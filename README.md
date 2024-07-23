@@ -1,4 +1,4 @@
-[English](https://github.com/w3c-cg/mcm-jp/edit/main/README_en.md)
+[English](https://github.com/w3c-cg/mcm-jp/blob/main/README_en.md)
 
 # Media Content Metadata Japanese CG (MCM-JP CG)
 
