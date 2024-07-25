@@ -15,9 +15,9 @@
 ### 前回会合議事録 [5]
   - [議事録ドラフト](https://github.com/w3c-cg/mcm-jp/tree/minutes-20240628/meetings/2024-06-28)
 ### CGチャーターレビュー [10]
-  - [ドラフト案](https://endouhhc.github.io/mcm-jp/charters/mcm-jp-cg-2024-draft.html)
+  - [ドラフトチャーター](https://w3c-cg.github.io/mcm-jp/charters/cg-charter-mcm-jp-2024)
 ### ユースケース・課題などのご紹介 [30]
-  - 出版に関する事例紹介（小学館） [15]
+  - 出版に関する事例紹介（小学館・Media Do International）[15]
   - 文字入力ソフトに関する事例紹介（オムロンソフトウェア）[15]
 ### 次回会合の予定 [5]
   - スケジュール
