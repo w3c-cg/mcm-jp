@@ -34,7 +34,7 @@
 ### 欠席
 - 塩浜大平（Media Do International, Inc.）
 
-## 議事メモ（ドラフト）
+## 議事録
 - [進行資料スライド](https://github.com/w3c-cg/mcm-jp/blob/main/meetings/2024-06-28/20240628-mcm-jp-cg-introduction-meeting.pdf)
 
 ### はじめに
@@ -137,7 +137,7 @@
 
 - CG Charterのテンプレート説明
 - CG Charterの概要説明
-- [Charterのドラフト](https://endouhhc.github.io/mcm-jp/charters/mcm-jp-cg-2024-draft.html)
+- [Charterのドラフト](https://w3c-cg.github.io/mcm-jp/charters/cg-charter-mcm-jp-2024)
 
 
 
