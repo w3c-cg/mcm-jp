@@ -10,7 +10,7 @@
 ## 本リポジトリ利用にあたっての基本方針
 下記MCM-JP CGの基本方針に則り、リポジトリをご利用ください。
 
-- CGチャーター(レビュー作業中)
+- [CGチャーター](https://w3c-cg.github.io/mcm-jp/charters/cg-charter-mcm-jp-2024)
 - [本リポジトリへの貢献について](https://github.com/w3c-cg/mcm-jp/blob/main/CONTRIBUTING.md)
 - [本リポジトリのライセンス](https://github.com/w3c-cg/mcm-jp/blob/main/LICENSE.md)
 - [本リポジトリの行動規範](https://github.com/w3c-cg/mcm-jp/blob/main/CODE_OF_CONDUCT.md)
