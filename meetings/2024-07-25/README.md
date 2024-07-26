@@ -16,7 +16,7 @@
     - [W3C IRC Web Client](https://irc.w3.org/#mcm-jp)
   - 参加者ご挨拶
 ### 前回会合議事録 [5]
-  - [議事録ドラフト](https://github.com/w3c-cg/mcm-jp/tree/minutes-20240628/meetings/2024-06-28)
+  - [前回議事録(6/28会合)ドラフト](https://github.com/w3c-cg/mcm-jp/tree/minutes-20240628/meetings/2024-06-28)
 ### CGチャーターレビュー [10]
   - [ドラフトチャーター](https://w3c-cg.github.io/mcm-jp/charters/cg-charter-mcm-jp-2024)
 ### ユースケース・課題などのご紹介 [30]
