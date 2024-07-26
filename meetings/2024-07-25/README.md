@@ -20,8 +20,13 @@
 ### CGチャーターレビュー [10]
   - [ドラフトチャーター](https://w3c-cg.github.io/mcm-jp/charters/cg-charter-mcm-jp-2024)
 ### ユースケース・課題などのご紹介 [30]
-  - 出版に関する事例紹介（小学館・Media Do International）[15]
-  - 文字入力ソフトに関する事例紹介（オムロンソフトウェア）[15]
+  - [出版に関する事例紹介](https://github.com/w3c-cg/mcm-jp/tree/main/meetings/2024-07-25/20240725_mcm-jp-cg_小学館説明資料.pdf)（小学館・Media Do International）[15]
+  - [文字入力ソフト(IME)に関する事例紹介](https://github.com/w3c-cg/mcm-jp/tree/main/meetings/2024-07-25/20240725_mcm-jp-cg_オムロンソフトウェアIME紹介資料.pdf)（オムロンソフトウェア）[15]
+  - 参考）
+    - [出版・放送連携サービス試作（デモ動画）](https://www.nhk.or.jp/strl/open2024/lecture/presentation2.html)（NHK）
+      - 4:54より当該シーン
+      - [NHK技研公開2024](https://www.nhk.or.jp/strl/open2024/index.html)展示
+
 ### 次回会合の予定 [5]
   - スケジュール
   - アジェンダ案
