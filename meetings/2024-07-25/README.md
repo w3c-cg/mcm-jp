@@ -6,17 +6,17 @@
 ## 会場
 - オンライン
 
-## 本会合の議事録
+## 本会合の議事録（ドラフト）
 - https://www.w3.org/2024/07/25-mcm-jp-minutes.html
 
-## アジェンダ（案）
+## アジェンダ
 ### はじめに [10]
   - 議事録:IRCを利用
     - irc://irc.w3.org/#mcm-jp
     - [W3C IRC Web Client](https://irc.w3.org/#mcm-jp)
   - 参加者ご挨拶
-### 前回会合議事録 [5]
-  - [前回議事録(6/28会合)ドラフト](https://github.com/w3c-cg/mcm-jp/tree/minutes-20240628/meetings/2024-06-28)
+### 前回議事録確認 [5]
+  - [前回議事録(6/28会合)](https://github.com/w3c-cg/mcm-jp/tree/minutes-20240628/meetings/2024-06-28)
 ### CGチャーターレビュー [10]
   - [ドラフトチャーター](https://w3c-cg.github.io/mcm-jp/charters/cg-charter-mcm-jp-2024)
 ### ユースケース・課題などのご紹介 [30]
