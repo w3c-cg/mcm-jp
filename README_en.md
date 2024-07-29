@@ -10,7 +10,7 @@
 ## Policy for this repository
 Please use the repository with the MCM-JP CG policy below.
 
-- CG Charter (Work in Progress)
+- [CG Charter](https://w3c-cg.github.io/mcm-jp/charters/cg-charter-mcm-jp-2024)
 - [Contributing](https://github.com/w3c-cg/mcm-jp/blob/main/CONTRIBUTING.md)
 - [License](https://github.com/w3c-cg/mcm-jp/blob/main/LICENSE.md)
 - [Code of Contact](https://github.com/w3c-cg/mcm-jp/blob/main/CODE_OF_CONDUCT.md)
