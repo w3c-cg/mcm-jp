@@ -21,15 +21,16 @@
 ### 前回議事録確認 [5]
   - [前回議事録(7/25会合)](https://www.w3.org/2024/07/25-mcm-jp-minutes.html)
 ### ユースケース・課題などのご紹介 [30]
-  - 放送関連メタデータに関する運用事例（エム・データ）
+  - [放送関連メタデータに関する運用事例](エム・データ資料_20240905【配布版】.pdf)（エム・データ）
   - 放送関連メタデータ相互運用プロトタイプ紹介（NHK）
 ### CG成果まとめ方針・作業案 [20]
   - CGレポート作業方針案
     - [Editor's Draft](https://w3c-cg.github.io/mcm-jp/reports/ED.html)
   - 記載例レビュー
     - CGレポート目次案
-    - 事例テンプレート
-    - サンプル紹介
+    - [事例テンプレート](../../reports/use-case-template.md)
+    - 事例記述サンプル
+      - [図鑑の情報を外部の用語検索サイトに掲載する事例](../../reports/use-case-sample-図鑑-Webサービス.md)
 ### TPAC MEIGへの進捗共有 [20]
  - [W3C TPAC 2024 イベントページ](https://www.w3.org/2024/09/TPAC/Overview.html)
  - Media & Entertainment Interest Group (MEIG) ミーティング
