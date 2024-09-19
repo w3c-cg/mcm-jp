@@ -25,7 +25,7 @@
   - 放送関連メタデータ相互運用プロトタイプ紹介（NHK）
 ### CG成果まとめ方針・作業案 [20]
   - CGレポート作業方針案
-    - [Editor's Draft](https://w3c-cg.github.io/mcm-jp/reports/ED.html)
+    - [CG-Draft](https://w3c-cg.github.io/mcm-jp/reports/cg-report.html)
   - 記載例レビュー
     - CGレポート目次案
     - [事例テンプレート](../../reports/use-case-template.md)
