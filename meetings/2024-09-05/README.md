@@ -22,7 +22,7 @@
   - [前回議事録(7/25会合)](https://www.w3.org/2024/07/25-mcm-jp-minutes.html)
 ### ユースケース・課題などのご紹介 [30]
   - [放送関連メタデータに関する運用事例](エム・データ資料_20240905【配布版】.pdf)（エム・データ）
-  - 放送関連メタデータ相互運用プロトタイプ紹介（NHK）
+  - [放送関連メタデータ相互運用プロトタイプ紹介](20240905-mcm-jp-cg-prototype-nhk.pdf)（NHK）
 ### CG成果まとめ方針・作業案 [20]
   - CGレポート作業方針案
     - [CG-Draft](https://w3c-cg.github.io/mcm-jp/reports/cg-report.html)
