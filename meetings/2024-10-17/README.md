@@ -17,8 +17,7 @@
   - 本日の議事録作成担当
     - TBD
 ### 前回議事録確認 [5]
-  - 前回議事録(9/5会合)
-    - リンク
+  - [前回議事録(9/5会合)](../2024-09-05/minutes.md)
   
 ### ユースケース・課題などのご紹介 [30]
   - イベント情報に関する事例紹介（ジョルテ）
@@ -31,11 +30,19 @@
     - Update on Media Content Metadata Japanese CG
   - [議事録](https://www.w3.org/2024/09/23-me-minutes.html)
 
-### CG成果まとめ方針・作業案 [20]
+### CG成果まとめ方針・作業案 [15]
   - CGレポート進捗報告
     - [CG-Draft](https://w3c-cg.github.io/mcm-jp/reports/cg-report.html)
     - [事例テンプレート](../../reports/use-case-template.md)
-    - 事例記述サンプルの更新（TBD）
+      - 項目名を明確化
+      - 実装例をサブ項目（任意記述）に変更
+      - 参照仕様の項目を追加
+    - 事例記述サンプルの更新
+      - [出版-放送プロトタイプ事例（作業中）](../../reports/use-case-sample-EPUB-TVProgram.md)
 
+
+### 次回会合のアジェンダ案 [5]
+- 「(仮)メタデータ標準化これまでの取り組み」岸上 順一（W3C Japan Deputy Director）
+- 11/28木 10:30-1200 （ハイブリッド開催検討中）
 
 ### まとめ、その他 [10]
