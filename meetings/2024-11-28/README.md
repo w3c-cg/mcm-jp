@@ -22,7 +22,8 @@
   - [前回議事録(10/17会合)](../2024-10-17/minutes.md)
   
 ### メタデータ標準化これまでの取り組み [45]
-  - 岸上 順一（W3C Japan Deputy Director）
+  - [メタデータの変遷とcIDF](20241128MCM-JP_CG_kishigami.pdf) 
+    - 岸上 順一（W3C Japan Deputy Director）
   
 ### CGレポート作成作業 [30]
   - CGレポート作成方針
