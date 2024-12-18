@@ -25,8 +25,8 @@
 ### 実装例（任意）
 具体的なデータやアルゴリズムの例
 
-![画像貼り付け（sample1）](sample1.png)
-![画像貼り付け（sample2）](sample2.png)
+![画像貼り付け（sample1）](https://w3c-cg.github.io/mcm-jp/reports/use-cases/template/sample1.png)
+![画像貼り付け（sample2）](use-cases/template/sample2.png)
 
 ### 参照仕様など（任意）
 シナリオや実装サンプルなどで参照している技術仕様などの情報
