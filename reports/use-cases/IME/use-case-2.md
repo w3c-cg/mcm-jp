@@ -28,13 +28,14 @@
 #### スマートフォン向け IME(iWnn IME for Android)＋クラウド辞書
 
 - 【iWnn IME for Android】
-![alt text](image.png)
+![iWnn IME for Android](https://w3c-cg.github.io/mcm-jp/reports/use-cases/IME/image.png)
 - 【組込辞書とクラウド辞書の変換例】
-![alt text](image-1.png)
+![組込辞書とクラウド辞書の変換例](https://w3c-cg.github.io/mcm-jp/reports/use-cases/IME/image-1.png)
 - 【辞書開発プロセス】
-![alt text](image-2.png)
+![辞書開発プロセス](https://w3c-cg.github.io/mcm-jp/reports/use-cases/IME/image-2.png)
 - 【辞書データ構造】
-![alt text](image-3.png)
+![辞書データ構造](https://w3c-cg.github.io/mcm-jp/reports/use-cases/IME/image-3.png)
+
 
 ### 参照仕様など（任意）
 
