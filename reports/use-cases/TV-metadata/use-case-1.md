@@ -1,7 +1,8 @@
 # 放送番組から出版コンテンツをレコメンド
 
 ## 作成者
-- 田口博康（エム・データ）
+- 田口 博康（エム・データ）
+- 西尾 真樹（エム・データ）
 
 ## 関連する産業ドメイン
 - 放送
@@ -29,20 +30,17 @@
 - 放送 x 出版 サービス連携プロトタイプ
   - [参考資料リンク](https://github.com/w3c-cg/mcm-jp/blob/main/meetings/2024-09-05/20240905-mcm-jp-cg-prototype-nhk.pdf)
   - 放送 x 出版 メタデータ 相互運用イメージ
-  ![放送 x 出版 メタデータ 相互運用イメージ](image.png "放送 x 出版 メタデータ 相互運用イメージ")
+    - ![放送 x 出版 メタデータ 相互運用イメージ](https://w3c-cg.github.io/mcm-jp/reports/use-cases/TV-metadata/image.png "放送 x 出版 メタデータ 相互運用イメージ")
   - 出版➡放送 プロトタイプ
-![出版コンテンツに関連した 放送コンテンツに気づく](image-1.png)
+    - ![出版コンテンツに関連した 放送コンテンツに気づく](https://w3c-cg.github.io/mcm-jp/reports/use-cases/TV-metadata/image-1.png "出版➡放送 プロトタイプ")
     - 動作シーケンス概要
-![alt text](image-3.png)
+      - ![動作シーケンス概要](https://w3c-cg.github.io/mcm-jp/reports/use-cases/TV-metadata/image-3.png "動作シーケンス概要")
   - 放送➡出版 プロトタイプ
-![放送コンテンツに関連した 出版コンテンツに気づく](image-2.png)
+    - ![放送コンテンツに関連した 出版コンテンツに気づく](https://w3c-cg.github.io/mcm-jp/reports/use-cases/TV-metadata/image-2.png "放送➡出版 プロトタイプ")
 
 ### 参照仕様など（任意）
 シナリオや実装サンプルなどで参照している技術仕様などの情報
-- [TVメタデータサンプル(出版コンテンツ情報)](./sample-data-1.csv)
+- [TVメタデータサンプル(出版コンテンツ情報)](https://w3c-cg.github.io/mcm-jp/reports/use-cases/TV-metadata/sample-data-1.csv)
 
 ## CGへの課題共有
-事例の産業内外における普及に向けた課題の共有事項
-
-
 
