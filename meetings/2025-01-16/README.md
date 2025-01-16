@@ -22,7 +22,7 @@
   
 ### 相互運用事例ご紹介 [45]
 - [イベントとテレビ番組の同時検索（ジョルテ）](../../reports/use-cases/event-metadata/use-case.md)
-- [放送業界のユースケースと課題（NHK）](../../reports/use-cases/TV-metadata/use-case-2.md)
+- 放送業界のユースケースと課題（NHK）
 
 ### CGレポート作成作業 [10]
   - CGレポート作成方針
