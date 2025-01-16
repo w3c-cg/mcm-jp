@@ -12,7 +12,7 @@
 
 ## 事例概要
 - 地図上でイベントを検索するサービス内で、イベント情報と一緒にテレビ番組の情報を混ぜて表示
-  - [参考資料リンク](https://github.com/w3c-cg/mcm-jp/tree/main/reports/use-cases/event-metadata/参考情報.pdf)
+  - [参考資料リンク](https://github.com/w3c-cg/mcm-jp/blob/main/reports/use-cases/event-metadata/%E5%8F%82%E8%80%83%E8%B3%87%E6%96%99.pdf)
 
 ## 目的
 イベントと同時にテレビ番組を探す、もしくは気付くため仕組みを作る
