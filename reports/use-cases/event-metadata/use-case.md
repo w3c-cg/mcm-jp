@@ -39,7 +39,7 @@
 
 ### 参照仕様など（任意）
 
-![画像貼り付け（dataformat）](https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/format.png "dataformat")
+![画像貼り付け（dataformat）](https://github.com/w3c-cg/mcm-jp/blob/main/reports/use-cases/event-metadata/dataformat.png "dataformat")
 - [イベントデータフォーマット](https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/event-data-format.xlsx)
 - [イベントデータサンプル](https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/event-data_2025-01-14_2025-01-31.xlsx)
 
