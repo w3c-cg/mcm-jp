@@ -22,7 +22,7 @@
   
 ### 相互運用事例ご紹介 [45]
 - [イベントとテレビ番組の同時検索（ジョルテ）](../../reports/use-cases/event-metadata/use-case.md)
-- 放送業界のユースケースと課題（NHK）
+- [放送業界の事例と課題（NHK）](./20250116_nhk_usecases-issues.pdf)
 
 ### CGレポート作成作業 [10]
   - CGレポート作成方針
@@ -30,6 +30,7 @@
     - [事例テンプレート](../../reports/use-cases/template/use-case.md)
   - メディアコンテンツ相互運用事例（追加分）
     - [イベントとテレビ番組の同時検索](https://w3c-cg.github.io/mcm-jp/reports/cg-report#generatedID-44))
+    - [放送実績情報による放送番組の特定とオンデマンド配信での視聴方法の取得](../../reports/use-cases/broadcasting-schema.org/use-case-1.md)
 
 ### 意見交換[15]
 
