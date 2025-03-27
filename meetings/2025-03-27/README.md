@@ -34,8 +34,17 @@
   - データに関する権利に関するスコープの確認
 - CGレポート発行手続き
   - https://www.w3.org/community/about/faq/#how-do-we-publish-a-report
+  - https://www.w3.org/community/reports/reqs/
 - アクションアイテム
-  - [ ] [関連する取り組み、技術仕様・参考](https://w3c-cg.github.io/mcm-jp/reports/cg-report#references)
+  - [ ] CG サイトでの "Publish Report"
+    - Report title: 
+    - Status of the report: Draft
+      - 今後も更新予定なので、Draftとして発行
+    - URI: https://w3c-cg.github.io/mcm-jp/reports/cg-report
+  - [ ] 英語版作成
+    - https://www.w3.org/Translations/
+  - [ ] 英語版発行
+  - [ ] [関連する取り組み、技術仕様・参考の追記](https://w3c-cg.github.io/mcm-jp/reports/cg-report#references)
 
 ### Interop W3Cブース展示[15]
 - 準備作業
