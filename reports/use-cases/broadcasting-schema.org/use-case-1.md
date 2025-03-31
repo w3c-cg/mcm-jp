@@ -68,13 +68,13 @@
 
 ### 図
 - 図1. システム構成例
-![alt text](https://github.com/w3c-cg/mcm-jp/blob/main/reports/use-cases/broadcasting-schema.org/configuration.png)
+![alt text](https://w3c-cg.github.io/mcm-jp/reports/use-cases/broadcasting-schema.org/configuration.png)
 - 図2. データモデル
-![alt text](https://github.com/w3c-cg/mcm-jp/blob/main/reports/use-cases/broadcasting-schema.org/datamodel.png)
+![alt text](https://w3c-cg.github.io/mcm-jp/reports/use-cases/broadcasting-schema.org/datamodel.png)
 - 図3. 放送メタデータサンプル
-![alt text](https://github.com/w3c-cg/mcm-jp/blob/main/reports/use-cases/broadcasting-schema.org/data_sample.png)
+![alt text](https://w3c-cg.github.io/mcm-jp/reports/use-cases/broadcasting-schema.org/data_sample.png)
 - 図4. 検索API例
-![alt text](https://github.com/w3c-cg/mcm-jp/blob/main/reports/use-cases/broadcasting-schema.org/api_sample.png)
+![alt text](https://w3c-cg.github.io/mcm-jp/reports/use-cases/broadcasting-schema.org/api_sample.png)
 
 
 ### 参照仕様など
