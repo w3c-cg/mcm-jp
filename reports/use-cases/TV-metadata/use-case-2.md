@@ -32,7 +32,7 @@ TV露出効果を最大限活用して商品販促を行う
 
 ### 参照仕様など（任意）
 - シナリオや実装サンプルなどで参照している技術仕様などの情報
-  - [TVメタデータサンプル（商品・放送履歴）](https://w3c-cg.github.io/mcm-jp/reports/use-cases/TV-metadata/sample-data-1.csv)
+  - [TVメタデータサンプル（商品・放送履歴）](https://w3c-cg.github.io/mcm-jp/reports/use-cases/TV-metadata/sample-data-2.csv)
 
 ## CGへの課題共有
 
