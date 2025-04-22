@@ -8,7 +8,7 @@
     <script class="remove">
         // All config options at https://respec.org/docs/
         var respecConfig = {
-            specStatus: "CG-DRAFT",
+            specStatus: "unofficial",
             editors: [
                 {
                     name: "遠藤 大礎",
@@ -50,7 +50,7 @@
             copyrightStart: 2025,
             publishDate: "2025-03-31",
             maxTocLevel: 2,
-            //shortName: "dahut",
+            shortName: "cg/mcm-jp",
             xref: "web-platform",
             group: "mcm-jp"
         };
@@ -132,20 +132,48 @@
 
     </section>
 
-    <section class="appendix">
-        <h2>（TBD）関連する取り組み、技術仕様</h2>
+    <section>
+        <h2>関連する技術仕様、取り組み</h2>
         <section>
             <h3>Data Catalog Vocabulary (DCAT) - Version 3</h3>
+            <p>Web上で公開されているdata
+                catalog間の相互運用性を高めるために設計されたRDF語彙のW3C勧告（2024/8/22）[[?vocab-dcat-3]]。公開者がdatasetとdata-serviceを、標準的なモデルと語彙を使ってcatalogに記述することを可能にし、複数のcatalogからのメタデータの利用と集約を容易にする。
+            </p>
+            <p><a href="https://www.w3.org/groups/wg/dx/">W3C Dataset Exchange Working Group</a>により維持、改訂される。</p>
+        </section>
+        <section>
+            <h3>DVB-I</h3>
+            <p>ブロードバンドまたは放送ネットワークを通じて配信されるテレビサービスを発見するメカニズム、およびこれらのサービスの番組メタデータを取得する方法を定義するDVB仕様（2024/2）<cite><a href="https://dvb.org/wp-content/uploads/2023/07/A177r6_Service-Discovery-and-Programme-Metadata-for-DVB-I_Draft_TS-103-770-v121_February-2024.pdf">DVB-I</a></cite> [<cite><a href="#ref-DVB-I">DVB-I</a></cite>]
+。コンテンツのメタデータはTV-Anytimeスキーマに基づいたXML文書として扱われる[[etsi-ts-102-822-3-1]]。
+            </p>
+        </section>
+        <section>
+            <h3>European Broadcasting Union (EBU) - EBUCorePlus</h3>
+            <p>ブロードバンドまたは放送ネットワークを通じて配信されるテレビサービスを発見するメカニズム、およびこれらのサービスの番組メタデータを取得する方法を定義する仕様（2024/2）。コンテンツのメタデータはTV-Anytimeスキーマに基づいたXML文書として扱われる[[etsi-ts-102-822-3-1]]。
+            </p>
+        </section>
+        <section>
+            <h3>Schema.org</h3>
             技術仕様: <a href="https://www.w3.org/TR/vocab-dcat-3/"> https://www.w3.org/TR/vocab-dcat-3/ </a>
             <p>W3C Dataset Exchange Working Group (https://www.w3.org/groups/wg/dx/)</p>
-
         </section>
     </section>
 
 
-    <section id="references" class="appendix">
+    <section id="References">
         <h2>References</h2>
-        <dl class="bibliography">
+        <dl>
+            <dt>[DCAT]</dt>
+            <dd>
+                <a href="http://dublincore.org/documents/dces/"><cite>Dublin Core Metadata Element Set, Version
+                        1.1</cite></a>. DCMI. 14 June 2012. DCMI Recommendation. URL: <a
+                    href="http://dublincore.org/documents/dces/">http://dublincore.org/documents/dces/</a>
+            </dd>
+            <dt id="ref-DVB-I">[DVB-I]</dt>
+            <dd>
+                <a href="https://dvb.org/wp-content/uploads/2023/07/A177r6_Service-Discovery-and-Programme-Metadata-for-DVB-I_Draft_TS-103-770-v121_February-2024.pdf"><cite>Service Discovery and Programme Metadata for DVB-I</cite></a>, DVB Document A177 Rev.6
+            </dd>
+
             <dt id="bib-dc11">[DC11]</dt>
             <dd>
                 <a href="http://dublincore.org/documents/dces/"><cite>Dublin Core Metadata Element Set, Version
@@ -160,6 +188,7 @@
             </dd>
         </dl>
     </section>
+
     <p role="navigation" id="back-to-top">
 
 </body>
