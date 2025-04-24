@@ -142,13 +142,29 @@
             <p><a href="https://www.w3.org/groups/wg/dx/">W3C Dataset Exchange Working Group</a>により維持、改訂される。</p>
         </section>
         <section>
-            <h3>DVB-I</h3>
-            <p>ブロードバンドまたは放送ネットワークを通じて配信されるテレビサービスを発見するメカニズム、およびこれらのサービスの番組メタデータを取得する方法を定義するDVB仕様（2024/2）<cite><a href="https://dvb.org/wp-content/uploads/2023/07/A177r6_Service-Discovery-and-Programme-Metadata-for-DVB-I_Draft_TS-103-770-v121_February-2024.pdf">DVB-I</a></cite> [<cite><a href="#ref-DVB-I">DVB-I</a></cite>]。コンテンツのメタデータはTV-Anytimeスキーマに基づいたXML文書として扱われる[[etsi-ts-102-822-3-1]]。
+            <h3>Dublin Core Metadata Initiative (DCMI) - DCMI Metadata Terms</h3>
+            <p>・ Web上でリソースを記述するためのメタデータ用語の仕様（2000） [[DCTERMS]]。仕様には、当初のDublin Core Metadata Element
+            Set [[DC11]]の15個の用語に加え、数十個のproperty、class、datatype、およびvocabulary encoding
+            scheme（統制語彙識別のための統制語彙）の用語からなる拡張語彙が含まれている。定義はRDF-Turtle等。用語はURIでグローバルに識別され、アプリケーションに応じて、他の語彙のメタデータ用語と組み合わせて使用されることが想定されている。
             </p>
+        </section>
+
+
+        <section>
+            <h3><a href="https://schema.org/"></a>Schema.org</h3>
+            <P>インターネット上の構造化データのためのスキーマとして作成したデータモデル（メタデータ語彙）の仕様。現在（2025/4）Ver.29.0のデータモデルが、公開されている。RDF Schemaから派生したデータモデリングに基づいており、語彙要素としてType、Property、Enumerationsを含む。定義はRDF-Turtle等</P>
+            <p>Full schema hierarchy: https://schema.org/docs/full.html</p>
         </section>
         <section>
             <h3>European Broadcasting Union (EBU) - EBUCorePlus</h3>
             <p>ブロードバンドまたは放送ネットワークを通じて配信されるテレビサービスを発見するメカニズム、およびこれらのサービスの番組メタデータを取得する方法を定義する仕様（2024/2）。コンテンツのメタデータはTV-Anytimeスキーマに基づいたXML文書として扱われる[[etsi-ts-102-822-3-1]]。
+            </p>
+        </section>
+        <section>
+            <h3>DVB-I</h3>
+            <p>ブロードバンドまたは放送ネットワークを通じて配信されるテレビサービスを発見するメカニズム、およびこれらのサービスの番組メタデータを取得する方法を定義するDVB仕様（2024/2）<cite><a
+                        href="https://dvb.org/wp-content/uploads/2023/07/A177r6_Service-Discovery-and-Programme-Metadata-for-DVB-I_Draft_TS-103-770-v121_February-2024.pdf">DVB-I</a></cite>DVB-I</a></cite>]。
+                        コンテンツのメタデータはTV-Anytimeスキーマに基づいたXML文書として扱われる[[etsi-ts-102-822-3-1]]。
             </p>
         </section>
         <section>
@@ -159,34 +175,6 @@
     </section>
 
 
-    <section id="References">
-        <h2>References</h2>
-        <dl>
-            <dt>[DCAT]</dt>
-            <dd>
-                <a href="http://dublincore.org/documents/dces/"><cite>Dublin Core Metadata Element Set, Version
-                        1.1</cite></a>. DCMI. 14 June 2012. DCMI Recommendation. URL: <a
-                    href="http://dublincore.org/documents/dces/">http://dublincore.org/documents/dces/</a>
-            </dd>
-            <dt id="ref-DVB-I">[DVB-I]</dt>
-            <dd>
-                <a href="https://dvb.org/wp-content/uploads/2023/07/A177r6_Service-Discovery-and-Programme-Metadata-for-DVB-I_Draft_TS-103-770-v121_February-2024.pdf"><cite>Service Discovery and Programme Metadata for DVB-I</cite></a>, DVB Document A177 Rev.6
-            </dd>
-
-            <dt id="bib-dc11">[DC11]</dt>
-            <dd>
-                <a href="http://dublincore.org/documents/dces/"><cite>Dublin Core Metadata Element Set, Version
-                        1.1</cite></a>. DCMI. 14 June 2012. DCMI Recommendation. URL: <a
-                    href="http://dublincore.org/documents/dces/">http://dublincore.org/documents/dces/</a>
-            </dd>
-            <dt id="bib-dcterms">[DCTERMS]</dt>
-            <dd>
-                <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/"><cite>DCMI Metadata
-                        Terms</cite></a>. DCMI Usage Board. DCMI. 20 January 2020. DCMI Recommendation. URL: <a
-                    href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">https://www.dublincore.org/specifications/dublin-core/dcmi-terms/</a>
-            </dd>
-        </dl>
-    </section>
 
     <p role="navigation" id="back-to-top">
 
