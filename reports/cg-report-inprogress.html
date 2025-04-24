@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <title>メディアコンテンツメタデータの相互運用事例</title>
+    <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
+    <script class="remove">
+        // All config options at https://respec.org/docs/
+        var respecConfig = {
+            specStatus: "unofficial",
+            editors: [
+                {
+                    name: "遠藤 大礎",
+                    company: "NHK",
+                    mailto: "endou.h-hc@nhk.or.jp"
+                }
+            ],
+            authors: [
+                {
+                    name: "遠藤 大礎",
+                    company: "NHK",
+                    mailto: "endou.h-hc@nhk.or.jp"
+                },
+                {
+                    name: "小沢 清人",
+                    company: "小学館"
+                },
+                {
+                    name: "出野 健太郎",
+                    company: "オムロンソフトウェア"
+                },
+                {
+                    name: "田口 博康",
+                    company: "エム・データ"
+                },
+                {
+                    name: "西尾 真樹",
+                    company: "エム・データ"
+                },
+                {
+                    name: "下花 剛一",
+                    company: "ジョルテ"
+                }
+            ],
+            //github: "w3c-cg/mcm-jp",
+            name: "メディアコンテンツメタデータの相互運用事例",
+            latestVersion: "https://w3c-cg.github.io/mcm-jp/reports/cg-report",
+            edDraftURI: null,
+            copyrightStart: 2025,
+            publishDate: null,
+            maxTocLevel: 2,
+            shortName: "cg/mcm-jp",
+            xref: "web-platform",
+            group: "mcm-jp"
+        };
+    </script>
+</head>
+
+<body>
+    <section id="abstract">
+        <p>本ドキュメントは、業界間を横断したメディアコンテンツの流通を促進することを目的に、Media Content Metadata Japanese Community
+            Groupが収集したさまざまな業界のメディアコンテンツのメタデータ（メディアメタ）の運用事例を掲載する。</p>
+        <p>メディアメタの相互運用性の向上に寄与する関連ユースケースや技術課題、実装事例について共有し、各業界のサービス開発における参考資料としての役割や、共通課題解決に向けた協調領域の手がかりとなる資料を目指す。</p>
+        <p>本レポートは、事例の記述詳細化と事例の追加の作業を継続予定である。</p>
+    </section>
+    <section id="sotd">
+    </section>
+    <section>
+        <h2>はじめに</h2>
+        <p>Media Content Metadata Japanese Community
+            Groupのミッションは、メディアコンテンツメタデータの相互運用性を向上させ、さまざまな業界間でのメディアコンテンツ配信を促進するために、
+            ユースケース、技術的課題、ベストプラクティス、および可能な実装について共有することである。</p>
+        <p>複数の事業者が相互にサービス連携できるようになるためには、各サービス間での情報のやり取りに関するルールが共有され、それぞれのサービスで扱われるメタデータを相互に交換できるようになることが必要である。
+            しかし、それぞれの業界においてどのようなメタデータのフォーマットや語彙などが利用されているのか、お互いに知られていないという課題がある。</p>
+        <p>参加者が属する各業界で広く使われているメタデータの仕様や活用事例、技術・運用両面での課題を共有する取り組みを通じて、メタデータを相互に交換するための具体的な方法をサービス開発者向けの参照事例として広く公開することを目指す。
+        </p>
+
+    </section>
+    <section>
+        <h2>スコープ対象</h2>
+        <p>このグループは各業界で定義および運用されているメディアコンテンツメタデータに焦点を当て、異なる業界間のデータ相互運用性の例を共有します。</p>
+        <p>このグループは、データ相互運用性の2つの領域をスコープ対象とする：</p>
+
+        <ul>
+            <li>メディアコンテンツ業界間</li>
+            <li>メディアコンテンツ業界と非メディアコンテンツ業界間</li>
+        </ul>
+
+
+        <figure>
+            <img class="diagram" src="https://w3c-cg.github.io/mcm-jp/charters/img/scope.png" alt="scope of mcm-jp cg"
+                width="90%" />
+            <figcaption>Scope of MCM-JP CG</figcaption>
+        </figure>
+        </p>
+
+        <section>
+            <h3>スコープ対象外</h3>
+            <p>本ドキュメントは既存技術仕様に基づく参考情報の提供を対象とし、新規の技術仕様の規定化は行わない。</p>
+
+            <p>メディアコンテンツのメタデータに関して、AI技術に関する課題、関連するユースケースや関連技術動向などの共有にあたり、
+                データに関わる権利（著作権や隣接権）を適切に扱うことができることが望ましいという前提の元で、
+                下記をスコープ外とする。:
+            <ul>
+                <li>データの適切な取り扱いに関する新規のルールや定義を作成しない。</li>
+                <li>課題の解決手段の開発、提案を行わない。</li>
+                <li>既存の取り組みの評価を行わない。</li>
+            </ul>
+
+            </p>
+
+        </section>
+
+    </section>
+
+    <section>
+        <h2>メディアメタ相互運用事例</h2>
+        <section data-include="use-cases/visual-dictionary/use-case.md" data-include-format="markdown"></section>
+        <section data-include="use-cases/IME/use-case-1.md" data-include-format="markdown"></section>
+        <section data-include="use-cases/IME/use-case-2.md" data-include-format="markdown"></section>
+        <section data-include="use-cases/IME/use-case-3.md" data-include-format="markdown"></section>
+
+        <section data-include="use-cases/TV-metadata/use-case-1.md" data-include-format="markdown"></section>
+        <section data-include="use-cases/TV-metadata/use-case-2.md" data-include-format="markdown"></section>
+
+        <section data-include="use-cases/event-metadata/use-case.md" data-include-format="markdown"></section>
+
+        <section data-include="use-cases/broadcasting-schema.org/use-case-1.md" data-include-format="markdown">
+        </section>
+
+
+    </section>
+
+    <section>
+        <h2>関連する技術仕様、取り組み</h2>
+        <section>
+            <h3>Data Catalog Vocabulary (DCAT) - Version 3</h3>
+            <p>Web上で公開されているdata
+                catalog間の相互運用性を高めるために設計されたRDF語彙のW3C勧告（2024/8/22）[[?vocab-dcat-3]]。公開者がdatasetとdata-serviceを、標準的なモデルと語彙を使ってcatalogに記述することを可能にし、複数のcatalogからのメタデータの利用と集約を容易にする。
+            </p>
+            <p><a href="https://www.w3.org/groups/wg/dx/">W3C Dataset Exchange Working Group</a>により維持、改訂される。</p>
+        </section>
+        <section>
+            <h3>Dublin Core Metadata Initiative (DCMI) - DCMI Metadata Terms</h3>
+            <p>・ Web上でリソースを記述するためのメタデータ用語の仕様（2000） [[DCTERMS]]。仕様には、当初のDublin Core Metadata Element
+            Set [[DC11]]の15個の用語に加え、数十個のproperty、class、datatype、およびvocabulary encoding
+            scheme（統制語彙識別のための統制語彙）の用語からなる拡張語彙が含まれている。定義はRDF-Turtle等。用語はURIでグローバルに識別され、アプリケーションに応じて、他の語彙のメタデータ用語と組み合わせて使用されることが想定されている。
+            </p>
+        </section>
+
+
+        <section>
+            <h3><a href="https://schema.org/"></a>Schema.org</h3>
+            <P>インターネット上の構造化データのためのスキーマとして作成したデータモデル（メタデータ語彙）の仕様。現在（2025/4）Ver.29.0のデータモデルが、公開されている。RDF Schemaから派生したデータモデリングに基づいており、語彙要素としてType、Property、Enumerationsを含む。定義はRDF-Turtle等</P>
+            <p>Full schema hierarchy: https://schema.org/docs/full.html</p>
+        </section>
+        <section>
+            <h3>European Broadcasting Union (EBU) - EBUCorePlus</h3>
+            <p>ブロードバンドまたは放送ネットワークを通じて配信されるテレビサービスを発見するメカニズム、およびこれらのサービスの番組メタデータを取得する方法を定義する仕様（2024/2）。コンテンツのメタデータはTV-Anytimeスキーマに基づいたXML文書として扱われる[[etsi-ts-102-822-3-1]]。
+            </p>
+        </section>
+        <section>
+            <h3>DVB-I</h3>
+            <p>ブロードバンドまたは放送ネットワークを通じて配信されるテレビサービスを発見するメカニズム、およびこれらのサービスの番組メタデータを取得する方法を定義するDVB仕様（2024/2）<cite><a
+                        href="https://dvb.org/wp-content/uploads/2023/07/A177r6_Service-Discovery-and-Programme-Metadata-for-DVB-I_Draft_TS-103-770-v121_February-2024.pdf">DVB-I</a></cite>DVB-I</a></cite>]。
+                        コンテンツのメタデータはTV-Anytimeスキーマに基づいたXML文書として扱われる[[etsi-ts-102-822-3-1]]。
+            </p>
+        </section>
+        <section>
+            <h3>Schema.org</h3>
+            技術仕様: <a href="https://www.w3.org/TR/vocab-dcat-3/"> https://www.w3.org/TR/vocab-dcat-3/ </a>
+            <p>W3C Dataset Exchange Working Group (https://www.w3.org/groups/wg/dx/)</p>
+        </section>
+    </section>
+
+
+
+    <p role="navigation" id="back-to-top">
+
+</body>
+
+</html>
