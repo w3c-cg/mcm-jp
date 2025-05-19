@@ -6,7 +6,7 @@
     <title>メディアコンテンツメタデータの相互運用事例</title>
     <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
     <script class="remove">
-        // All config options at https://respec.org/docs/
+        // ReSpecの設定例。詳細は https://respec.org/docs/ を参照してください。
         var respecConfig = {
             specStatus: "CG-DRAFT",
             editors: [
@@ -50,7 +50,7 @@
             copyrightStart: 2025,
             publishDate: "2025-03-31",
             maxTocLevel: 2,
-            //shortName: "dahut",
+            shortName: "cg/mcm-jp",
             xref: "web-platform",
             group: "mcm-jp"
         };
@@ -132,34 +132,51 @@
 
     </section>
 
-    <section class="appendix">
-        <h2>（TBD）関連する取り組み、技術仕様</h2>
+    <section>
+        <h2>関連する技術仕様、取り組み</h2>
         <section>
             <h3>Data Catalog Vocabulary (DCAT) - Version 3</h3>
-            技術仕様: <a href="https://www.w3.org/TR/vocab-dcat-3/"> https://www.w3.org/TR/vocab-dcat-3/ </a>
-            <p>W3C Dataset Exchange Working Group (https://www.w3.org/groups/wg/dx/)</p>
-
+            <p>Web上で公開されているdata catalog間の相互運用性を高めるために設計されたRDF語彙のW3C勧告（2024/8/22）[[vocab-dcat-3]]。公開者がdatasetとdata-serviceを、標準的なモデルと語彙を使ってcatalogに記述することを可能にし、複数のcatalogからのメタデータの利用と集約を容易にする。</p>
+            <p><strong>W3C Dataset Exchange Working Group</strong>は、DCATの機能要求を考慮しながら、DCATを維持・改訂することを目的とするWG（2017年～）。<br>
+            WGページ: <a href="https://www.w3.org/2017/dxwg/wiki/Main_Page">https://www.w3.org/2017/dxwg/wiki/Main_Page</a></p>
+            <p><a href="https://www.w3.org/groups/wg/dx/">W3C Dataset Exchange Working Group</a>により維持、改訂される。</p>
         </section>
+        <section>
+            <h3>JSON-LD 1.1</h3>
+            <p>Web上の構造化データやメタデータの表現・交換のための軽量なLinked Dataフォーマット。JSON-LD 1.1[[json-ld]]は、W3C JSON-LD Working Groupによりメンテナンスされている（2020年勧告）。</p>
+            <p>仕様: <a href="https://www.w3.org/TR/json-ld/">https://www.w3.org/TR/json-ld/</a><br>
+            WGページ: <a href="https://www.w3.org/groups/wg/json-ld/">https://www.w3.org/groups/wg/json-ld/</a></p>
+        </section>
+
+        <section>
+            <h3>Dublin Core Metadata Initiative (DCMI) - DCMI Metadata Terms</h3>
+            <p>Web上でリソースを記述するためのメタデータ用語の仕様（2000） [[DCTERMS]]。仕様には、当初のDublin Core Metadata Element
+            Set [[DC11]]の15個の用語に加え、数十個のproperty、class、datatype、およびvocabulary encoding
+            scheme（統制語彙識別のための統制語彙）の用語からなる拡張語彙が含まれている。定義はRDF-Turtle等。用語はURIでグローバルに識別され、アプリケーションに応じて、他の語彙のメタデータ用語と組み合わせて使用されることが想定されている。
+            </p>
+        </section>
+        <section>
+            <h3><a href="https://schema.org/">Schema.org</a></h3>
+            <p>インターネット上の構造化データのためのスキーマとして作成したデータモデル（メタデータ語彙）の仕様。現在（2025/4）Ver.29.0のデータモデルが、公開されている。RDF Schemaから派生したデータモデリングに基づいており、語彙要素としてType、Property、Enumerationsを含む。定義はRDF-Turtle等。</p>
+            <p>Full schema hierarchy: <a href="https://schema.org/docs/full.html">https://schema.org/docs/full.html</a></p>
+            <p>Schema.orgはJSON-LD[[json-ld]]による記述も公式にサポートしている。</p>
+        </section>
+        <section>
+            <h3>European Broadcasting Union (EBU) - EBUCorePlus</h3>
+            <p>ブロードバンドまたは放送ネットワークを通じて配信されるテレビサービスを発見するメカニズム、およびこれらのサービスの番組メタデータを取得する方法を定義する仕様（2024/2）。コンテンツのメタデータはTV-Anytimeスキーマに基づいたXML文書として扱われる[[etsi-ts-102-822-3-1]]。
+            </p>
+        </section>
+        <section>
+            <h3>DVB-I</h3>
+            <p>ブロードバンドまたは放送ネットワークを通じて配信されるテレビサービスを発見するメカニズム、およびこれらのサービスの番組メタデータを取得する方法を定義するDVB仕様（2024/2）<cite><a
+                        href="https://dvb.org/wp-content/uploads/2023/07/A177r6_Service-Discovery-and-Programme-Metadata-for-DVB-I_Draft_TS-103-770-v121_February-2024.pdf">DVB-I</a></cite>DVB-I</a></cite>]。
+                        コンテンツのメタデータはTV-Anytimeスキーマに基づいたXML文書として扱われる[[etsi-ts-102-822-3-1]]。
+            </p>
+        </section>
+
     </section>
 
 
-    <section id="references" class="appendix">
-        <h2>References</h2>
-        <dl class="bibliography">
-            <dt id="bib-dc11">[DC11]</dt>
-            <dd>
-                <a href="http://dublincore.org/documents/dces/"><cite>Dublin Core Metadata Element Set, Version
-                        1.1</cite></a>. DCMI. 14 June 2012. DCMI Recommendation. URL: <a
-                    href="http://dublincore.org/documents/dces/">http://dublincore.org/documents/dces/</a>
-            </dd>
-            <dt id="bib-dcterms">[DCTERMS]</dt>
-            <dd>
-                <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/"><cite>DCMI Metadata
-                        Terms</cite></a>. DCMI Usage Board. DCMI. 20 January 2020. DCMI Recommendation. URL: <a
-                    href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">https://www.dublincore.org/specifications/dublin-core/dcmi-terms/</a>
-            </dd>
-        </dl>
-    </section>
     <p role="navigation" id="back-to-top">
 
 </body>
