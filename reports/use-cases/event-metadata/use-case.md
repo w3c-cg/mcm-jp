@@ -27,19 +27,19 @@
 
 - イベントと一緒にテレビ番組を表示した画面
 
-![画像貼り付け（event1）](https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/event1.png "event1")
-![画像貼り付け（event2）](https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/event2.png "event2")
-![画像貼り付け（event3）](https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/event3.png "event3")
+<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/event1.png" alt="event1" width="400" />
+<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/event2.png" alt="event2" width="400" />
+<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/event3.png" alt="event3" width="400" />
 
 - 日付ごとにテレビ番組を表示した画面
 
-![画像貼り付け（bangumi1）](https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/bangumi1.png "bangumi1")
-![画像貼り付け（bangumi2）](https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/bangumi2.png "bangumi2")
-![画像貼り付け（bangumi3）](https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/bangumi3.png "bangumi3")
+<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/bangumi1.png" alt="bangumi1" width="400" />
+<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/bangumi2.png" alt="bangumi2" width="400" />
+<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/bangumi3.png" alt="bangumi3" width="400" />
 
 ### 参照仕様など（任意）
-
-![画像貼り付け（dataformat）](https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/dataformat.png "dataformat")
+-
+<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/dataformat.png" alt="dataformat" width="400" />
 - [イベントデータフォーマット](https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/event-data-format.xlsx)
 - [イベントデータサンプル](https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/event-data_2025-01-14_2025-01-31.xlsx)
 
