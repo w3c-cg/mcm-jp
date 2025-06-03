@@ -1,4 +1,4 @@
-# 放送番組から出版コンテンツをレコメンド
+# 放送番組から出版コンテンツをレコメンド / Recommending Publishing Content Based on Broadcast Programs
 
 ## 作成者
 - 田口 博康（エム・データ）

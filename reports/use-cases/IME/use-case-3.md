@@ -1,4 +1,4 @@
-# 放送メタデータと連動したIME
+# 放送メタデータと連動したIME / IME Integrated with Broadcast Metadata
 
 ## 作成者
 - 出野 健太郎（オムロンソフトウェア）

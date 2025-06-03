@@ -1,4 +1,4 @@
-# 図鑑コンテンツデータベース
+# 図鑑コンテンツデータベース / Visual Encyclopedia Content Database
 
 ## 作成者
 - 小沢 清人（小学館）
