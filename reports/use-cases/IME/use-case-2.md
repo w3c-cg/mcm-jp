@@ -1,4 +1,4 @@
-# 固有名詞に関するメタデータの流通とIME辞書データへの活用
+# 固有名詞に関するメタデータの流通とIME辞書データへの活用 / Distribution of Proper Noun Metadata and Its Integration into IME Dictionary Data
 
 ## 作成者
 - 出野 健太郎（オムロンソフトウェア）

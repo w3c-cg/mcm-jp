@@ -1,4 +1,4 @@
-# 固有名詞に関するIME辞書データの自社作成と展開
+# 固有名詞に関するIME辞書データの自社作成と展開 / In-house Development and Deployment of IME Dictionary Data for Proper Nouns
 
 ## 作成者
 - 出野 健太郎（オムロンソフトウェア）

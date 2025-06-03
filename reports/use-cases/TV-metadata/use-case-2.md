@@ -1,4 +1,4 @@
-# TVメタデータと検索データを用いたヒット商品のシグナル検知・アラートサービス
+# TVメタデータと検索データを用いたヒット商品のシグナル検知・アラートサービス / Trend Alert Service for Potential Hit Products Using Broadcast and Search Data
 
 ## 作成者
 - 田口 博康（エム・データ）

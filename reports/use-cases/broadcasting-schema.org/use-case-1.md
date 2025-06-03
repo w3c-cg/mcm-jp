@@ -1,4 +1,4 @@
-# 放送実績情報による放送番組の特定とオンデマンド配信での視聴方法の取得
+# 放送実績からの放送番組の特定とオンデマンド視聴情報の取得 / Program Identification from Broadcast Logs and Retrieval of On-Demand Viewing Information
 
 ## 作成者
 - 遠藤 大礎（NHK）
