@@ -3,7 +3,7 @@
 ## 日時
 - 日時: 2025年6月26日(木) 11:00-12:00
 - 会場: オンライン
-- W3Cカレンダー: (https://www.w3.org/events/meetings/9758a8fe-8135-4ef6-a654-3b4bc447efb2/20250522T110000/)
+- W3Cカレンダー: (https://www.w3.org/events/meetings/9758a8fe-8135-4ef6-a654-3b4bc447efb2/20250626T110000/)
 - 議事録: (TBD)
 
 ## 出席者
