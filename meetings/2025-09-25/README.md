@@ -37,7 +37,7 @@
   - [セッション企画提案](https://github.com/w3c/tpac2025-breakouts)
     - 10/22 締め切り
   - [スケジュール](https://github.com/w3c/tpac2025-breakouts/wiki/Breakout%E2%80%90time%E2%80%90slots)
-    - 2025/11/11月 08:30-09:30 での提案予定
+    - 2025/11/11火 08:30-09:30 での提案予定
     - MEIG, Publishing メンバーを中心に参加いただけるように調整
   - [参加登録](https://www.w3.org/2025/11/TPAC/#registration)
 
