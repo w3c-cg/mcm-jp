@@ -4,15 +4,17 @@
 - **日時**: 2025年10月27日(木) 11:00-12:00
 - **会場**: オンライン会議
   - Teams会議（W3Cカレンダー参照）
-- **議事録**: 遠藤
-
+- **議事録**: 
+  
 ## はじめに [遠藤] (5)
 - [行動規範](https://www.w3.org/policies/code-of-conduct/)
-- 議事録：遠藤が担当
 
+### 議事録：
+- W3Cで提供されるEtherpadを使用
+  - https://pad.w3.org/p/2025-11-27-mcmjp
 
-## 前回会合の振り返り (5)
-- [第16回](https://github.com/w3c-cg/mcm-jp/tree/main/meetings/2025-10-23)
+## 前回議事録の振り返り (5)
+- [第16回](https://github.com/w3c-cg/mcm-jp/tree/main/meetings/2025-09-25)
 
 ## 本日の進行内容の確認 (5)
 
@@ -55,8 +57,6 @@
 
 ### （4） CGレポート更新
 - Interop展示デモに関する事例ドラフト（出野さん）
-  - https://github.com/w3c-cg/mcm-jp/blob/main/reports/use-cases/IME/use-case-interop-demo03.md
-  - https://github.com/w3c-cg/mcm-jp/blob/main/reports/use-cases/IME/use-case-interop-demo04.md
 
 ### （5）マーケット目線での検証シナリオ
 - 提案取りまとめを始めます
@@ -69,23 +69,8 @@
 ## まとめ (10)
 
 - **決定事項**
-  - Breakoutセッションの進行、役割について共有
-  - 多言語対応デモに関するユースケースをInteropで実施する
-    - Interopでの利用した各データについて、TPACでも利用できる確認
-  - Interop IMEユースケースについて、出野さんドラフトベースで、レポートに反映
-  - マーケット目線でのシナリオ・タスク整理
-    - 現状の事例テンプレートベースで、遠藤 or Githubへ
 
 - **アクションアイテム**
-  - Breakoutセッション準備: 遠藤
-  - 多言語対応デモ情報調整：
-    - IME：オムロンデジタル、講談社、小学館、集英社、遠藤
-    - イベンティア: ジョルテ、小学館、遠藤
-  - レポート掲載内容の精査
-    - ドラフト：遠藤
-    - 精査：ユースケース参加者
-  - マーケット目線での検証シナリオ収集開始
-
 
 - **次回予定（仮）**
   - 日時： 11/27 (木) 11:00-12:00
