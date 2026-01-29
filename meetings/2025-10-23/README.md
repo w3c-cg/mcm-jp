@@ -4,7 +4,7 @@
 - **日時**: 2025年10月23日(木) 11:00-12:00
 - **会場**: オンライン会議
   - Teams会議（W3Cカレンダー参照）
-- **議事録**: 遠藤
+- **議事録**: https://github.com/w3c-cg/mcm-jp/tree/main/meetings/2025-10-23
 
 ## はじめに [遠藤] (5)
 - [行動規範](https://www.w3.org/policies/code-of-conduct/)
@@ -12,7 +12,7 @@
 
 
 ## 前回会合の振り返り (5)
-- [第16回](https://github.com/w3c-cg/mcm-jp/tree/main/meetings/2025-10-23)
+- [第16回](https://github.com/w3c-cg/mcm-jp/tree/main/meetings/2025-09-25/MCM-JP-CG_第15回会合_議事録.md)
 
 ## 本日の進行内容の確認 (5)
 
