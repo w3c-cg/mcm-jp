@@ -11,7 +11,7 @@
 - [行動規範](https://www.w3.org/policies/code-of-conduct/)
 
 ## 議題
-- https://pad.w3.org/p/2026-01-29-mcmjp#L12
+- https://pad.w3.org/p/2026-02-26-mcmjp
 - [CGレポート改訂方針レビュー](https://github.com/w3c-cg/mcm-jp/blob/main/meetings/2026-02-26/20260226_mcm-jp_CG%E6%94%B9%E8%A8%82%E6%96%B9%E9%87%9D.pdf)
 
 ## 今後のスケジュール
