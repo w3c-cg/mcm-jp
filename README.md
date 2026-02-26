@@ -16,12 +16,14 @@
 - [本リポジトリの行動規範](https://github.com/w3c-cg/mcm-jp/blob/main/CODE_OF_CONDUCT.md)
 
 
-## イベント
+## カレンダー
 
-- イベントの管理には、W3Cカレンダーを利用します。
-- MCM-JP CGのイベントは下記リンクより参照ください。
+- MCM-JP CGのイベントは下記W3Cカレンダーを参照ください。
   - [MCM-JP CG カレンダー](https://www.w3.org/groups/cg/mcm-jp/calendar/)
 
+## CGレポート
+- [CGレポートドラフト版 （2025/3/31改訂）](https://w3c-cg.github.io/mcm-jp/reports/cg-report)
+  - [改訂作業中レポート (Unofficial Draft)](https://w3c-cg.github.io/mcm-jp/reports/cg-report-inprogress)
 
 ## コンタクト
 - GitHubにIssueを作成いただくか、[グループの公開メーリングリスト](mailto:public-mcm-jp@w3.org)でご連絡ください。
