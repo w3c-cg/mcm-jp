@@ -7,13 +7,13 @@
 
 ### 位置情報から番組情報取得
 
-<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/interop2a.png" alt="interop2a" width="400" />
+<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/interop2a.png" alt="interop2a" width="800" />
 
 
 ## 関連メタデータ仕様
 
 - イベンティア： 催事イベントメタデータサンプル
-<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/dataformat.png" alt="dataformat" width="400" />
+<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/dataformat.png" alt="dataformat" width="600" />
 
 - [イベンティア参考資料](https://github.com/w3c-cg/mcm-jp/blob/main/reports/use-cases/event-metadata/%E5%8F%82%E8%80%83%E8%B3%87%E6%96%99.pdf)
 

@@ -6,26 +6,26 @@
 
 ### 日付から番組情報取得
 
-<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/interop1a.png" alt="interop1a" width="400" />
+<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/interop1a.png" alt="interop1a" width="800" />
 
 
 ### 日付から書籍情報取得
-<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/interop1b.png" alt="interop1b" width="400" />
+<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/interop1b.png" alt="interop1b" width="800" />
 
 
 
 ### 位置情報から番組情報取得
-<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/interop1c.png" alt="interop1c" width="400" />
+<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/interop1c.png" alt="interop1c" width="800" />
 
 
 ### 放送番組情報から関連する関連する書誌情報の取得
-<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/interop1d.png" alt="interop1d" width="400" />
+<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/interop1d.png" alt="interop1d" width="800" />
 
 
 ## 関連メタデータ仕様
 
 - イベンティア： 催事イベントメタデータサンプル
-<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/dataformat.png" alt="dataformat" width="400" />
+<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/dataformat.png" alt="dataformat" width="600" />
 
 - [イベンティア参考資料](https://github.com/w3c-cg/mcm-jp/blob/main/reports/use-cases/event-metadata/%E5%8F%82%E8%80%83%E8%B3%87%E6%96%99.pdf)
 
