@@ -1,28 +1,25 @@
 # 催事イベントと関連するテレビ番組・出版コンテンツのレコメンド
 
-- 事例概要
-  - 地図上でイベントを検索するサービス内で、イベント情報と一緒にテレビ番組の情報を混ぜて表示
+ユーザの位置情報や日時情報などを用いて、催事イベント情報、テレビ番組、出版コンテンツのレコメンドを行う。
 
 ## 試作・検証事例
 
 ### 日付から番組情報取得
 
-![alt text](interop1a.png)
-
+<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/interop1a.png" alt="interop1a" width="400" />
 
 
 ### 日付から書籍情報取得
-![alt text](interop1b.png)
+<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/interop1b.png" alt="interop1b" width="400" />
 
-- 参照仕様など（任意）
 
 
 ### 位置情報から番組情報取得
-![alt text](interop1c.png)
+<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/interop1c.png" alt="interop1c" width="400" />
 
 
 ### 放送番組情報から関連する関連する書誌情報の取得
-![alt text](interop1d.png)
+<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/interop1d.png" alt="interop1d" width="400" />
 
 
 ## 関連メタデータ仕様
