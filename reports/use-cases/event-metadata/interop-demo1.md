@@ -5,21 +5,35 @@
 ## 試作・検証事例
 
 ### 日付から番組情報取得
+- ある日時に放送されている番組を、放送編成枠情報の検索エンドポイントで検索する
+- 放送編成枠情報に紐づくTVエピソードを特定する
+- 番組エピソード名や、サムネイル画像などを視聴放送編成枠情報に紐づくTVエピソードを特定する
+- 取得した放送関連情報を、イベント情報などと合わせて一覧表示
 
-<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/interop1a.png" alt="interop1a" width="800" />
-
+<figure>
+  <img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/interop1a.png" alt="interop1a" width="800" />
+  <figcatption>Fig. 日付から番組情報取得フロー</figcaption>
+</figure>
 
 ### 日付から書籍情報取得
-<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/interop1b.png" alt="interop1b" width="800" />
-
+<figure>
+  <img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/interop1b.png" alt="interop1b" width="800" />
+  <figcatption>Fig. 日付から書籍情報取得</figcaption>
+</figure>
 
 
 ### 位置情報から番組情報取得
-<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/interop1c.png" alt="interop1c" width="800" />
+<figure>
+  <img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/interop1c.png" alt="interop1c" width="800" />
+  <figcatption>Fig. 位置情報から番組情報取得</figcaption>
+</figure>
 
 
 ### 放送番組情報から関連する関連する書誌情報の取得
-<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/interop1d.png" alt="interop1d" width="800" />
+<figure>
+  <img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/interop1d.png" alt="interop1d" width="800" />
+  <figcatption>Fig. 放送番組情報から関連する関連する書誌情報の取得</figcaption>
+</figure>
 
 
 ## 関連メタデータ仕様
