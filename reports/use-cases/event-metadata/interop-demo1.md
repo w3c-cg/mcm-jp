@@ -12,27 +12,27 @@
 
 <figure>
   <img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/interop1a.png" alt="interop1a" width="800" />
-  <figcatption>Fig. 日付から番組情報取得フロー</figcaption>
+  <figcaption>Fig. 日付から番組情報取得フロー</figcaption>
 </figure>
 
 ### 日付から書籍情報取得
 <figure>
   <img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/interop1b.png" alt="interop1b" width="800" />
-  <figcatption>Fig. 日付から書籍情報取得</figcaption>
+  <figcaption>Fig. 日付から書籍情報取得</figcaption>
 </figure>
 
 
 ### 位置情報から番組情報取得
 <figure>
   <img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/interop1c.png" alt="interop1c" width="800" />
-  <figcatption>Fig. 位置情報から番組情報取得</figcaption>
+  <figcaption>Fig. 位置情報から番組情報取得</figcaption>
 </figure>
 
 
 ### 放送番組情報から関連する関連する書誌情報の取得
 <figure>
   <img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/interop1d.png" alt="interop1d" width="800" />
-  <figcatption>Fig. 放送番組情報から関連する関連する書誌情報の取得</figcaption>
+  <figcaption>Fig. 放送番組情報から関連する関連する書誌情報の取得</figcaption>
 </figure>
 
 
