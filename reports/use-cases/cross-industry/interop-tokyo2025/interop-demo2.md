@@ -7,18 +7,12 @@
 
 ### 位置情報から番組情報取得
 
-<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/interop2a.png" alt="interop2a" width="800" />
+<img src="/reports/use-cases/cross-industry/interop-tokyo2025/interop2a.png" alt="interop2a" width="800" />
 
 
 ## 関連メタデータ仕様
 
-- イベンティア： 催事イベントメタデータサンプル
-<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/dataformat.png" alt="dataformat" width="600" />
-
-- [イベンティア参考資料](https://github.com/w3c-cg/mcm-jp/blob/main/reports/use-cases/event-metadata/%E5%8F%82%E8%80%83%E8%B3%87%E6%96%99.pdf)
-
-- [イベントデータフォーマット](https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/event-data-format.xlsx)
-- [イベントデータサンプル](https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/event-data_2025-01-14_2025-01-31.xlsx)
+- [イベンティア： 催事イベントメタデータサンプル](#ref-eventia)
 
 ## CGへの課題共有
 - 催事イベントにおいて、緯度経度など物理的情報の運用

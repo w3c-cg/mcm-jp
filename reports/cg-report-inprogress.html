@@ -95,17 +95,28 @@
             latestVersion: "https://w3c-cg.github.io/mcm-jp/reports/cg-report",
             edDraftURI: null,
             copyrightStart: 2025,
-            publishDate: "2025-03-31",
+            publishDate: "2026-03-18",
             maxTocLevel: 2,
             shortName: "cg/mcm-jp",
             xref: "web-platform",
             group: "mcm-jp",
             lint: {
                 "required-sections": false
+            },
+            localBiblio: {
+                "DVB-I": {
+                title: "DVB-I Service Discovery and Programme Metadata",
+                href: "https://dvb.org/wp-content/uploads/2023/07/A177r6_Service-Discovery-and-Programme-Metadata-for-DVB-I_Draft_TS-103-770-v121_February-2024.pdf",
+                status: "Spec",
+                publisher: "DVB",
+                date: "2024-02"
             }
-        };
+        }
+    };
     </script>
     <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
+    
+
     <style>
       .lang-switch-fixed {
         position: fixed;
@@ -168,7 +179,7 @@
     </section>
     <section id="scope">
         <h2>
-          <span lang="ja">スコープ対象</span>
+          <span lang="ja">スコープ</span>
           <span lang="en">Scope</span>
         </h2>
         <p lang="ja">このグループは各業界で定義および運用されているメディアコンテンツメタデータに焦点を当て、異なる業界間のデータ相互運用性の例を共有します。</p>
@@ -217,21 +228,21 @@
         </h2>
         <p lang="en" style="color:gray; font-style:italic;">English version of this section forthcoming.</p>
 
-<p lang="ja">
-本章では、業界横断的なサービス開発に向けた実践的な参照情報を提供することを目的として、
-メディアメタの相互運用性の向上に寄与する既存の運用事例および、
-相互運用性の検証を目的とした試作・検証事例を紹介する。
+        <p lang="ja">
+        本章では、業界横断的なサービス開発に向けた実践的な参照情報を提供することを目的として、
+        メディアメタの相互運用性の向上に寄与する既存の運用事例および、
+        相互運用性の検証を目的とした試作・検証事例を紹介する。
 
-各事例は、新たな技術仕様や標準の策定を目的とするものではなく、
-既存のメタデータ仕様や運用を前提として、
-業界間での連携可能性や実運用上の課題を整理し、
-共通課題解決に向けた協調領域の検討に資する参照事例として位置付けられる。
-</p>
+        各事例は、新たな技術仕様や標準の策定を目的とするものではなく、
+        既存のメタデータ仕様や運用を前提として、
+        業界間での連携可能性や実運用上の課題を整理し、
+        共通課題解決に向けた協調領域の検討に資する参照事例として位置付けられる。
+        </p>
 
-<p lang="ja">
-本章に掲載する事例は、今後の検討や議論の進展に応じて、
-記述の詳細化や新たな事例の追加を行いながら、継続的に更新される。
-</p>
+        <p lang="ja">
+        本章に掲載する事例は、今後の検討や議論の進展に応じて、
+        記述の詳細化や新たな事例の追加を行いながら、継続的に更新される。
+        </p>
 
         
         <section data-include="use-cases/visual-dictionary/use-case.md" data-include-format="markdown"></section>
@@ -246,11 +257,10 @@
 
         <section data-include="use-cases/broadcasting-schema.org/use-case-1.md" data-include-format="markdown"></section>
 
-        <section data-include="use-cases/event-metadata/interop-demo1.md" data-include-format="markdown"></section>
-        <section data-include="use-cases/event-metadata/interop-demo2.md" data-include-format="markdown"></section>
-        <section data-include="use-cases/IME/use-case-interop-demo03.md" data-include-format="markdown"></section>
-
-        </section>
+        <section data-include="use-cases/cross-industry/interop-tokyo2025/interop-demo1.md" data-include-format="markdown"></section>
+        
+        <section data-include="use-cases/cross-industry/interop-tokyo2025/interop-demo2.md" data-include-format="markdown"></section>
+        <section data-include="use-cases/cross-industry/interop-tokyo2025/interop-demo3.md" data-include-format="markdown"></section>
 
 
     </section>
@@ -294,18 +304,13 @@
         </section>
         <section>
             <h3>DVB-I</h3>
-            <p>ブロードバンドまたは放送ネットワークを通じて配信されるテレビサービスを発見するメカニズム、およびこれらのサービスの番組メタデータを取得する方法を定義するDVB仕様（2024/2）<cite><a
-                        href="https://dvb.org/wp-content/uploads/2023/07/A177r6_Service-Discovery-and-Programme-Metadata-for-DVB-I_Draft_TS-103-770-v121_February-2024.pdf">DVB-I</a></cite>DVB-I</a></cite>]。
+            <p>ブロードバンドまたは放送ネットワークを通じて配信されるテレビサービスを発見するメカニズム、およびこれらのサービスの番組メタデータを取得する方法を定義するDVB仕様（2024/2）[[DVB-I]]。
                         コンテンツのメタデータはTV-Anytimeスキーマに基づいたXML文書として扱われる[[etsi-ts-102-822-3-1]]。
             </p>
         </section>
 
     </section>
 
-
-    <p role="navigation" id="back-to-top">
-        <a href="#title"><abbr title="Back to Top">↑</abbr></a>
-    </p>
 
 </body>
 

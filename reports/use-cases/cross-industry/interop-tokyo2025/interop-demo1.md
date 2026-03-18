@@ -11,40 +11,35 @@
 - 取得した放送関連情報を、イベント情報などと合わせて一覧表示
 
 <figure>
-  <img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/interop1a.png" alt="interop1a" width="800" />
-  <figcaption>Fig. 日付から番組情報取得フロー</figcaption>
+  <img src="/reports/use-cases/cross-industry/interop-tokyo2025/interop1a.png" alt="interop1a" width="800" />
+  <figcaption>日付から番組情報取得フロー</figcaption>
 </figure>
 
 ### 日付から書籍情報取得
 <figure>
-  <img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/interop1b.png" alt="interop1b" width="800" />
-  <figcaption>Fig. 日付から書籍情報取得</figcaption>
+  <img src="/reports/use-cases/cross-industry/interop-tokyo2025/interop1b.png" alt="interop1b" width="800" />
+  <figcaption>日付から書籍情報取得</figcaption>
 </figure>
 
 
 ### 位置情報から番組情報取得
 <figure>
-  <img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/interop1c.png" alt="interop1c" width="800" />
-  <figcaption>Fig. 位置情報から番組情報取得</figcaption>
+  <img src="/reports/use-cases/cross-industry/interop-tokyo2025/interop1c.png" alt="interop1c" width="800" />
+  <figcaption>位置情報から番組情報取得</figcaption>
 </figure>
 
 
 ### 放送番組情報から関連する関連する書誌情報の取得
 <figure>
-  <img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/interop1d.png" alt="interop1d" width="800" />
-  <figcaption>Fig. 放送番組情報から関連する関連する書誌情報の取得</figcaption>
+  <img src="/reports/use-cases/cross-industry/interop-tokyo2025/interop1d.png" alt="interop1d" width="800" />
+  <figcaption>放送番組情報から関連する関連する書誌情報の取得</figcaption>
 </figure>
 
 
 ## 関連メタデータ仕様
 
-- イベンティア： 催事イベントメタデータサンプル
-<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/dataformat.png" alt="dataformat" width="600" />
+- [イベンティア： 催事イベントメタデータサンプル](#ref-eventia)
 
-- [イベンティア参考資料](https://github.com/w3c-cg/mcm-jp/blob/main/reports/use-cases/event-metadata/%E5%8F%82%E8%80%83%E8%B3%87%E6%96%99.pdf)
-
-- [イベントデータフォーマット](https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/event-data-format.xlsx)
-- [イベントデータサンプル](https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/event-data_2025-01-14_2025-01-31.xlsx)
 
 ## CGへの課題共有
 - 催事イベントにおいて、緯度経度など物理的情報の運用
