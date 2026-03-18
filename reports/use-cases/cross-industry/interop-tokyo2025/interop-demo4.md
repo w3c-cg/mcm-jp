@@ -9,7 +9,7 @@
 
 ## 事例概要
 - 書籍検索サイトでのWeb埋め込み側IMEによるタイトル補完入力
-![参考資料](image-5.png)
+![参考資料](/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/interop4.png)
 
 ## 目的
 作品の検索ページで入力される固有名詞（作品名・登場人物名など）の表記揺らぎを解消し、検索精度を向上させる

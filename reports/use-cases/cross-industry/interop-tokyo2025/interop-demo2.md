@@ -7,7 +7,7 @@
 
 ### 位置情報から番組情報取得
 
-<img src="/reports/use-cases/cross-industry/interop-tokyo2025/interop2a.png" alt="interop2a" width="800" />
+<img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/interop2a.png" alt="interop2a" width="800" />
 
 
 ## 関連メタデータ仕様

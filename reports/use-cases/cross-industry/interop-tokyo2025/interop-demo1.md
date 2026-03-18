@@ -11,27 +11,27 @@
 - 取得した放送関連情報を、イベント情報などと合わせて一覧表示
 
 <figure>
-  <img src="/reports/use-cases/cross-industry/interop-tokyo2025/interop1a.png" alt="interop1a" width="800" />
+  <img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/interop1a.png" alt="interop1a" width="800" />
   <figcaption>日付から番組情報取得フロー</figcaption>
 </figure>
 
 ### 日付から書籍情報取得
 <figure>
-  <img src="/reports/use-cases/cross-industry/interop-tokyo2025/interop1b.png" alt="interop1b" width="800" />
+  <img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/interop1b.png" alt="interop1b" width="800" />
   <figcaption>日付から書籍情報取得</figcaption>
 </figure>
 
 
 ### 位置情報から番組情報取得
 <figure>
-  <img src="/reports/use-cases/cross-industry/interop-tokyo2025/interop1c.png" alt="interop1c" width="800" />
+  <img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/interop1c.png" alt="interop1c" width="800" />
   <figcaption>位置情報から番組情報取得</figcaption>
 </figure>
 
 
 ### 放送番組情報から関連する関連する書誌情報の取得
 <figure>
-  <img src="/reports/use-cases/cross-industry/interop-tokyo2025/interop1d.png" alt="interop1d" width="800" />
+  <img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/interop1d.png" alt="interop1d" width="800" />
   <figcaption>放送番組情報から関連する関連する書誌情報の取得</figcaption>
 </figure>
 

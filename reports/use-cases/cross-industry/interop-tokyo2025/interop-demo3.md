@@ -17,7 +17,7 @@
 - IMEアプリは、ユーザが入力したテキストをIME辞書の「読み文字列」として用いて、「表記文字列」から正式な「書名」を取得する。
 - IMEアプリは、取得した表記文字列を変換候補として表示する。
 
-![alt text](/reports/use-cases/cross-industry/interop-tokyo2025/interop3a.png "書誌情報に基づく文字入力変換 検証フロー")
+![alt text](/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/interop3a.png "書誌情報に基づく文字入力変換 検証フロー")
 
 
 ## 参考事例
