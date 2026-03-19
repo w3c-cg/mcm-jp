@@ -1,17 +1,10 @@
 # 放送実績からの放送番組の特定とオンデマンド視聴情報の取得 / Program Identification from Broadcast Logs and Retrieval of On-Demand Viewing Information
-
-## 作成者
-- 遠藤 大礎（NHK）
+ユーザが既知の情報から放送番組を特定し、放送や配信で番組を視聴できるようにする事例。
+放送実績情報（チャンネル、放送時刻）から放送番組を特定し、放送予定・配信情報などの番組情報を取得する。
 
 ## 関連する産業ドメイン
 - 放送
 - OTTサービス
-
-## 事例概要
-- 放送実績情報（チャンネル、放送時刻）から放送番組を特定し、放送予定・配信情報などの番組情報を取得する
-
-## 目的
-- ユーザが既知の情報から放送番組を特定し、放送や配信で番組を視聴できるようにすること
 
 ## シナリオ
 
@@ -22,10 +15,43 @@
 5. 受信機は、レスポンスを元に、当該番組を視聴する方法をユーザに提示する
 6. ユーザは、視聴方法の候補をもとに、配信サービスでの視聴や、放送視聴予約・放送録画予約などを行う
 
-### 実装例
+## システム構成
+
+システム構成概要と動作フローを示す。
+<figure>
+  <img src="/mcm-jp/reports/use-cases/broadcasting-schema.org/configuration.png" alt="" width="800" />
+  <figcaption>システム構成例</figcaption>
+</figure>
 
 
-#### 動作環境（TBD）
+## データモデル
+想定データモデルを示す。放送番組については、Schema.orgなどでもスキーマタイプが示されている。
+これらや、放送業界の既存仕様[ITU-R]、[Google Media Actions]仕様などを参考に、放送番組に関するメタデータのデータモデルを示す。
+
+<figure width="60%">
+  <img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/broadcasting-schema.org/datamodel.png" alt=""  />
+  <figcaption>放送番組メタデータのデータモデル</figcaption>
+</figure>
+
+## 動作フロー概要
+- 放送事業者、放送メタデータサーバ、受信機、ユーザーの構成を図1に示す
+- 放送メタデータサーバは、放送メタデータの登録APIと、参照APIをもつ
+  - 放送メタデータサーバAPI仕様(リンク記載)
+  - メタデータのデータモデル（図2）
+    - Schema.orgの語彙、データ構造などのRDFスキーマに基づく記述
+- 放送事業者が、放送メタデータサーバに放送実績情報を登録する。メタデータのサンプルを図3に示す
+  - 放送枠（BroadcastEvent）とその番組枠で提供された放送番組（TVEpisode）の関係性を登録する
+  - 放送番組（TVEpisode）に対して、詳細情報（シリーズ、出演者など）や提供情報（放送情報、配信情報）を登録する
+- ユーザーが受信機に対して、放送が終了した番組の視聴をリクエストする
+  - 受信機は、放送チャンネルと放送時刻の情報を検索パラメータとして、放送メタデータサーバに問合せ、番組枠（BroadcastEvent）と放送番組（TVEpisode）を特定する（図4 検索API例）
+- 放送メタデータサーバは、受信機に対して、BroadcastEvent、TVEpisodeの情報を返答する
+  - 図2に示すように、TVEpisodeには、オンデマンド配信枠（OnDemandEvent）の情報などが紐づいている
+- 受信機は、TVEpisodeの提供方法として、現在利用可能な複数のBroadcastEventおよびOnDemandEventを視聴方法として提示する
+- ユーザーは、提示された視聴方法の候補のうち、あるVODサービスを示すOnDemandEventを選択する
+- 受信機は、指定されたOnDemandEventにより、番組の再生を行う
+
+
+### 動作環境（TBD）
 - 受信機: 
   - Hybridcast対応受信機
     - LG OLED42C2PJA
@@ -49,32 +75,16 @@
       - OpenAPI仕様
       - generator: python
 
-#### 処理シーケンス（TBD）
-- 放送事業者、放送メタデータサーバ、受信機、ユーザーの構成を図1に示す
-- 放送メタデータサーバは、放送メタデータの登録APIと、参照APIをもつ
-  - 放送メタデータサーバAPI仕様(リンク記載)
-  - メタデータのデータモデル（図2）
-    - Schema.orgの語彙、データ構造などのRDFスキーマに基づく記述
-- 放送事業者が、放送メタデータサーバに放送実績情報を登録する。メタデータのサンプルを図3に示す
-  - 放送枠（BroadcastEvent）とその番組枠で提供された放送番組（TVEpisode）の関係性を登録する
-  - 放送番組（TVEpisode）に対して、詳細情報（シリーズ、出演者など）や提供情報（放送情報、配信情報）を登録する
-- ユーザーが受信機に対して、放送が終了した番組の視聴をリクエストする
-  - 受信機は、放送チャンネルと放送時刻の情報を検索パラメータとして、放送メタデータサーバに問合せ、番組枠（BroadcastEvent）と放送番組（TVEpisode）を特定する（図4 検索API例）
-- 放送メタデータサーバは、受信機に対して、BroadcastEvent、TVEpisodeの情報を返答する
-  - 図2に示すように、TVEpisodeには、オンデマンド配信枠（OnDemandEvent）の情報などが紐づいている
-- 受信機は、TVEpisodeの提供方法として、現在利用可能な複数のBroadcastEventおよびOnDemandEventを視聴方法として提示する
-- ユーザーは、提示された視聴方法の候補のうち、あるVODサービスを示すOnDemandEventを選択する
-- 受信機は、指定されたOnDemandEventにより、番組の再生を行う
 
-### 図
-- 図1. システム構成例
-<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/broadcasting-schema.org/configuration.png" alt="システム構成例" width="400" />
-- 図2. データモデル
-<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/broadcasting-schema.org/datamodel.png" alt="データモデル" width="400" />
-- 図3. 放送メタデータサンプル
-<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/broadcasting-schema.org/data_sample.png" alt="放送メタデータサンプル" width="400" />
-- 図4. 検索API例
-<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/broadcasting-schema.org/api_sample.png" alt="検索API例" width="700" />
+<figure width="60%">
+  <img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/broadcasting-schema.org/data_sample.png" alt=""  />
+  <figcaption>放送番組メタデータのサンプル</figcaption>
+</figure>
+
+<figure width="40%">
+<img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/broadcasting-schema.org/api_sample.png" alt="検索API例" />
+  <figcaption>検索API例</figcaption>
+</figure>
 
 
 ### 参照仕様など

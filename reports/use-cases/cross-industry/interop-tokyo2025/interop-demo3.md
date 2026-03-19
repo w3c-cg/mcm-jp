@@ -6,9 +6,7 @@
 - 出版
 - コミュニケーションツール（IME）
 
-## 試作・検証事例
-
-### 書誌情報に基づく文字入力変換
+## 書誌情報に基づく文字入力変換
 
 試作構成における動作フローを示す。
 - 出版社が書誌情報を作成する。
@@ -17,14 +15,22 @@
 - IMEアプリは、ユーザが入力したテキストをIME辞書の「読み文字列」として用いて、「表記文字列」から正式な「書名」を取得する。
 - IMEアプリは、取得した表記文字列を変換候補として表示する。
 
-![alt text](/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/interop3a.png "書誌情報に基づく文字入力変換 検証フロー")
+![alt text](/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/images/interop3a.png "動作フロー概要")
 
 
-## 参考事例
+## 実機デモの様子
+Interop Tokyo 2025で展示したデモ外観を示す。
 
-- スマートフォン向け IME(iWnn IME for Android)＋クラウド辞書
+<figure>
+    <img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/images/ime-Yu-Gi-Oh!.png" alt="interop4" width ="33%" />
+    <img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/images/ime-re_zero.png" alt="interop4"  width ="33%" />
+    <img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/images/ime-taigan-no-kaji.png" alt="interop4"  width ="33%"/>
+      <figcaption>Interop Tokyo 2025 デモ動作の様子</figcaption>
+</figure>
 
-### 参照仕様など（任意）
+
+## 参照仕様など
+- [スマートフォン向け IME(iWnn IME for Android)＋クラウド辞書](#ref-ime)
 
 
 ## CGへの課題共有

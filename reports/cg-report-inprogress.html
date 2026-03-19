@@ -66,6 +66,10 @@
             ],
             authors: [
                 {
+                    name: "出野 健太郎 / Kentaro Ideno",
+                    company: "オムロンデジタル株式会社 / OMRON DIGITAL Co., Ltd."
+                },
+                {
                     name: "遠藤 大礎 / Hiroki Endo",
                     company: "日本放送協会 (NHK) / Japan Broadcasting Corporation",
                     mailto: "endou.h-hc@nhk.or.jp"
@@ -75,8 +79,8 @@
                     company: "株式会社小学館 / SHOGAKUKAN Inc."
                 },
                 {
-                    name: "出野 健太郎 / Kentaro Ideno",
-                    company: "オムロンソフトウェア株式会社 / OMRON SOFTWARE Co., Ltd."
+                    name: "下花 剛一 / Koichi Shimohana",
+                    company: "株式会社ジョルテ / Jorte Inc."
                 },
                 {
                     name: "田口 博康 / Hiroyasu Taguchi",
@@ -84,23 +88,24 @@
                 },
                 {
                     name: "西尾 真樹 / Masaki Nishio",
-                    company: "エム・データ / M Data Co., Ltd."
+                    company: "株式会社エム・データ / M Data Co., Ltd."
                 },
                 {
-                    name: "下花 剛一 / Koichi Shimohana",
-                    company: "株式会社ジョルテ / Jorte Inc."
+                    name: "星野 慎二 / Shinji Hoshino",
+                    company: "株株式会社ACCESS / ACCESS CO., LTD"
                 }
+
             ],
-            //github: "w3c-cg/mcm-jp",
+            github: "w3c-cg/mcm-jp",
             name: "メディアコンテンツメタデータの相互運用事例",
             latestVersion: "https://w3c-cg.github.io/mcm-jp/reports/cg-report",
             edDraftURI: null,
             copyrightStart: 2025,
-            publishDate: "2026-03-18",
+            publishDate: "2026-03-19",
             maxTocLevel: 2,
             shortName: "cg/mcm-jp",
-            xref: "web-platform",
             group: "mcm-jp",
+            xref: "web-platform",
             lint: {
                 "required-sections": false
             },
@@ -149,12 +154,12 @@
     </div>
     <section id="abstract">
         <p lang="ja">本ドキュメントは、業界間を横断したメディアコンテンツの流通を促進することを目的に、Media Content Metadata Japanese Community Groupが収集したさまざまな業界のメディアコンテンツのメタデータ（メディアメタ）の運用事例を掲載する。</p>
-        <p lang="en">This document presents case studies of media content metadata operations collected by the Media Content Metadata Japanese Community Group, aiming to promote the distribution of media content across industries.</p>
+        <p lang="en">This document presents case studies of media content metadata operations collected by the Media Content Metadata Japanese Community Group, aiming to promote the cross-industry distribution of media content.</p>
 
         <p lang="ja">メディアメタの相互運用性の向上に寄与するユースケースや技術課題、実装事例について共有し、業界横断的なサービス開発における参考資料としての役割を担うとともに、共通課題解決に向けた協調領域の手がかりを提供する。</p>
         <p lang="en">This report shares use cases, technical challenges, and implementation examples that contribute to improving the interoperability of media content metadata. It serves as a reference for cross-industry service development and provides insights into potential areas of collaboration toward solving common issues.</p>
         
-        <p lang="ja">本レポートは、事例の記述詳細化と事例の追加を行いながら、継続的に更新される。</p>
+        <p lang="ja">本ドキュメントは、事例の記述詳細化や新たな事例の追加を行いながら、継続的に更新される。</p>
         <p lang="en">This report is continuously updated with more detailed descriptions and additional case studies.</p>
     </section>
     <section id="sotd">
@@ -164,18 +169,54 @@
           <span lang="ja">はじめに</span>
           <span lang="en">Introduction</span>
         </h2>
-        <p lang="ja">Media Content Metadata Japanese Community Groupのミッションは、メディアコンテンツメタデータの相互運用性を向上させ、さまざまな業界間でのメディアコンテンツ配信を促進することである。</p>
-        <p lang="en">The mission of the Media Content Metadata Japanese Community Group is to improve the interoperability of media content metadata and promote the distribution of media content across various industries.</p>
-        <p lang="ja">そのために、ユースケース、技術的課題、ベストプラクティス、および可能な実装について共有する。</p>
-        <p lang="en">To achieve this, the group shares use cases, technical challenges, best practices, and possible implementations.</p>
 
-        <p lang="ja">複数の事業者が相互にサービス連携できるようになるためには、各サービス間での情報のやり取りに関するルールが共有され、それぞれのサービスで扱われるメタデータを相互に交換できるようになることが必要である。</p>
-        <p lang="en">For multiple businesses to collaborate and link their services, it is necessary to share rules for exchanging information between services and to enable the mutual exchange of metadata handled by each service.</p>
-        <p lang="ja">しかし、それぞれの業界においてどのようなメタデータのフォーマットや語彙などが利用されているのか、お互いに知られていないという課題がある。</p>
-        <p lang="en">However, there is a challenge in that each industry is often unaware of the metadata formats and vocabularies used in other industries.</p>
+        <p lang="ja">
+            本ドキュメントは、Media Content Metadata Japanese Community Group（以下、本CG）の活動の一環として、
+            メディアコンテンツメタデータの相互運用性の向上に資する参照事例を収集・共有するものである。</p>
+        <p lang="en">
+            This document is developed as part of the activities of the Media Content Metadata Japanese Community Group (MCM-JP CG),
+            and aims to organize and share reference case studies that contribute to improving the interoperability of media content metadata.
+        </p>
 
-        <p lang="ja">参加者が属する各業界で広く使われているメタデータの仕様や活用事例、技術・運用両面での課題を共有する取り組みを通じて、メタデータを相互に交換するための具体的な方法をサービス開発者向けの参照事例として広く公開することを目指す。</p>
-        <p lang="en">Through efforts to share widely used metadata specifications, use cases, and both technical and operational challenges in each participant's industry, this group aims to openly provide concrete examples for service developers on how to exchange metadata.</p>
+        <p lang="ja">
+        本CGのミッションは、メディアコンテンツメタデータの相互運用性を向上させ、
+        さまざまな業界間でのメディアコンテンツ配信を促進することである。</p>
+    
+        <p lang="en">
+            The mission of the MCM-JP CG is to enhance the interoperability of media content metadata and to promote the distribution of media content across various industries.</p>
+
+
+        <p lang="ja">
+            複数の事業者が相互にサービス連携できるようになるためには、
+            各サービス間での情報のやり取りに関する共通の前提や取り決めが共有され、
+            それぞれのサービスで扱われるメタデータを相互に交換できるようになることが必要である。
+            一方で、各業界において利用されているメタデータのフォーマットや語彙については、
+            業界間で十分に共有されておらず、お互いに知られていないという課題がある。</p>
+
+        <p lang="en">
+            For multiple businesses to collaborate and link their services, it is necessary to share common conventions for exchanging information between services,
+            and to enable the mutual exchange of metadata handled by each service.
+            However, there remains a challenge in that metadata formats and vocabularies used in each industry are often not sufficiently shared across industries,
+            and are not well known to one another.
+        </p>
+
+
+        <p lang="ja">
+            本ドキュメントでは、
+            第2章で本CGの対象範囲を整理した上で、
+            第3章において、各業界における実際の運用事例や検証事例を参照事例として紹介する。
+            これらを通じて、サービス開発者がメタデータ相互運用を検討する際の
+            実践的な参考情報を提供することを目指す。</p>
+
+        <p lang="en">
+            In this document, after outlining the scope of the MCM-JP CG’s activities in Chapter 2,
+            Chapter 3 presents practical operational and experimental case studies from various industries as reference examples.
+            Through these case studies, the document aims to provide practical reference information for service developers
+            when considering interoperability of media content metadata.
+        </p>
+
+
+
 
     </section>
     <section id="scope">
@@ -194,8 +235,7 @@
         </ul>
 
         <figure>
-            <img class="diagram" src="https://w3c-cg.github.io/mcm-jp/charters/img/scope.png" alt="scope of mcm-jp cg"
-                width="90%" />
+            <img class="diagram" src="https://w3c-cg.github.io/mcm-jp/charters/img/scope.png" alt="Scope of MCM-JP CG" width="90%" />
             <figcaption>
               <span lang="ja">MCM-JP CGのスコープ</span>
               <span lang="en">Scope of MCM-JP CG</span>
@@ -259,10 +299,11 @@
         <section data-include="use-cases/broadcasting-schema.org/use-case-1.md" data-include-format="markdown"></section>
 
         <section data-include="use-cases/cross-industry/interop-tokyo2025/interop-demo1.md" data-include-format="markdown"></section>
-        
         <section data-include="use-cases/cross-industry/interop-tokyo2025/interop-demo2.md" data-include-format="markdown"></section>
         <section data-include="use-cases/cross-industry/interop-tokyo2025/interop-demo3.md" data-include-format="markdown"></section>
-
+        <section data-include="use-cases/cross-industry/interop-tokyo2025/interop-demo4.md" data-include-format="markdown"></section>
+        <section data-include="use-cases/cross-industry/interop-tokyo2025/interop-demo5.md" data-include-format="markdown"></section>
+        <section data-include="use-cases/cross-industry/interop-tokyo2025/interop-demo6.md" data-include-format="markdown"></section>
 
     </section>
 
