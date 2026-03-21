@@ -29,10 +29,10 @@
 </figure>
 
 
-### 放送番組情報から関連する関連する書誌情報の取得
+### 放送番組情報から関連する書誌情報の取得
 <figure>
   <img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/images/interop1d.png" alt="interop1d" width="800" />
-  <figcaption>放送番組情報から関連する関連する書誌情報の取得</figcaption>
+  <figcaption>放送番組情報から関連する書誌情報の取得</figcaption>
 </figure>
 
 
