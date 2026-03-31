@@ -65,6 +65,10 @@
             ],
             authors: [
                 {
+                    name: "出野 健太郎 / Kentaro Ideno",
+                    company: "オムロンデジタル株式会社 / OMRON DIGITAL Co., Ltd."
+                },
+                {
                     name: "遠藤 大礎 / Hiroki Endo",
                     company: "日本放送協会 (NHK) / Japan Broadcasting Corporation",
                     mailto: "endou.h-hc@nhk.or.jp"
@@ -74,8 +78,8 @@
                     company: "株式会社小学館 / SHOGAKUKAN Inc."
                 },
                 {
-                    name: "出野 健太郎 / Kentaro Ideno",
-                    company: "オムロンソフトウェア株式会社 / OMRON SOFTWARE Co., Ltd."
+                    name: "下花 剛一 / Koichi Shimohana",
+                    company: "株式会社ジョルテ / Jorte Inc."
                 },
                 {
                     name: "田口 博康 / Hiroyasu Taguchi",
@@ -83,24 +87,35 @@
                 },
                 {
                     name: "西尾 真樹 / Masaki Nishio",
-                    company: "エム・データ / M Data Co., Ltd."
+                    company: "株式会社エム・データ / M Data Co., Ltd."
                 },
                 {
-                    name: "下花 剛一 / Koichi Shimohana",
-                    company: "株式会社ジョルテ / Jorte Inc."
+                    name: "星野 慎二 / Shinji Hoshino",
+                    company: "株式会社ACCESS / ACCESS CO., LTD"
                 }
             ],
-            //github: "w3c-cg/mcm-jp",
             name: "メディアコンテンツメタデータの相互運用事例",
             latestVersion: "https://w3c-cg.github.io/mcm-jp/reports/cg-report",
             edDraftURI: null,
             copyrightStart: 2025,
-            publishDate: "2025-03-31",
+            publishDate: "2026-03-31",
             maxTocLevel: 2,
             shortName: "cg/mcm-jp",
             xref: "web-platform",
-            group: "mcm-jp"
-        };
+            group: "mcm-jp",
+            lint: {
+                "required-sections": false
+            },
+            localBiblio: {
+                "DVB-I": {
+                title: "DVB-I Service Discovery and Programme Metadata",
+                href: "https://dvb.org/wp-content/uploads/2023/07/A177r6_Service-Discovery-and-Programme-Metadata-for-DVB-I_Draft_TS-103-770-v121_February-2024.pdf",
+                status: "Spec",
+                publisher: "DVB",
+                date: "2024-02"
+            }
+        }
+    };
     </script>
     <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
     <style>
@@ -134,11 +149,13 @@
     </div>
     <section id="abstract">
         <p lang="ja">本ドキュメントは、業界間を横断したメディアコンテンツの流通を促進することを目的に、Media Content Metadata Japanese Community Groupが収集したさまざまな業界のメディアコンテンツのメタデータ（メディアメタ）の運用事例を掲載する。</p>
-        <p lang="en">This document presents case studies of media content metadata operations collected by the Media Content Metadata Japanese Community Group, aiming to promote the distribution of media content across industries.</p>
-        <p lang="ja">メディアメタの相互運用性の向上に寄与するユースケースや技術課題、実装事例について共有し、各業界のサービス開発における参考資料としての役割や、共通課題解決に向けた協調領域の手がかりとなる資料を目指す。</p>
-        <p lang="en">This report shares use cases, technical challenges, and implementation examples that contribute to improving the interoperability of media content metadata. It aims to serve as a reference for service development in various industries and as a resource for collaboration toward solving common issues.</p>
-        <p lang="ja">本レポートは、事例の記述詳細化と事例の追加の作業を継続予定である。</p>
-        <p lang="en">This report will continue to be updated with more detailed descriptions and additional case studies.</p>
+        <p lang="en">This document presents case studies of media content metadata operations collected by the Media Content Metadata Japanese Community Group, aiming to promote the cross-industry distribution of media content.</p>
+
+        <p lang="ja">メディアメタの相互運用性の向上に寄与するユースケースや技術課題、実装事例について共有し、業界横断的なサービス開発における参考資料としての役割を担うとともに、共通課題解決に向けた協調領域の手がかりを提供する。</p>
+        <p lang="en">This report shares use cases, technical challenges, and implementation examples that contribute to improving the interoperability of media content metadata. It serves as a reference for cross-industry service development and provides insights into potential areas of collaboration toward solving common issues.</p>
+        
+        <p lang="ja">本ドキュメントは、事例の記述詳細化や新たな事例の追加を行いながら、継続的に更新される。</p>
+        <p lang="en">This report is continuously updated with more detailed descriptions and additional case studies.</p>
     </section>
     <section id="sotd">
     </section>
@@ -147,26 +164,72 @@
           <span lang="ja">はじめに</span>
           <span lang="en">Introduction</span>
         </h2>
-        <p lang="ja">Media Content Metadata Japanese Community Groupのミッションは、メディアコンテンツメタデータの相互運用性を向上させ、さまざまな業界間でのメディアコンテンツ配信を促進することである。</p>
-        <p lang="en">The mission of the Media Content Metadata Japanese Community Group is to improve the interoperability of media content metadata and promote the distribution of media content across various industries.</p>
-        <p lang="ja">そのために、ユースケース、技術的課題、ベストプラクティス、および可能な実装について共有する。</p>
-        <p lang="en">To achieve this, the group shares use cases, technical challenges, best practices, and possible implementations.</p>
 
-        <p lang="ja">複数の事業者が相互にサービス連携できるようになるためには、各サービス間での情報のやり取りに関するルールが共有され、それぞれのサービスで扱われるメタデータを相互に交換できるようになることが必要である。</p>
-        <p lang="en">For multiple businesses to collaborate and link their services, it is necessary to share rules for exchanging information between services and to enable the mutual exchange of metadata handled by each service.</p>
-        <p lang="ja">しかし、それぞれの業界においてどのようなメタデータのフォーマットや語彙などが利用されているのか、お互いに知られていないという課題がある。</p>
-        <p lang="en">However, there is a challenge in that each industry is often unaware of the metadata formats and vocabularies used in other industries.</p>
+        <p lang="ja">
+            本ドキュメントは、Media Content Metadata Japanese Community Group（以下、MCM-JP CG）の活動の一環として、
+            メディアコンテンツメタデータの相互運用性の向上に資する参照事例を収集・共有するものである。</p>
+        <p lang="en">
+            This document is developed as part of the activities of the Media Content Metadata Japanese Community Group (MCM-JP CG),
+            and aims to organize and share reference case studies that contribute to improving the interoperability of media content metadata.
+        </p>
 
-        <p lang="ja">参加者が属する各業界で広く使われているメタデータの仕様や活用事例、技術・運用両面での課題を共有する取り組みを通じて、メタデータを相互に交換するための具体的な方法をサービス開発者向けの参照事例として広く公開することを目指す。</p>
-        <p lang="en">Through efforts to share widely used metadata specifications, use cases, and both technical and operational challenges in each participant's industry, this group aims to openly provide concrete examples for service developers on how to exchange metadata.</p>
+        <p lang="ja">
+        本CGのミッションは、メディアコンテンツメタデータの相互運用性を向上させ、
+        さまざまな業界間でのメディアコンテンツ配信を促進することである。</p>
+    
+        <p lang="en">
+            The mission of the MCM-JP CG is to enhance the interoperability of media content metadata and to promote the distribution of media content across various industries.</p>
+
+
+        <p lang="ja">
+            複数の事業者が相互にサービス連携できるようになるためには、
+            各サービス間での情報のやり取りに関する共通の前提や取り決めが共有され、
+            それぞれのサービスで扱われるメタデータを相互に交換できるようになることが必要である。
+            一方で、各業界において利用されているメタデータのフォーマットや語彙については、
+            業界間で十分に共有されておらず、お互いに知られていないという課題がある。</p>
+
+        <p lang="en">
+            For multiple businesses to collaborate and link their services, it is necessary to share common conventions for exchanging information between services,
+            and to enable the mutual exchange of metadata handled by each service.
+            However, there remains a challenge in that metadata formats and vocabularies used in each industry are often not sufficiently shared across industries,
+            and are not well known to one another.
+        </p>
+
+
+        <p lang="ja">
+            本ドキュメントでは、
+            第2章で本CGの対象範囲を整理した上で、
+            第3章において、各業界における実際の運用事例や検証事例を参照事例として紹介する。
+            これらを通じて、サービス開発者がメタデータ相互運用を検討する際の
+            実践的な参考情報を提供することを目指す。</p>
+
+        <p lang="en">
+            In this document, after outlining the scope of the MCM-JP CG’s activities in Chapter 2,
+            Chapter 3 presents practical operational and experimental case studies from various industries as reference examples.
+            Through these case studies, the document aims to provide practical reference information for service developers
+            when considering interoperability of media content metadata.
+        </p>
+
+
+        <p lang="ja">
+            なお、本ドキュメントに掲載されている各事例は、
+            MCM-JP CGの参加者および関係者から提供されたものであり、
+            本レポートにおける著者一覧は、主として事例の提供およびその記述に関与した貢献者を示している。
+        </p>
+
+        <p lang="en">
+            Note that the listed authors in this report primarily represent contributors who provided and described individual case studies contributed to the MCM-JP CG.
+        </p>
+
+
 
     </section>
     <section id="scope">
         <h2>
-          <span lang="ja">スコープ対象</span>
+          <span lang="ja">スコープ</span>
           <span lang="en">Scope</span>
         </h2>
-        <p lang="ja">このグループは各業界で定義および運用されているメディアコンテンツメタデータに焦点を当て、異なる業界間のデータ相互運用性の例を共有します。</p>
+        <p lang="ja">このグループは各業界で定義および運用されているメディアコンテンツメタデータに焦点を当て、異なる業界間のデータ相互運用性の例を共有する。</p>
         <p lang="en">This group focuses on media content metadata defined and operated in each industry, and shares examples of data interoperability between different industries.</p>
         <p lang="ja">このグループは、データ相互運用性の2つの領域をスコープ対象とする：</p>
         <p lang="en">This group targets two areas of data interoperability:</p>
@@ -177,8 +240,7 @@
         </ul>
 
         <figure>
-            <img class="diagram" src="https://w3c-cg.github.io/mcm-jp/charters/img/scope.png" alt="scope of mcm-jp cg"
-                width="90%" />
+            <img class="diagram" src="https://w3c-cg.github.io/mcm-jp/charters/img/scope.png" alt="Scope of MCM-JP CG" width="90%" />
             <figcaption>
               <span lang="ja">MCM-JP CGのスコープ</span>
               <span lang="en">Scope of MCM-JP CG</span>
@@ -193,7 +255,7 @@
             <p lang="ja">本ドキュメントは既存技術仕様に基づく参考情報の提供を対象とし、新規の技術仕様の規定化は行わない。</p>
             <p lang="en">This document is intended to provide reference information based on existing technical specifications and does not define new technical specifications.</p>
 
-            <p lang="ja">メディアコンテンツのメタデータに関して、AI技術に関する課題、関連するユースケースや関連技術動向などの共有にあたり、データに関わる権利（著作権や隣接権）を適切に扱うことができることが望ましいという前提の元で、下記をスコープ外とする。</p>
+            <p lang="ja">メディアコンテンツのメタデータに関して、AI技術に関する課題、関連するユースケースや関連技術動向などの共有にあたり、データに関わる権利（著作権や隣接権）を適切に扱うことができることが望ましいという前提の下で、下記をスコープ外とする。</p>
             <p lang="en">When sharing issues related to AI technologies, relevant use cases, and related technology trends regarding media content metadata, it is assumed that rights related to data (such as copyrights and neighboring rights) can be properly handled. Under this premise, the following are considered out of scope:</p>
             <ul>
               <li><span lang="ja">データの適切な取り扱いに関する新規のルールや定義を作成しない。</span><span lang="en">No new rules or definitions regarding the proper handling of data will be created.</span></li>
@@ -207,10 +269,28 @@
 
     <section id="use-cases">
         <h2>
-          <span lang="ja">メディアメタ相互運用の実践的ユースケース</span>
+          <span lang="ja">メディアメタ相互運用の実践的ユースケース・検証事例</span>
           <span lang="en">Practical Use Cases on Media Content Metadata Interoperability</span>
         </h2>
         <p lang="en" style="color:gray; font-style:italic;">English version of this section forthcoming.</p>
+
+        <p lang="ja">
+        本章では、業界横断的なサービス開発に向けた実践的な参照情報を提供することを目的として、
+        メディアメタの相互運用性の向上に寄与する既存の運用事例および、
+        相互運用性の検証を目的とした試作・検証事例を紹介する。
+
+        各事例は、新たな技術仕様や標準の策定を目的とするものではなく、
+        既存のメタデータ仕様や運用を前提として、
+        業界間での連携可能性や実運用上の課題を整理し、
+        共通課題解決に向けた協調領域の検討に資する参照事例として位置付けられる。
+        </p>
+
+        <p lang="ja">
+        本章に掲載する事例は、今後の検討や議論の進展に応じて、
+        記述の詳細化や新たな事例の追加を行いながら、継続的に更新される。
+        </p>
+
+        
         <section data-include="use-cases/visual-dictionary/use-case.md" data-include-format="markdown"></section>
         <section data-include="use-cases/IME/use-case-1.md" data-include-format="markdown"></section>
         <section data-include="use-cases/IME/use-case-2.md" data-include-format="markdown"></section>
@@ -221,16 +301,21 @@
 
         <section data-include="use-cases/event-metadata/use-case.md" data-include-format="markdown"></section>
 
-        <section data-include="use-cases/broadcasting-schema.org/use-case-1.md" data-include-format="markdown">
-        </section>
+        <section data-include="use-cases/broadcasting-schema.org/use-case-1.md" data-include-format="markdown"></section>
 
+        <section data-include="use-cases/cross-industry/interop-tokyo2025/interop-demo1.md" data-include-format="markdown"></section>
+        <section data-include="use-cases/cross-industry/interop-tokyo2025/interop-demo2.md" data-include-format="markdown"></section>
+        <section data-include="use-cases/cross-industry/interop-tokyo2025/interop-demo3.md" data-include-format="markdown"></section>
+        <section data-include="use-cases/cross-industry/interop-tokyo2025/interop-demo4.md" data-include-format="markdown"></section>
+        <section data-include="use-cases/cross-industry/interop-tokyo2025/interop-demo5.md" data-include-format="markdown"></section>
+        <section data-include="use-cases/cross-industry/interop-tokyo2025/interop-demo6.md" data-include-format="markdown"></section>
 
     </section>
 
     <section id="related-specs">
         <h2>
           <span lang="ja">関連する技術仕様、取り組み</span>
-          <span lang="en">Related Specifications and Initiatives (Japanese)</span>
+          <span lang="en">Related Specifications and Initiatives</span>
         </h2>
         <p lang="en" style="color:gray; font-style:italic;">English version of this section forthcoming.</p>
 
@@ -266,18 +351,39 @@
         </section>
         <section>
             <h3>DVB-I</h3>
-            <p>ブロードバンドまたは放送ネットワークを通じて配信されるテレビサービスを発見するメカニズム、およびこれらのサービスの番組メタデータを取得する方法を定義するDVB仕様（2024/2）<cite><a
-                        href="https://dvb.org/wp-content/uploads/2023/07/A177r6_Service-Discovery-and-Programme-Metadata-for-DVB-I_Draft_TS-103-770-v121_February-2024.pdf">DVB-I</a></cite>DVB-I</a></cite>]。
+            <p>ブロードバンドまたは放送ネットワークを通じて配信されるテレビサービスを発見するメカニズム、およびこれらのサービスの番組メタデータを取得する方法を定義するDVB仕様（2024/2）[[DVB-I]]。
                         コンテンツのメタデータはTV-Anytimeスキーマに基づいたXML文書として扱われる[[etsi-ts-102-822-3-1]]。
             </p>
         </section>
-
     </section>
 
-
-    <p role="navigation" id="back-to-top">
-        <a href="#title"><abbr title="Back to Top">↑</abbr></a>
-    </p>
+    <section>
+        <h2>
+          <span lang="ja">謝辞</span>
+          <span lang="en">Acknowledgements</span>
+        </h2>
+        <p lang="ja">本ドキュメントの作成ならびに、MCM-JP CGにおける検討および議論に際し、多くの示唆を与えていただいた方々に謝意を表する。</p>
+        <p lang="en">The following individuals provided feedback and advice during the creation of this document (in no particular order). </p>
+        <p lang="en">The editor also acknowledges the support provided by W3C staff.</p>
+        <ul>
+            <li>芦村 和幸 / Kazuyuki Ashimura (長崎大学 / Nagasaki University)</li>
+            <li>新井 幸二 / Koji Arai (LG Japan Lab)</li>
+            <li>市川 博 / Hiroshi Ichikawa (集英社 / Shueisha)</li>
+            <li>薄井 司 / Tsukasa Usui (エム・データ / M Data)</li>
+            <li>大亦 寿之 / Hisayuki Ohmata (NHK)</li>
+            <li>岸上 順一 / Jay Kishigami (WCAP)</li>
+            <li>塩浜 大平 / Daihei Shiohama (Media Do International)</li>
+            <li>杉村 奨 / Sho Sugimura (集英社 / Shueisha)</li>
+            <li>鈴木 基 / Motoi Suzuki (集英社 / Shueisha)</li>
+            <li>高見 真也 / Shinya Takami (KADOKAWA)</li>
+            <li>津田 雅之 / Masayuki Tsuda (ジョルテ / Jorte)</li>
+            <li>出葉 義治 / Yoshiharu Dewa (LG Japan Lab)</li>
+            <li>冨倉 由樹央 / Yukio Tomikura (講談社 / Kodansha)</li>
+            <li>廣瀬 良周 / Ryoshu Hirose (講談社 / Kodansha)</li>
+            <li>丸山 夢人 / Yumeto Maruyama (集英社 / Shueisha)</li>
+            <li>吉澤 直美 / Naomi Yoshizawa (W3C)</li>
+        </ul>
+    </section>
 
 </body>
 
