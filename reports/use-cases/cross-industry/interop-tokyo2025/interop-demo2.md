@@ -5,14 +5,29 @@
 
 ## 試作・検証事例
 
-### 位置情報から番組情報取得
+車載インフォテインメントシステムの位置情報を利用して、イベンティアアプリ上でイベント情報と放送番組を混在したレコメンドを行う流れを示す。
 
 <img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/images/interop2a.png" alt="interop2a" width="800" />
 
 
-## 関連メタデータ仕様
+## 実機デモ外観
 
-- [イベンティア： 催事イベントメタデータサンプル](#ref-eventia)
+Interop Tokyo 2025で展示したデモ外観を示す。
+
+<img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/images/interop2-configuration.png" alt="interop2a" width="800" />
+
+## 実装環境・関連メタデータ仕様
+
+- 車載インフォテインメントシステム（IVI）
+  - NetFront Browser for Automotive （ACCESS）
+- イベント情報メタデータ仕様
+  - [イベンティア メタデータ関連事例・サンプル（ジョルテ）](#ref-eventia)
+- 放送番組メタデータ仕様
+  - [TVメタデータ 参照事例（エム・データ）](#tv-trend-alert-service-for-potential-hit-products-using-broadcast-and-search-data)
+    - [TVメタデータサンプル（スポット関連メタデータ）](https://github.com/w3c-cg/mcm-jp/blob/main/reports/use-cases/TV-metadata/sample-data-3_spot.csv)
+- 位置情報関連仕様
+  - W3C Geoloation API[[geolocation]]を用いた緯度・経度情報の取得
+
 
 ## CGへの課題共有
 - 催事イベントにおいて、緯度経度など物理的情報の運用
