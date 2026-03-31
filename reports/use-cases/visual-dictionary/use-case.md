@@ -7,7 +7,7 @@
 
 ## 事例概要
 - 図鑑コンテンツのデータベース化および、コンテンツの外部提供等の利活用
-   - [参考資料](https://w3c-cg.github.io/mcm-jp//meetings/2024-07-25/20240725_mcm-jp-cg_小学館説明資料.pdf)
+   - [参考資料](https://w3c-cg.github.io/mcm-jp/meetings/2024-07-25/20240725_mcm-jp-cg_小学館説明資料.pdf)
 
 
 ## シナリオ
