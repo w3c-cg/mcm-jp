@@ -19,7 +19,7 @@ Interop Tokyo 2025で展示したデモ外観を示す。
 ## 実装環境・関連メタデータ仕様
 
 - 車載インフォテインメントシステム（IVI）
-  - NetFront Browser for Automotive （ACCESS）
+  - [NetFront® Browser for Automotive（ACCESS）](https://www.access-company.com/products/browser/netfront-browser-be/)
 - イベント情報メタデータ仕様
   - [イベンティア メタデータ関連事例・サンプル（ジョルテ）](#ref-eventia)
 - 放送番組メタデータ仕様
