@@ -22,8 +22,7 @@
   - [MCM-JP CG カレンダー](https://www.w3.org/groups/cg/mcm-jp/calendar/)
 
 ## CGレポート
-- [CGレポートドラフト版 （2025/3/31改訂）](https://w3c-cg.github.io/mcm-jp/reports/cg-report)
-  - [改訂作業中レポート (Unofficial Draft)](https://w3c-cg.github.io/mcm-jp/reports/cg-report-inprogress)
+- [CGレポートドラフト版 （2026/3/31改訂）](https://w3c-cg.github.io/mcm-jp/reports/cg-report)
 
 ## コンタクト
 - GitHubにIssueを作成いただくか、[グループの公開メーリングリスト](mailto:public-mcm-jp@w3.org)でご連絡ください。
