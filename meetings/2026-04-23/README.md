@@ -1,19 +1,27 @@
-# MCM-JP CG 定例ミーティング
+# MCM-JP CG 定例ミーティング 第21回
 
-- **W3Cカレンダー**: (https://www.w3.org/events/meetings/71be6383-89a3-46e4-87d9-f2b27813ca4e/)
+- **W3Cカレンダー**:https://www.w3.org/events/meetings/71be6383-89a3-46e4-87d9-f2b27813ca4e/
 - **日時**: 2026年04月23日(木) 17:00-18:00
 - **会場**: オンライン会議
   - Teams会場（W3Cカレンダー参照）
-- **議事録**: https://pad.w3.org/p/2026-04-23-mcmjp
+- **議事録作業ツール**: https://pad.w3.org/p/2026-04-23-mcmjp
   
 ## はじめに [遠藤] (5)
 - [行動規範](https://www.w3.org/policies/code-of-conduct/)
 
-## 議題
+## 議題案
 - 前回議事録レビュー
-  https://pad.w3.org/p/2026-03-19-mcmjp
+  - [前回議事録リンク](../2026-03-19/minutes.md)
+
+- 議事録ツール
+  - 
+
+
 - [CGレポート改訂](https://w3c-cg.github.io/mcm-jp/reports/cg-report)
-  - 残作業まとめ
+- 検討事項
+  - レポートの発行手続き
+    - Snapshot版の発行
+  - 
 - Interop展示プラン
   - W3C 全体ブース 概要 （W3C関本さま）
     - W3Cブースのねらい
@@ -28,8 +36,9 @@
       - だんどり
 - W3C日本会員会議 ご紹介（W3C吉澤さま）
 
-## 今後のスケジュール
+## 今後のスケジュール案
 - 次回
   - 日時： 2026/05/21（木） 1700-1800
   - 会場： オンライン
-  - 主なアジェンダ： Interop 展示参加プラン、事前準備レビュー。
+  - 主なアジェンダ： 
+    - Interop 展示参加プラン、事前準備レビュー。
