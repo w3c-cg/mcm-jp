@@ -25,8 +25,8 @@
 
 
 ## データモデル
-想定データモデルを示す。放送番組については、Schema.orgなどでもスキーマタイプが示されている。
-これらや、放送業界の既存仕様[ITU-R]、[Google Media Actions]仕様などを参考に、放送番組に関するメタデータのデータモデルを示す。
+想定データモデルを示す。放送番組については、[Schema.org](#schema-org-spec) などでもスキーマタイプが示されている。
+これらや、放送業界の既存仕様 [Report ITU-R BT.2400](#参照仕様など)、[Google Media Actions](#参照仕様など) などを参考に、放送番組に関するメタデータのデータモデルを示す。
 
 <figure width="60%">
   <img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/broadcasting-schema.org/datamodel.png" alt=""  />
@@ -36,7 +36,7 @@
 ## 動作フロー概要
 - 放送事業者、放送メタデータサーバ、受信機、ユーザーの構成を図1に示す
 - 放送メタデータサーバは、放送メタデータの登録APIと、参照APIをもつ
-  - 放送メタデータサーバAPI仕様(リンク記載)
+  - 放送メタデータサーバAPI仕様
   - メタデータのデータモデル（図2）
     - Schema.orgの語彙、データ構造などのRDFスキーマに基づく記述
 - 放送事業者が、放送メタデータサーバに放送実績情報を登録する。メタデータのサンプルを図3に示す
@@ -51,7 +51,7 @@
 - 受信機は、指定されたOnDemandEventにより、番組の再生を行う
 
 
-### 動作環境（TBD）
+### 動作環境（例）
 - 受信機: 
   - Hybridcast対応受信機
     - LG OLED42C2PJA
@@ -59,7 +59,7 @@
   - Webアプリケーションによる実装（Hybridcast）
     - HTML/CSS/JavaScript
 - 放送メタデータサーバ
-  - API仕様（OpenAPI仕様[TBD]）に基づく実装
+  - API仕様 (OpenAPI仕様) に基づく実装
     - Ubuntu 22.04
     - PostgreSQL 16
     - Flask (Python)
@@ -68,7 +68,7 @@
       - generator: python-flask 
 - 放送局: 放送メタデータ登録スクリプト
   - 放送実績情報(BroadcastEvent)および、放送番組情報（TVEpisode）などのメタデータ登録
-  - API仕様（OpenAPI仕様[TBD]）に基づく実装
+  - API仕様 (OpenAPI仕様) に基づく実装
     - OS: Ubuntu 22.04
     - Python
     - OpenAPI Generator
@@ -89,8 +89,6 @@
 
 ### 参照仕様など
 - データモデル
-  - [Schema.org](https://schema.org/)
-    - 構造化データの語彙や表現ルールを共有する共同コミュニティ活動
   - [Google Media Actions](https://developers.google.com/actions/media)
     - メディアコンテンツの説明をGoogleに提供するためのガイドライン
 - 放送サービスのためのグローバルプラットフォームのユースケース・要求条件・技術要素

@@ -100,7 +100,7 @@
             copyrightStart: 2025,
             publishDate: "2026-03-31",
             maxTocLevel: 2,
-            shortName: "cg/mcm-jp",
+            shortName: "mcm-jp",
             xref: "web-platform",
             group: "mcm-jp",
             lint: {
@@ -108,13 +108,34 @@
             },
             localBiblio: {
                 "DVB-I": {
-                title: "DVB-I Service Discovery and Programme Metadata",
-                href: "https://dvb.org/wp-content/uploads/2023/07/A177r6_Service-Discovery-and-Programme-Metadata-for-DVB-I_Draft_TS-103-770-v121_February-2024.pdf",
-                status: "Spec",
-                publisher: "DVB",
-                date: "2024-02"
+                    title: "DVB-I Service Discovery and Programme Metadata",
+                    href: "https://dvb.org/wp-content/uploads/2023/07/A177r6_Service-Discovery-and-Programme-Metadata-for-DVB-I_Draft_TS-103-770-v121_February-2024.pdf",
+                    status: "Spec",
+                    publisher: "DVB",
+                    date: "2024-02"
+                },
+                "ebu-tech3397": {
+                    title: "EBUCorePlus – The Ontology for Media. TECH 3397 V2",
+                    href: "https://tech.ebu.ch/files/live/sites/tech/files/shared/tech/tech3397.pdf",
+                    status: "Spec",
+                    publisher: "EBU",
+                    date: "2025-04"
+                },
+                "arib-std-b10": {
+                    title: "ARIB STD-B10: Service Information for Digital Broadcasting System",
+                    href: "https://www.arib.or.jp/english/std_tr/broadcasting/std-b10.html",
+                    status: "Standard",
+                    publisher: "ARIB",
+                    date: "2025-03"
+                },
+                "arib-tr-b14": {
+                    title: "ARIB TR-B14: Operational Guidelines for Digital Terrestrial Television Broadcasting",
+                    href: "https://www.arib.or.jp/english/std_tr/broadcasting/tr-b14.html",
+                    status: "Technical Report",
+                    publisher: "ARIB",
+                    date: "2026-04"
+                }
             }
-        }
     };
     </script>
     <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
@@ -221,7 +242,12 @@
             Note that the listed authors in this report primarily represent contributors who provided and described individual case studies contributed to the MCM-JP CG.
         </p>
 
-
+        <p lang="ja">
+            本ドキュメントは、日本語を原文とし、英訳と併せて提供される。
+        </p>
+        <p lang="en">
+            This document was originally authored in Japanese, and is published bilingually in Japanese and English.
+        </p>
 
     </section>
     <section id="scope">
@@ -272,24 +298,47 @@
           <span lang="ja">メディアメタ相互運用の実践的ユースケース・検証事例</span>
           <span lang="en">Practical Use Cases on Media Content Metadata Interoperability</span>
         </h2>
-        <p lang="en" style="color:gray; font-style:italic;">English version of this section forthcoming.</p>
 
         <p lang="ja">
-        本章では、業界横断的なサービス開発に向けた実践的な参照情報を提供することを目的として、
-        メディアメタの相互運用性の向上に寄与する既存の運用事例および、
-        相互運用性の検証を目的とした試作・検証事例を紹介する。
-
-        各事例は、新たな技術仕様や標準の策定を目的とするものではなく、
-        既存のメタデータ仕様や運用を前提として、
-        業界間での連携可能性や実運用上の課題を整理し、
-        共通課題解決に向けた協調領域の検討に資する参照事例として位置付けられる。
+            本章では、業界横断的なサービス開発に向けた実践的な参照情報を提供することを目的として、
+            メディアメタの相互運用性の向上に寄与する既存の運用事例および、
+            相互運用性の検証を目的とした試作・検証事例を紹介する。
+        </p>
+        <p lang="en">
+            This chapter presents existing operational case studies and experimental case studies
+            that contribute to improving the interoperability of media content metadata,
+            aiming to provide practical reference information for cross-industry service development.
         </p>
 
         <p lang="ja">
-        本章に掲載する事例は、今後の検討や議論の進展に応じて、
-        記述の詳細化や新たな事例の追加を行いながら、継続的に更新される。
+            各事例は、新たな技術仕様や標準の策定を目的とするものではなく、
+            既存のメタデータ仕様や運用を前提として、
+            業界間での連携可能性や実運用上の課題を整理し、
+            共通課題解決に向けた協調領域の検討に資する参照事例として位置付けられる。
+        </p>
+        <p lang="en">
+            These case studies are not intended to define new technical specifications or standards.
+            Building on existing metadata specifications and operations, they identify
+            opportunities for cross-industry collaboration and practical operational challenges.
+            They serve as reference examples for exploring areas of collaboration
+            that address common issues.
         </p>
 
+        <p lang="ja">
+            本章に掲載する事例は、今後の検討や議論の進展に応じて、
+            記述の詳細化や新たな事例の追加を行いながら、継続的に更新される。
+        </p>
+        <p lang="en">
+            This chapter is continuously updated with refined descriptions and new case studies.
+        </p>
+
+        <p lang="ja">
+            なお、各事例では主に日本語で記載されたメタデータを対象としている。英訳の限界に鑑み、詳細記述は原文(日本語)のみの記載とする。
+        </p>
+        <p lang="en">
+            Note that each case study mainly deals with metadata written in Japanese.
+            In view of the limits of translation, the detailed descriptions are presented in the original Japanese only.
+        </p>
         
         <section data-include="use-cases/visual-dictionary/use-case.md" data-include-format="markdown"></section>
         <section data-include="use-cases/IME/use-case-1.md" data-include-format="markdown"></section>
@@ -317,43 +366,54 @@
           <span lang="ja">関連する技術仕様、取り組み</span>
           <span lang="en">Related Specifications and Initiatives</span>
         </h2>
-        <p lang="en" style="color:gray; font-style:italic;">English version of this section forthcoming.</p>
 
         <section>
             <h3>Data Catalog Vocabulary (DCAT) - Version 3</h3>
-            <p>Web上で公開されているdata catalog間の相互運用性を高めるために設計されたRDF語彙のW3C勧告（2024/8/22）[[vocab-dcat-3]]。公開者がdatasetとdata-serviceを、標準的なモデルと語彙を使ってcatalogに記述することを可能にし、複数のcatalogからのメタデータの利用と集約を容易にする。</p>
-            <p><a href="https://www.w3.org/groups/wg/dx/">W3C Dataset Exchange Working Group</a>により維持、改訂される。</p>
+            <p lang="ja">Web上で公開されているデータカタログ間の相互運用性を高めるために設計されたRDF語彙のW3C勧告 (2024年8月22日) [[vocab-dcat-3]]。公開者が<code>Dataset</code>と<code>DataService</code>を、標準的なモデルと語彙を使って<code>Catalog</code>に記述することを可能にし、複数の<code>Catalog</code>からのメタデータの利用と集約を容易にする。</p>
+            <p lang="en">A W3C Recommendation (August 22, 2024) of an RDF vocabulary designed to improve interoperability between data catalogs published on the Web [[vocab-dcat-3]]. It enables publishers to describe <code>Dataset</code> and <code>DataService</code> resources in <code>Catalog</code> instances using a standard model and vocabulary, making it easier to consume and aggregate metadata from multiple <code>Catalog</code> instances.</p>
+            <p lang="ja"><a href="https://www.w3.org/groups/wg/dx/">W3C Dataset Exchange Working Group</a>により維持、改訂される。</p>
+            <p lang="en">Maintained and revised by the <a href="https://www.w3.org/groups/wg/dx/">W3C Dataset Exchange Working Group</a>.</p>
         </section>
         <section>
             <h3>JSON-LD 1.1</h3>
-            <p>Web上の構造化データやメタデータの表現・交換のための軽量なLinked Dataフォーマット。JSON-LD 1.1[[json-ld]]は、W3C JSON-LD Working Groupによりメンテナンスされている（2020年勧告）。</p>
-            <p>仕様: <a href="https://www.w3.org/TR/json-ld/">https://www.w3.org/TR/json-ld/</a><br>
+            <p lang="ja">Web上の構造化データやメタデータの表現・交換のための軽量なLinked Dataフォーマット。JSON-LD 1.1[[json-ld]] (2020年W3C勧告) は、W3C JSON-LD Working Groupによりメンテナンスされている。</p>
+            <p lang="en">A lightweight Linked Data format for representing and exchanging structured data and metadata on the Web. JSON-LD 1.1 [[json-ld]], a 2020 W3C Recommendation, is maintained by the W3C JSON-LD Working Group.</p>
+            <p lang="ja">仕様: <a href="https://www.w3.org/TR/json-ld/">https://www.w3.org/TR/json-ld/</a><br>
             WGページ: <a href="https://www.w3.org/groups/wg/json-ld/">https://www.w3.org/groups/wg/json-ld/</a></p>
+            <p lang="en">Specification: <a href="https://www.w3.org/TR/json-ld/">https://www.w3.org/TR/json-ld/</a><br>
+            Working Group: <a href="https://www.w3.org/groups/wg/json-ld/">https://www.w3.org/groups/wg/json-ld/</a></p>
         </section>
 
         <section>
             <h3>Dublin Core Metadata Initiative (DCMI) - DCMI Metadata Terms</h3>
-            <p>Web上でリソースを記述するためのメタデータ用語の仕様（2000） [[DCTERMS]]。仕様には、当初のDublin Core Metadata Element
-            Set [[DC11]]の15個の用語に加え、数十個のproperty、class、datatype、およびvocabulary encoding
-            scheme（統制語彙識別のための統制語彙）の用語からなる拡張語彙が含まれている。定義はRDF-Turtle等。用語はURIでグローバルに識別され、アプリケーションに応じて、他の語彙のメタデータ用語と組み合わせて使用されることが想定されている。
+            <p lang="ja">Web上でリソースを記述するためのメタデータ用語の仕様 (2000年) [[DCTERMS]]。仕様には、当初のDublin Core Metadata Element
+            Set [[DC11]]の15個の用語に加え、数十個の<code>Property</code>、<code>Class</code>、<code>Datatype</code>、および<code>VocabularyEncodingScheme</code>（統制語彙識別のための統制語彙）の用語からなる拡張語彙が含まれている。定義はRDF-Turtle等。用語はURIでグローバルに識別され、アプリケーションに応じて、他の語彙のメタデータ用語と組み合わせて使用されることが想定されている。
             </p>
+            <p lang="en">A specification of metadata terms for describing resources on the Web (2000) [[DCTERMS]]. In addition to the original fifteen terms of the Dublin Core Metadata Element Set [[DC11]], it includes an extended vocabulary of dozens of <code>Property</code>, <code>Class</code>, <code>Datatype</code>, and <code>VocabularyEncodingScheme</code> terms (controlled vocabularies whose members identify resources from a controlled vocabulary). Definitions are provided in RDF-Turtle and other formats. Terms are globally identified by URIs and are intended to be combined with metadata terms from other vocabularies as appropriate to each application.</p>
         </section>
-        <section>
-            <h3><a href="https://schema.org/">Schema.org</a></h3>
-            <p>インターネット上の構造化データのためのスキーマとして作成したデータモデル（メタデータ語彙）の仕様。現在（2025/4）Ver.29.0のデータモデルが、公開されている。RDF Schemaから派生したデータモデリングに基づいており、語彙要素としてType、Property、Enumerationsを含む。定義はRDF-Turtle等。</p>
+        <section id="schema-org-spec">
+            <h3>Schema.org</h3>
+            <p lang="ja">Schema.orgは、インターネット上の構造化データのためのスキーマとして策定されたデータモデル（メタデータ語彙）の仕様。2026年3月現在、Ver.30.0が公開されている。RDF Schemaから派生したデータモデリングに基づいており、語彙要素として<code>Type</code>、<code>Property</code>、<code>Enumeration</code>を含む。定義はRDF-Turtle等。</p>
+            <p lang="en">Schema.org is a data model (metadata vocabulary) specification developed as a schema for structured data on the Internet. As of March 2026, version 30.0 is available. Based on a data modeling approach derived from RDF Schema, its vocabulary includes <code>Type</code>, <code>Property</code>, and <code>Enumeration</code>. Definitions are provided in RDF-Turtle and other formats.</p>
             <p>Full schema hierarchy: <a href="https://schema.org/docs/full.html">https://schema.org/docs/full.html</a></p>
-            <p>Schema.orgはJSON-LD[[json-ld]]による記述も公式にサポートしている。</p>
+            <p lang="ja">Schema.orgはJSON-LD[[json-ld]]による記述も公式にサポートしている。</p>
+            <p lang="en">Schema.org also officially supports descriptions using JSON-LD [[json-ld]].</p>
         </section>
         <section>
             <h3>European Broadcasting Union (EBU) - EBUCorePlus</h3>
-            <p>ブロードバンドまたは放送ネットワークを通じて配信されるテレビサービスを発見するメカニズム、およびこれらのサービスの番組メタデータを取得する方法を定義する仕様（2024/2）。コンテンツのメタデータはTV-Anytimeスキーマに基づいたXML文書として扱われる[[etsi-ts-102-822-3-1]]。
-            </p>
+            <p lang="ja">メディア企業での活用を目的に、コンテンツの内容を表現・蓄積する知識グラフの構築ルールを規定するデータモデル＝オントロジーの仕様 (2025年4月) [[ebu-tech3397]]。Web Ontology Language (OWL) を用いて規定されている。</p>
+            <p lang="en">A specification of an ontology (data model) that defines rules for building knowledge graphs representing and accumulating content for use in media enterprises (April 2025) [[ebu-tech3397]]. It is defined using the Web Ontology Language (OWL).</p>
+            <p>Ontology documentation: <a href="https://tech-metadata.ebu-it-tools.ch/ontologies/ebucoreplus/index.html">https://tech-metadata.ebu-it-tools.ch/ontologies/ebucoreplus/index.html</a></p>
         </section>
         <section>
             <h3>DVB-I</h3>
-            <p>ブロードバンドまたは放送ネットワークを通じて配信されるテレビサービスを発見するメカニズム、およびこれらのサービスの番組メタデータを取得する方法を定義するDVB仕様（2024/2）[[DVB-I]]。
-                        コンテンツのメタデータはTV-Anytimeスキーマに基づいたXML文書として扱われる[[etsi-ts-102-822-3-1]]。
-            </p>
+            <p lang="ja">DVB-I [[DVB-I]] は、ブロードバンドまたは放送ネットワークを通じて配信されるリニア型テレビサービスを発見するメカニズム、およびこれらのサービスの番組メタデータを取得する方法を定義する、DVBによる仕様 (2024年2月) である。コンテンツのメタデータはTV-Anytimeスキーマに基づいたXML文書として扱われる [[etsi-ts-102-822-3-1]]。</p>
+            <p lang="en">DVB-I [[DVB-I]] is a specification (February 2024) by DVB that defines mechanisms for discovering linear television services delivered over broadband or broadcast networks, and methods for retrieving programme metadata for those services. The content metadata is handled as XML documents based on the TV-Anytime schema [[etsi-ts-102-822-3-1]].</p>
+        </section>
+        <section>
+            <h3>ARIB - Service Information for Digital Broadcasting (STD-B10 / TR-B14)</h3>
+            <p lang="ja">ARIB STD-B10 [[arib-std-b10]] (Ver.5.14、2025年3月改定) は、Association of Radio Industries and Businesses (ARIB) による日本のデジタル放送のサービス情報 (SI) を定める標準規格で、番組情報 (EPG) などのメタデータ伝送に用いられる。ARIB TR-B14 [[arib-tr-b14]] (Ver.6.13、2026年4月改定) は、地上デジタルテレビジョン放送の運用規定をまとめたARIB技術資料であり、SIの運用方法も含む。</p>
+            <p lang="en">ARIB STD-B10 [[arib-std-b10]] (Ver. 5.14, March 2025), by the Association of Radio Industries and Businesses (ARIB), defines Service Information (SI) for digital broadcasting in Japan, used for transmitting metadata such as electronic programme guides (EPG). ARIB TR-B14 [[arib-tr-b14]] (Ver. 6.13, April 2026) is an ARIB technical report on operational guidelines for digital terrestrial television broadcasting, including SI operational practices.</p>
         </section>
     </section>
 
@@ -362,9 +422,13 @@
           <span lang="ja">謝辞</span>
           <span lang="en">Acknowledgements</span>
         </h2>
-        <p lang="ja">本ドキュメントの作成ならびに、MCM-JP CGにおける検討および議論に際し、多くの示唆を与えていただいた方々に謝意を表する。</p>
-        <p lang="en">The following individuals provided feedback and advice during the creation of this document (in no particular order). </p>
-        <p lang="en">The editor also acknowledges the support provided by W3C staff.</p>
+        <p lang="ja">
+            本ドキュメントの作成にあたり、多くの示唆を与えていただいた方々に謝意を表する。
+        </p>
+        <p lang="en">
+            The following individuals provided feedback and advice during the development of this document (in no particular order).
+            The editor also acknowledges the support provided by W3C staff.
+        </p>
         <ul>
             <li>芦村 和幸 / Kazuyuki Ashimura (長崎大学 / Nagasaki University)</li>
             <li>新井 幸二 / Koji Arai (LG Japan Lab)</li>
