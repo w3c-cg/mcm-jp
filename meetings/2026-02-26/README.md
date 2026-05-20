@@ -5,13 +5,14 @@
 - **会場**: ハイブリッド会議
   - 現地会場（W3Cカレンダー参照）
   - Teams会場（W3Cカレンダー参照）
-- **議事録**: https://pad.w3.org/p/2026-02-26-mcmjp
+- **議事録**: https://pad.w3.org/p/r.3b120e048318043a2e4d324bb46db59a
   
 ## はじめに [遠藤] (5)
 - [行動規範](https://www.w3.org/policies/code-of-conduct/)
 
 ## 議題
-- https://pad.w3.org/p/2026-02-26-mcmjp
+- 議事録承認
+  - https://pad.w3.org/p/r.3b120e048318043a2e4d324bb46db59a
 - [CGレポート改訂方針レビュー](https://github.com/w3c-cg/mcm-jp/blob/main/meetings/2026-02-26/20260226_mcm-jp_CG%E6%94%B9%E8%A8%82%E6%96%B9%E9%87%9D.pdf)
 
 ## 今後のスケジュール

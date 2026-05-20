@@ -22,7 +22,7 @@ Please use the repository with the MCM-JP CG policy below.
   - [MCM-JP CG Calendar](https://www.w3.org/groups/cg/mcm-jp/calendar/)
 
 ## Draft CG Report
-- [Draft CG Report (31 March 2025）](https://w3c-cg.github.io/mcm-jp/reports/cg-report)
+- [Draft CG Report (31 March 2026）](https://w3c-cg.github.io/mcm-jp/reports/cg-report)
 
 ## Contact
 - Please open issues or send emails to [our public mailing list](mailto:public-mcm-jp@w3.org).
