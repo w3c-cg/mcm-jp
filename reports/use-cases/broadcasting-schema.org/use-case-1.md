@@ -26,7 +26,7 @@
 
 ## データモデル
 想定データモデルを示す。放送番組については、[Schema.org](#schema-org-spec) などでもスキーマタイプが示されている。
-これらや、放送業界の既存仕様 [Report ITU-R BT.2400](#参照仕様など)、[Google Media Actions](#参照仕様など) などを参考に、放送番組に関するメタデータのデータモデルを示す。
+これらや、放送業界の既存仕様 [Report ITU-R BT.2400](#uc1-references)、[Google Media Actions](#uc1-references) などを参考に、放送番組に関するメタデータのデータモデルを示す。
 
 <figure width="60%">
   <img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/broadcasting-schema.org/datamodel.png" alt=""  />
@@ -87,7 +87,8 @@
 </figure>
 
 
-### 参照仕様など
+<h3 id="uc1-references">参照仕様など</h3>
+
 - データモデル
   - [Google Media Actions](https://developers.google.com/actions/media)
     - メディアコンテンツの説明をGoogleに提供するためのガイドライン
