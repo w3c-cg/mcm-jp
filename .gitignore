@@ -1,0 +1,7 @@
+# etherpad 作業ファイル (各会合の README.md / minutes.md に転載するため commit 不要)
+etherpad*/
+
+# IDE / OS 個人設定
+.vscode/
+.DS_Store
+Thumbs.db
