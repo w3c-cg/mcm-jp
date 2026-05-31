@@ -35,7 +35,7 @@
 <img src="demos/demo6.png" alt="demo6" width="50%" />
 
 ## セミナー
-[ブース内セミナー資料](https://w3c-cg.github.io/mcm-jp/events/interop-2025-06/20250611_mcm-jp_interop_seminar.pdf)
+[ブース内セミナー資料](https://w3c-cg.github.io/mcm-jp/events/interop2025/20250611_mcm-jp_interop_seminar.pdf)
 
 ## リンク
 - Interop公式: https://www.interop.jp/

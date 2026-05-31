@@ -50,9 +50,9 @@ etherpadで作成、readme.mdに転載してレビューする方針に変更。
 
 - 広報プラン
   - 広報展開用ページの作成
-- [前回のInterop用作業ページ内部向け](https://w3c-cg.github.io/mcm-jp/events/interop-2025-06/)
+- [前回のInterop用作業ページ内部向け](https://w3c-cg.github.io/mcm-jp/events/interop2025/)
   - 参照先資料資料の参考
-- [セミナー資料](https://w3c-cg.github.io/mcm-jp/events/interop-2025-06/20250611_mcm-jp_interop_seminar.pdf)
+- [セミナー資料](https://w3c-cg.github.io/mcm-jp/events/interop2025/20250611_mcm-jp_interop_seminar.pdf)
   - イベント終了後に掲載
   - [Interop26 W3Cページ](https://f2ff.jp/2026/interop/exhibitor/show.php?id=3610&lang=ja)
 - ミニセミナー

@@ -23,7 +23,7 @@
 
 ### 前回議事録確認[5]
 
-### [Interopミニブース概要](../../events/interop-2025-06/README.md)[20]
+### [Interopミニブース概要](../../events/interop2025/README.md)[20]
 - 展示準備[5]
 - メインパネル紹介[10]
 - デモ進捗共有[10]
