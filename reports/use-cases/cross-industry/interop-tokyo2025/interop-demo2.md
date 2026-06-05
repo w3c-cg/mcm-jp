@@ -26,7 +26,7 @@ Interop Tokyo 2025で展示したデモ外観を示す。
   - [TVメタデータ 参照事例（エム・データ）](#tv-trend-alert-service-for-potential-hit-products-using-broadcast-and-search-data)
     - [TVメタデータサンプル（スポット関連メタデータ）](https://github.com/w3c-cg/mcm-jp/blob/main/reports/use-cases/TV-metadata/sample-data-3_spot.csv)
 - 位置情報関連仕様
-  - W3C Geoloation API[[geolocation]]を用いた緯度・経度情報の取得
+  - W3C Geolocation API [[geolocation]] を用いた緯度・経度情報の取得
 
 
 ## CGへの課題共有

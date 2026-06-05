@@ -4,7 +4,6 @@
 
 
 ## 関連する産業ドメイン
-事例に関連する産業を記述（複数可）
 - イベント
 - Web
 - 地図
@@ -18,18 +17,12 @@
 
 ## 検証事例
 
-実証実験
-[イベンティア（イベント情報提供サービス）](https://github.com/w3c-cg/mcm-jp/blob/main/reports/use-cases/event-metadata/%E5%8F%82%E8%80%83%E8%B3%87%E6%96%99.pdf)に対して、
-
-
-イベントと一緒にテレビ番組を混在表示させる実証実験を実施。におけるアプリ画面を示す。
-
-イベントと一緒にテレビ番組を表示した実証実験におけるアプリ画面を示す。
+[イベンティア（イベント情報提供サービス）](https://github.com/w3c-cg/mcm-jp/blob/main/reports/use-cases/event-metadata/%E5%8F%82%E8%80%83%E8%B3%87%E6%96%99.pdf)に対して、イベントと一緒にテレビ番組を混在表示させる実証実験を実施した。実証実験におけるアプリ画面を以下に示す。
 
 <figure>
   <img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/event1.png" alt="event1" width="30%" />
   <img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/event2.png" alt="event2" width="30%" />
-  <img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/event3.png" alt="event2" width="30%" />
+  <img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/event-metadata/event3.png" alt="event3" width="30%" />
   <figcaption>放送番組情報とイベントの混合表示画面</figcaption>
 </figure>
 
