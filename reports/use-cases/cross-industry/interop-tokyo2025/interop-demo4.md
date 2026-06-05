@@ -16,7 +16,7 @@
 1. 書籍検索サイト利用ユーザは、書籍検索の際、間違えた読みを入力しても、正しい書籍タイトルの文字変換ができることで、意図した書籍検索結果が得られる
 
 <figure>
-  <img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/images/interop4a.png" alt="interop4" width="800" />
+  <img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/images/interop4a.png" alt="interop4a" width="800" />
   <figcaption>動作イメージ概要</figcaption>
 </figure>
 
@@ -30,7 +30,7 @@
 Interop Tokyo 2025で展示したデモ外観を示す。
 
 <figure>
-  <img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/images/ime-book-search.png" alt="interop4b" width="800" />
+  <img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/images/ime-book-search.png" alt="interop4c" width="800" />
   <figcaption>実機デモ動作外観</figcaption>
 </figure>
 

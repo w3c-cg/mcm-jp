@@ -1,5 +1,7 @@
 # TVメタデータと検索データを用いたヒット商品のシグナル検知・アラートサービス / Trend Alert Service for Potential Hit Products Using Broadcast and Search Data
 
+<span id="ref-tv-metadata"></span>
+
 以下の目的のため、TV番組で紹介された商品のデータとポータルサイトの検索データを用いて、小売店のバイヤーやラウンダーへヒットの予兆がある商品を検知・アラートする。
 
   - [紹介スライド(p.11-13)](https://github.com/w3c-cg/mcm-jp/blob/main/meetings/2024-09-05/%E3%82%A8%E3%83%A0%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E8%B3%87%E6%96%99_20240905%E3%80%90%E9%85%8D%E5%B8%83%E7%89%88%E3%80%91.pdf)

@@ -19,7 +19,7 @@
 
 ## 構成・動作フロー概要
 <figure  width="80％">
-  <img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/images/tvtopic-rec-book-flow.png" alt="interop4" />
+  <img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/images/tvtopic-rec-book-flow.png" alt="interop5a" />
   <figcaption>構成概要・動作フロー概要</figcaption>
 </figure>
 
@@ -27,12 +27,12 @@
 ## 検証イメージ外観
 
 <figure  width="80％">
-  <img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/images/tvtopic-rec-book-outline.png" alt="interop4" />
+  <img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/images/tvtopic-rec-book-outline.png" alt="interop5b" />
   <figcaption>放送トピックによる出版プロモーションのイメージ</figcaption>
 </figure>
 
 
 <figure  width="80％">
-  <img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/images/book-landingpage.png" alt="interop4" />
+  <img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/images/book-landingpage.png" alt="interop5c" />
   <figcaption>出版プロモーションページからの放送番組紹介イメージ</figcaption>
 </figure>

@@ -22,16 +22,12 @@
 Interop Tokyo 2025で展示したデモ外観を示す。
 
 <figure>
-    <img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/images/ime-Yu-Gi-Oh!.png" alt="interop4" width ="33%" />
-    <img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/images/ime-re_zero.png" alt="interop4"  width ="33%" />
-    <img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/images/ime-taigan-no-kaji.png" alt="interop4"  width ="33%"/>
+    <img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/images/ime-Yu-Gi-Oh!.png" alt="interop3a" width ="33%" />
+    <img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/images/ime-re_zero.png" alt="interop3b"  width ="33%" />
+    <img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/images/ime-taigan-no-kaji.png" alt="interop3c"  width ="33%"/>
       <figcaption>Interop Tokyo 2025 デモ動作の様子</figcaption>
 </figure>
 
 
 ## 参照仕様など
 - [スマートフォン向け IME(iWnn IME for Android)＋クラウド辞書](#ref-ime)
-
-
-## CGへの課題共有
-
