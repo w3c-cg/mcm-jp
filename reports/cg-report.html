@@ -10,7 +10,7 @@
         const lang = params.get('lang');
         if (lang === 'en') {
             document.documentElement.lang = 'en';
-            document.title = 'Case Studies on Media Content Metadata Interoperability';
+            document.title = 'Practical Use Cases of Media Content Metadata Interoperability';
         } else {
             document.documentElement.lang = 'ja';
             document.title = 'メディアコンテンツメタデータの相互運用事例';
@@ -166,14 +166,21 @@
         <button onclick="location.search='?lang=all'" aria-label="Show all languages">All</button>
     </div>
     <section id="abstract">
-        <p lang="ja">本ドキュメントは、業界間を横断したメディアコンテンツの流通を促進することを目的に、Media Content Metadata Japanese Community Groupが収集したさまざまな業界のメディアコンテンツのメタデータ（メディアメタ）の運用事例を掲載する。</p>
-        <p lang="en">This document presents case studies of media content metadata operations collected by the Media Content Metadata Japanese Community Group, aiming to promote the cross-industry distribution of media content.</p>
+        <p lang="ja">
+            本ドキュメントは、Media Content Metadata Japanese Community Group (MCM-JP CG) が収集した、さまざまな業界のメディアコンテンツメタデータ (以下、メディアメタ) の相互運用事例を記述する。</p>
 
-        <p lang="ja">メディアメタの相互運用性の向上に寄与するユースケースや技術課題、実装事例について共有し、業界横断的なサービス開発における参考資料としての役割を担うとともに、共通課題解決に向けた協調領域の手がかりを提供する。</p>
-        <p lang="en">This report shares use cases, technical challenges, and implementation examples that contribute to improving the interoperability of media content metadata. It serves as a reference for cross-industry service development and provides insights into potential areas of collaboration toward solving common issues.</p>
+        <p lang="en">
+            This document describes use cases of media content metadata interoperability across various industries, collected by the Media Content Metadata Japanese Community Group (MCM-JP CG).
+        </p>
+
+        <p lang="ja">
+            これらの事例は、主に想定シナリオ、試作・検証、および課題提起から構成され、メディアメタの相互運用性の向上を通じて、業界横断的なサービス開発の促進に資する参照情報を提供する。</p>
+        <p lang="en">
+            These cases mainly include envisioned scenarios, prototyping and validation, and issues raised for discussion, providing reference information that contributes to cross-industry service development through improved interoperability of media content metadata.
+        </p>
         
-        <p lang="ja">本ドキュメントは、事例の記述詳細化や新たな事例の追加を行いながら、継続的に更新される。</p>
-        <p lang="en">This report is continuously updated with more detailed descriptions and additional case studies.</p>
+        <p lang="ja">本ドキュメントは、事例の詳細化や新たな事例の追加を行いながら、継続的に更新される。</p>
+        <p lang="en">This report is continuously updated with more detailed descriptions and additional use cases.</p>
     </section>
     <section id="sotd">
     </section>
@@ -184,55 +191,28 @@
         </h2>
 
         <p lang="ja">
-            本ドキュメントは、Media Content Metadata Japanese Community Group（以下、MCM-JP CG）の活動の一環として、
-            メディアコンテンツメタデータの相互運用性の向上に資する参照事例を収集・共有するものである。</p>
+            Media Content Metadata Japanese Community Group (以下、MCM-JP CG) のミッションは、メディアコンテンツメタデータの相互運用性を向上させ、さまざまな業界間でのメディアコンテンツ配信を促進することである。</p>
         <p lang="en">
-            This document is developed as part of the activities of the Media Content Metadata Japanese Community Group (MCM-JP CG),
-            and aims to organize and share reference case studies that contribute to improving the interoperability of media content metadata.
+            The mission of the Media Content Metadata Japanese Community Group (MCM-JP CG) is to enhance the interoperability of media content metadata and to promote the distribution of media content across various industries.
         </p>
 
         <p lang="ja">
-        本CGのミッションは、メディアコンテンツメタデータの相互運用性を向上させ、
-        さまざまな業界間でのメディアコンテンツ配信を促進することである。</p>
-    
+            複数の事業者が相互にサービス連携できるようになるためには、各サービス間での情報のやり取りに関する共通の前提や取り決めが共有され、それぞれのサービスで扱われるメタデータを相互に交換できるようになることが必要である。一方で、各業界において利用されているメタデータのフォーマットや語彙については、業界間で十分に共有されておらず、お互いに知られていないという課題がある。</p>
         <p lang="en">
-            The mission of the MCM-JP CG is to enhance the interoperability of media content metadata and to promote the distribution of media content across various industries.</p>
-
-
-        <p lang="ja">
-            複数の事業者が相互にサービス連携できるようになるためには、
-            各サービス間での情報のやり取りに関する共通の前提や取り決めが共有され、
-            それぞれのサービスで扱われるメタデータを相互に交換できるようになることが必要である。
-            一方で、各業界において利用されているメタデータのフォーマットや語彙については、
-            業界間で十分に共有されておらず、お互いに知られていないという課題がある。</p>
-
-        <p lang="en">
-            For multiple businesses to collaborate and link their services, it is necessary to share common conventions for exchanging information between services,
-            and to enable the mutual exchange of metadata handled by each service.
-            However, there remains a challenge in that metadata formats and vocabularies used in each industry are often not sufficiently shared across industries,
-            and are not well known to one another.
+            For multiple businesses to collaborate and link their services, it is necessary to share common conventions for exchanging information between services, and to enable the mutual exchange of metadata handled by each service. However, there remains a challenge in that metadata formats and vocabularies used in each industry are often not sufficiently shared across industries, and are not well known to one another.
         </p>
 
-
         <p lang="ja">
-            本ドキュメントでは、
-            第2章で本CGの対象範囲を整理した上で、
-            第3章において、各業界における実際の運用事例や検証事例を参照事例として紹介する。
-            これらを通じて、サービス開発者がメタデータ相互運用を検討する際の
-            実践的な参考情報を提供することを目指す。</p>
-
+            これらの課題に対し、本ドキュメントは、サービス開発者がメタデータ相互運用を検討する際の実践的な参考情報を提供する。第2章で MCM-JP CG の対象範囲を整理した上で、第3章において、各業界における実際の運用事例や検証事例を参照事例として紹介する。</p>
         <p lang="en">
-            In this document, after outlining the scope of the MCM-JP CG’s activities in Chapter 2,
-            Chapter 3 presents practical operational and experimental case studies from various industries as reference examples.
-            Through these case studies, the document aims to provide practical reference information for service developers
-            when considering interoperability of media content metadata.
+            In response to these challenges, this document provides practical reference information for service developers considering interoperability of media content metadata. Chapter 2 outlines the scope of the MCM-JP CG's activities, and Chapter 3 presents practical operational and experimental case studies from various industries as reference examples.
         </p>
 
 
         <p lang="ja">
             なお、本ドキュメントに掲載されている各事例は、
             MCM-JP CGの参加者および関係者から提供されたものであり、
-            本レポートにおける著者一覧は、主として事例の提供およびその記述に関与した貢献者を示している。
+            本レポートの著者一覧は、主として事例の提供およびその記述に関与した貢献者を示している。
         </p>
 
         <p lang="en">
@@ -292,14 +272,13 @@
 
     <section id="use-cases">
         <h2>
-          <span lang="ja">メディアメタ相互運用の実践的ユースケース・検証事例</span>
-          <span lang="en">Practical Use Cases on Media Content Metadata Interoperability</span>
+          <span lang="ja">メディアメタの実践的な相互運用事例</span>
+          <span lang="en">Practical Use Cases of Media Content Metadata Interoperability</span>
         </h2>
 
         <p lang="ja">
             本章では、業界横断的なサービス開発に向けた実践的な参照情報を提供することを目的として、
-            メディアメタの相互運用性の向上に寄与する既存の運用事例および、
-            相互運用性の検証を目的とした試作・検証事例を紹介する。
+            メディアメタの相互運用性の向上に寄与する既存の運用事例、および、相互運用性の検証を目的とした試作・検証事例を紹介する。
         </p>
         <p lang="en">
             This chapter presents existing operational case studies and experimental case studies
@@ -322,18 +301,17 @@
         </p>
 
         <p lang="ja">
-            本章に掲載する事例は、今後の検討や議論の進展に応じて、
-            記述の詳細化や新たな事例の追加を行いながら、継続的に更新される。
+            本章に掲載する事例は、今後の検討や議論の進展に応じて、既存事例の詳細化やユースケースの追記などを行いながら、継続的に更新される。
         </p>
         <p lang="en">
-            This chapter is continuously updated with refined descriptions and new case studies.
+            This chapter is continuously updated with refined descriptions and new use cases.
         </p>
 
         <p lang="ja">
-            なお、各事例では主に日本語で記載されたメタデータを対象としている。英訳の限界に鑑み、詳細記述は原文(日本語)のみの記載とする。
+            なお、各事例では主に日本語で記載されたメタデータを対象としている。英訳の限界に鑑み、詳細記述は原文（日本語）のみの記載とする。
         </p>
         <p lang="en">
-            Note that each case study mainly deals with metadata written in Japanese.
+            Note that each use case mainly deals with metadata written in Japanese.
             In view of the limits of translation, the detailed descriptions are presented in the original Japanese only.
         </p>
         
