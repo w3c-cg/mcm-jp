@@ -5,3 +5,6 @@ etherpad*/
 .vscode/
 .DS_Store
 Thumbs.db
+
+# 議長/編者の個人作業メモ (公開しない)
+private*/
