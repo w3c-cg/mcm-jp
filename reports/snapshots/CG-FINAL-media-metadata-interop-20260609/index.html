@@ -416,21 +416,21 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         <button onclick="location.search='?lang=all'" aria-label="Show all languages">All</button>
     </div>
     <section id="abstract" class="introductory"><h2><span lang="ja">要約</span><span lang="en">Abstract</span></h2>
-        <p lang="ja" style="">
+        <p lang="ja">
             本ドキュメントは、Media Content Metadata Japanese Community Group (MCM-JP CG) が収集した、さまざまな業界のメディアコンテンツメタデータ (以下、メディアメタ) の相互運用事例を記述する。</p>
 
-        <p lang="en" style="display: none;">
+        <p lang="en">
             This document describes use cases of media content metadata interoperability across various industries, collected by the Media Content Metadata Japanese Community Group (MCM-JP CG).
         </p>
 
-        <p lang="ja" style="">
+        <p lang="ja">
             これらの事例は、主に想定シナリオ、試作・検証、および課題提起から構成され、メディアメタの相互運用性の向上を通じて、業界横断的なサービス開発の促進に資する参照情報を提供する。</p>
-        <p lang="en" style="display: none;">
+        <p lang="en">
             These cases mainly include envisioned scenarios, prototyping and validation, and issues raised for discussion, providing reference information that contributes to cross-industry service development through improved interoperability of media content metadata.
         </p>
         
-        <p lang="ja" style="">本ドキュメントは、事例の詳細化や新たな事例の追加を行いながら、継続的に更新される。</p>
-        <p lang="en" style="display: none;">This report is continuously updated with more detailed descriptions and additional use cases.</p>
+        <p lang="ja">本ドキュメントは、事例の詳細化や新たな事例の追加を行いながら、継続的に更新される。</p>
+        <p lang="en">This report is continuously updated with more detailed descriptions and additional use cases.</p>
     </section>
     <section id="sotd" class="introductory"><h2><span lang="ja">この文書の位置付け</span><span lang="en">Status of This Document</span></h2><p>
       This specification was published by the
@@ -445,124 +445,124 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       <a href="https://www.w3.org/community/">W3C Community and Business Groups</a>.
     </p>
     </section><nav id="toc"><h2 class="introductory" id="generatedID-58"><span lang="ja">目次</span><span lang="en">Table of Contents</span></h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract"><span lang="ja">要約</span><span lang="en">Abstract</span></a></li><li class="tocline"><a class="tocxref" href="#sotd"><span lang="ja">この文書の位置付け</span><span lang="en">Status of This Document</span></a></li><li class="tocline"><a class="tocxref" href="#introduction"><bdi class="secno">1. </bdi>
-          <span lang="ja" style="">はじめに</span>
-          <span lang="en" style="display: none;">Introduction</span>
+          <span lang="ja">はじめに</span>
+          <span lang="en">Introduction</span>
         </a></li><li class="tocline"><a class="tocxref" href="#scope"><bdi class="secno">2. </bdi>
-          <span lang="ja" style="">スコープ</span>
-          <span lang="en" style="display: none;">Scope</span>
+          <span lang="ja">スコープ</span>
+          <span lang="en">Scope</span>
         </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#out-of-scope"><bdi class="secno">2.1 </bdi>
-              <span lang="ja" style="">スコープ対象外</span>
-              <span lang="en" style="display: none;">Out of Scope</span>
+              <span lang="ja">スコープ対象外</span>
+              <span lang="en">Out of Scope</span>
             </a></li></ol></li><li class="tocline"><a class="tocxref" href="#use-cases"><bdi class="secno">3. </bdi>
-          <span lang="ja" style="">メディアメタの実践的な相互運用事例</span>
-          <span lang="en" style="display: none;">Practical Use Cases of Media Content Metadata Interoperability</span>
-        </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#visual-encyclopedia-content-database"><bdi class="secno">3.1 </bdi><span lang="ja" style="">図鑑コンテンツデータベース</span> <span lang="en" style="display: none;">Visual Encyclopedia Content Database</span></a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#ime-in-house-development-and-deployment-of-ime-dictionary-data-for-proper-nouns"><bdi class="secno">3.2 </bdi><span lang="ja" style="">固有名詞に関するIME辞書データの自社作成と展開</span> <span lang="en" style="display: none;">In-house Development and Deployment of IME Dictionary Data for Proper Nouns</span></a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#ime-distribution-of-proper-noun-metadata-and-its-integration-into-ime-dictionary-data"><bdi class="secno">3.3 </bdi><span lang="ja" style="">固有名詞に関するメタデータの流通とIME辞書データへの活用</span> <span lang="en" style="display: none;">Distribution of Proper Noun Metadata and Its Integration into IME Dictionary Data</span></a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#ime-ime-integrated-with-broadcast-metadata"><bdi class="secno">3.4 </bdi><span lang="ja" style="">放送メタデータと連動したIME</span> <span lang="en" style="display: none;">IME Integrated with Broadcast Metadata</span></a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#recommending-publishing-content-based-on-broadcast-programs"><bdi class="secno">3.5 </bdi><span lang="ja" style="">放送番組から出版コンテンツをレコメンド</span> <span lang="en" style="display: none;">Recommending Publishing Content Based on Broadcast Programs</span></a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#tv-trend-alert-service-for-potential-hit-products-using-broadcast-and-search-data"><bdi class="secno">3.6 </bdi><span lang="ja" style="">TVメタデータと検索データを用いたヒット商品のシグナル検知・アラートサービス</span> <span lang="en" style="display: none;">Trend Alert Service for Potential Hit Products Using Broadcast and Search Data</span></a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#joint-discovery-of-events-and-tv-programs"><bdi class="secno">3.7 </bdi><span lang="ja" style="">催事イベントとテレビ番組の同時検索</span> <span lang="en" style="display: none;">Joint Discovery of Events and TV Programs</span></a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#program-identification-from-broadcast-logs-and-retrieval-of-on-demand-viewing-information"><bdi class="secno">3.8 </bdi><span lang="ja" style="">放送実績からの放送番組の特定とオンデマンド視聴情報の取得</span> <span lang="en" style="display: none;">Program Identification from Broadcast Logs and Retrieval of On-Demand Viewing Information</span></a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#recommendation-of-tv-programs-and-published-content-related-to-events"><bdi class="secno">3.9 </bdi><span lang="ja" style="">催事イベントと関連するテレビ番組・出版コンテンツのレコメンド</span> <span lang="en" style="display: none;">Recommendation of TV Programs and Published Content Related to Events</span></a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#recommendation-of-tv-programs-and-published-content-related-to-events-in-in-vehicle-infotainment-systems"><bdi class="secno">3.10 </bdi><span lang="ja" style="">車載インフォテインメントシステムにおける催事イベントと関連するテレビ番組・出版コンテンツのレコメンド</span> <span lang="en" style="display: none;">Recommendation of TV Programs and Published Content Related to Events in In‑Vehicle Infotainment Systems</span></a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#ime-integration-between-ime-and-published-content-metadata"><bdi class="secno">3.11 </bdi><span lang="ja" style="">文字入力ソフト（IME）と出版コンテンツメタデータの連携</span> <span lang="en" style="display: none;">Integration between IME and published content metadata</span></a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#book-title-autocomplete-input-on-a-book-search-site"><bdi class="secno">3.12 </bdi><span lang="ja" style="">書籍検索サイトでのタイトル補完入力</span> <span lang="en" style="display: none;">Book title autocomplete input on a book search site</span></a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#publishing-promotion-triggered-by-tv-exposure"><bdi class="secno">3.13 </bdi><span lang="ja" style="">放送メタデータに基づく出版プロモーション</span> <span lang="en" style="display: none;">Publishing Promotion Triggered by TV Exposure</span></a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#tv-program-recommendations-from-e-books"><bdi class="secno">3.14 </bdi><span lang="ja" style="">電子書籍からの放送番組レコメンド</span> <span lang="en" style="display: none;">TV Program Recommendations from E-Books</span></a><ol class="toc"></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#related-specs"><bdi class="secno">4. </bdi>
-          <span lang="ja" style="">関連する技術仕様、取り組み</span>
-          <span lang="en" style="display: none;">Related Specifications and Initiatives</span>
+          <span lang="ja">メディアメタの実践的な相互運用事例</span>
+          <span lang="en">Practical Use Cases of Media Content Metadata Interoperability</span>
+        </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#visual-encyclopedia-content-database"><bdi class="secno">3.1 </bdi><span lang="ja">図鑑コンテンツデータベース</span> <span lang="en">Visual Encyclopedia Content Database</span></a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#ime-in-house-development-and-deployment-of-ime-dictionary-data-for-proper-nouns"><bdi class="secno">3.2 </bdi><span lang="ja">固有名詞に関するIME辞書データの自社作成と展開</span> <span lang="en">In-house Development and Deployment of IME Dictionary Data for Proper Nouns</span></a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#ime-distribution-of-proper-noun-metadata-and-its-integration-into-ime-dictionary-data"><bdi class="secno">3.3 </bdi><span lang="ja">固有名詞に関するメタデータの流通とIME辞書データへの活用</span> <span lang="en">Distribution of Proper Noun Metadata and Its Integration into IME Dictionary Data</span></a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#ime-ime-integrated-with-broadcast-metadata"><bdi class="secno">3.4 </bdi><span lang="ja">放送メタデータと連動したIME</span> <span lang="en">IME Integrated with Broadcast Metadata</span></a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#recommending-publishing-content-based-on-broadcast-programs"><bdi class="secno">3.5 </bdi><span lang="ja">放送番組から出版コンテンツをレコメンド</span> <span lang="en">Recommending Publishing Content Based on Broadcast Programs</span></a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#tv-trend-alert-service-for-potential-hit-products-using-broadcast-and-search-data"><bdi class="secno">3.6 </bdi><span lang="ja">TVメタデータと検索データを用いたヒット商品のシグナル検知・アラートサービス</span> <span lang="en">Trend Alert Service for Potential Hit Products Using Broadcast and Search Data</span></a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#joint-discovery-of-events-and-tv-programs"><bdi class="secno">3.7 </bdi><span lang="ja">催事イベントとテレビ番組の同時検索</span> <span lang="en">Joint Discovery of Events and TV Programs</span></a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#program-identification-from-broadcast-logs-and-retrieval-of-on-demand-viewing-information"><bdi class="secno">3.8 </bdi><span lang="ja">放送実績からの放送番組の特定とオンデマンド視聴情報の取得</span> <span lang="en">Program Identification from Broadcast Logs and Retrieval of On-Demand Viewing Information</span></a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#recommendation-of-tv-programs-and-published-content-related-to-events"><bdi class="secno">3.9 </bdi><span lang="ja">催事イベントと関連するテレビ番組・出版コンテンツのレコメンド</span> <span lang="en">Recommendation of TV Programs and Published Content Related to Events</span></a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#recommendation-of-tv-programs-and-published-content-related-to-events-in-in-vehicle-infotainment-systems"><bdi class="secno">3.10 </bdi><span lang="ja">車載インフォテインメントシステムにおける催事イベントと関連するテレビ番組・出版コンテンツのレコメンド</span> <span lang="en">Recommendation of TV Programs and Published Content Related to Events in In‑Vehicle Infotainment Systems</span></a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#ime-integration-between-ime-and-published-content-metadata"><bdi class="secno">3.11 </bdi><span lang="ja">文字入力ソフト（IME）と出版コンテンツメタデータの連携</span> <span lang="en">Integration between IME and published content metadata</span></a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#book-title-autocomplete-input-on-a-book-search-site"><bdi class="secno">3.12 </bdi><span lang="ja">書籍検索サイトでのタイトル補完入力</span> <span lang="en">Book title autocomplete input on a book search site</span></a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#publishing-promotion-triggered-by-tv-exposure"><bdi class="secno">3.13 </bdi><span lang="ja">放送メタデータに基づく出版プロモーション</span> <span lang="en">Publishing Promotion Triggered by TV Exposure</span></a><ol class="toc"></ol></li><li class="tocline"><a class="tocxref" href="#tv-program-recommendations-from-e-books"><bdi class="secno">3.14 </bdi><span lang="ja">電子書籍からの放送番組レコメンド</span> <span lang="en">TV Program Recommendations from E-Books</span></a><ol class="toc"></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#related-specs"><bdi class="secno">4. </bdi>
+          <span lang="ja">関連する技術仕様、取り組み</span>
+          <span lang="en">Related Specifications and Initiatives</span>
         </a><ol class="toc"><li class="tocline"><a class="tocxref" href="#data-catalog-vocabulary-dcat-version-3"><bdi class="secno">4.1 </bdi>Data Catalog Vocabulary (DCAT) - Version 3</a></li><li class="tocline"><a class="tocxref" href="#json-ld-1-1"><bdi class="secno">4.2 </bdi>JSON-LD 1.1</a></li><li class="tocline"><a class="tocxref" href="#dublin-core-metadata-initiative-dcmi-dcmi-metadata-terms"><bdi class="secno">4.3 </bdi>Dublin Core Metadata Initiative (DCMI) - DCMI Metadata Terms</a></li><li class="tocline"><a class="tocxref" href="#schema-org-spec"><bdi class="secno">4.4 </bdi>Schema.org</a></li><li class="tocline"><a class="tocxref" href="#european-broadcasting-union-ebu-ebucoreplus"><bdi class="secno">4.5 </bdi>European Broadcasting Union (EBU) - EBUCorePlus</a></li><li class="tocline"><a class="tocxref" href="#dvb-i"><bdi class="secno">4.6 </bdi>DVB-I</a></li><li class="tocline"><a class="tocxref" href="#arib-service-information-for-digital-broadcasting-std-b10-tr-b14"><bdi class="secno">4.7 </bdi>ARIB - Service Information for Digital Broadcasting (STD-B10 / TR-B14)</a></li></ol></li><li class="tocline"><a class="tocxref" href="#acknowledgements"><bdi class="secno">5. </bdi>
-          <span lang="ja" style="">謝辞</span>
-          <span lang="en" style="display: none;">Acknowledgements</span>
+          <span lang="ja">謝辞</span>
+          <span lang="en">Acknowledgements</span>
         </a></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">A. </bdi><span lang="ja">参考文献</span><span lang="en">References</span></a><ol class="toc"><li class="tocline"><a class="tocxref" href="#generatedID"><bdi class="secno">A.1 </bdi><span lang="ja">参照用参考文献</span><span lang="en">Informative references</span></a></li></ol></li></ol></nav>
     <section id="introduction"><div class="header-wrapper"><h2 id="x1-introduction"><bdi class="secno">1. </bdi>
-          <span lang="ja" style="">はじめに</span>
-          <span lang="en" style="display: none;">Introduction</span>
+          <span lang="ja">はじめに</span>
+          <span lang="en">Introduction</span>
         </h2><a class="self-link" href="#introduction" aria-label="Permalink for Section 1."></a></div>
         
 
-        <p lang="ja" style="">
+        <p lang="ja">
             Media Content Metadata Japanese Community Group (以下、MCM-JP CG) のミッションは、メディアコンテンツメタデータの相互運用性を向上させ、さまざまな業界間でのメディアコンテンツ配信を促進することである。</p>
-        <p lang="en" style="display: none;">
+        <p lang="en">
             The mission of the Media Content Metadata Japanese Community Group (MCM-JP CG) is to enhance the interoperability of media content metadata and to promote the distribution of media content across various industries.
         </p>
 
-        <p lang="ja" style="">
+        <p lang="ja">
             複数の事業者が相互にサービスを連携させるためには、各サービス間での情報のやり取りに関する共通の前提や取り決めが共有され、それぞれのサービスで扱われるメタデータを相互に交換できることが必要である。一方で、各業界において利用されているメタデータのフォーマットや語彙については、業界間で十分に共有されておらず、相互に認知されていないという課題がある。</p>
-        <p lang="en" style="display: none;">
+        <p lang="en">
             For multiple businesses to collaborate and link their services, it is necessary to share common conventions for exchanging information between services, and to enable the mutual exchange of metadata handled by each service. However, there remains a challenge in that metadata formats and vocabularies used in each industry are often not sufficiently shared across industries, and are not well known to one another.
         </p>
 
-        <p lang="ja" style="">
+        <p lang="ja">
             これらの課題に取り組むため、MCM-JP CGでは、各業界からの参加者が想定シナリオを持ち寄り、関連する各業界のナレッジ（メタデータ運用ワークフロー・メタデータの語彙・フォーマット仕様など）を調査、共有する。そして、想定シナリオの実現性について、それらのナレッジを組み合わせ、相互運用検証を実施する (<a href="#fig-overview" class="fig-ref" title="MCM-JP CGの活動概要 Overview of MCM-JP CG activities"><span lang="ja">図 </span><span lang="en">Figure </span><bdi class="">1</bdi></a>)。</p>
-        <p lang="en" style="display: none;">
-            To address these challenges, in the MCM-JP CG, participants from various industries bring envisioned scenarios, and collaboratively investigate and share the relevant industry knowledge (such as metadata operation workflows, metadata vocabularies, and format specifications). Then, to examine the feasibility of these scenarios, the participants combine that knowledge and jointly conduct interoperability validation (<a href="#fig-overview" class="fig-ref" title="MCM-JP CGの活動概要 Overview of MCM-JP CG activities" lang="ja" style=""><span lang="ja">図 </span><span lang="en">Figure </span><bdi class="">1</bdi></a>).
+        <p lang="en">
+            To address these challenges, in the MCM-JP CG, participants from various industries bring envisioned scenarios, and collaboratively investigate and share the relevant industry knowledge (such as metadata operation workflows, metadata vocabularies, and format specifications). Then, to examine the feasibility of these scenarios, the participants combine that knowledge and jointly conduct interoperability validation (<a href="#fig-overview" class="fig-ref" title="MCM-JP CGの活動概要 Overview of MCM-JP CG activities" lang="ja"><span lang="ja">図 </span><span lang="en">Figure </span><bdi class="">1</bdi></a>).
         </p>
 
         <figure id="fig-overview" style="text-align: left;">
             <img lang="ja" class="diagram" src="assets/mcm-jp-cg-overview_jp.svg" alt="MCM-JP CGの活動概要" width="85%" style="margin-left: 2%;">
             <img lang="en" class="diagram" src="assets/mcm-jp-cg-overview_en.svg" alt="Overview of MCM-JP CG activities" width="85%" style="margin-left: 2%; display: none;">
             <figcaption style="text-align: center;"><a class="self-link" href="#fig-overview"><span lang="ja">図 </span><span lang="en">Figure </span><bdi class="figno">1</bdi></a> <span class="fig-title">
-              <span lang="ja" style="">MCM-JP CGの活動概要</span>
-              <span lang="en" style="display: none;">Overview of MCM-JP CG activities</span>
+              <span lang="ja">MCM-JP CGの活動概要</span>
+              <span lang="en">Overview of MCM-JP CG activities</span>
             </span></figcaption>
         </figure>
 
-        <p lang="ja" style="">
+        <p lang="ja">
             本ドキュメントは、さまざまな業界における業界横断的なサービス開発に際して、実践的な参照情報として活用されることをねらい、MCM-JP CGの取り組み成果を記述したものである。</p>
-        <p lang="en" style="display: none;">
+        <p lang="en">
             This document describes the outcomes of the MCM-JP CG's activities, with the aim of serving as practical reference information for cross-industry service development across various industries.
         </p>
-        <p lang="ja" style="">         
+        <p lang="ja">         
             第2章でMCM-JP CGの対象範囲を整理した上で、第3章において、各業界における実践的なメディアコンテンツメタデータの運用事例を紹介する。</p>
-        <p lang="en" style="display: none;">
+        <p lang="en">
             Chapter 2 outlines the scope of the MCM-JP CG, and Chapter 3 introduces practical use cases of media content metadata interoperability from various industries.
         </p>
 
 
-        <p lang="ja" style="">
+        <p lang="ja">
             なお、本ドキュメントに掲載されている各事例は、
             MCM-JP CGの参加者および関係者から提供されたものであり、
             本レポートの著者一覧は、主として事例の提供およびその記述に関与した貢献者を示している。
         </p>
 
-        <p lang="en" style="display: none;">
+        <p lang="en">
             Note that the listed authors in this report primarily represent contributors who provided and described individual case studies contributed to the MCM-JP CG.
         </p>
 
-        <p lang="ja" style="">
+        <p lang="ja">
             本ドキュメントは、日本語を原文とし、英訳と併せて提供される。
         </p>
-        <p lang="en" style="display: none;">
+        <p lang="en">
             This document was originally authored in Japanese, and is published bilingually in Japanese and English.
         </p>
 
     </section>
     <section id="scope"><div class="header-wrapper"><h2 id="x2-scope"><bdi class="secno">2. </bdi>
-          <span lang="ja" style="">スコープ</span>
-          <span lang="en" style="display: none;">Scope</span>
+          <span lang="ja">スコープ</span>
+          <span lang="en">Scope</span>
         </h2><a class="self-link" href="#scope" aria-label="Permalink for Section 2."></a></div>
         
-        <p lang="ja" style="">このグループは各業界で定義および運用されているメディアコンテンツメタデータに焦点を当て、異なる業界間のデータ相互運用性の例を共有する。</p>
-        <p lang="en" style="display: none;">This group focuses on media content metadata defined and operated in each industry, and shares examples of data interoperability between different industries.</p>
-        <p lang="ja" style="">このグループは、データ相互運用性の2つの領域をスコープ対象とする：</p>
-        <p lang="en" style="display: none;">This group targets two areas of data interoperability:</p>
+        <p lang="ja">このグループは各業界で定義および運用されているメディアコンテンツメタデータに焦点を当て、異なる業界間のデータ相互運用性の例を共有する。</p>
+        <p lang="en">This group focuses on media content metadata defined and operated in each industry, and shares examples of data interoperability between different industries.</p>
+        <p lang="ja">このグループは、データ相互運用性の2つの領域をスコープ対象とする：</p>
+        <p lang="en">This group targets two areas of data interoperability:</p>
 
         <ul>
-            <li><span lang="ja" style="">メディアコンテンツ業界間</span><span lang="en" style="display: none;">Between media content industries</span></li>
-            <li><span lang="ja" style="">メディアコンテンツ業界と非メディアコンテンツ業界間</span><span lang="en" style="display: none;">Between media content industries and non-media content industries</span></li>
+            <li><span lang="ja">メディアコンテンツ業界間</span><span lang="en">Between media content industries</span></li>
+            <li><span lang="ja">メディアコンテンツ業界と非メディアコンテンツ業界間</span><span lang="en">Between media content industries and non-media content industries</span></li>
         </ul>
 
         <figure id="fig-mcm-jp-cg-scope-of-mcm-jp-cg">
             <img class="diagram" src="assets/scope.png" alt="Scope of MCM-JP CG" width="95%">
             <figcaption><a class="self-link" href="#fig-mcm-jp-cg-scope-of-mcm-jp-cg"><span lang="ja">図 </span><span lang="en">Figure </span><bdi class="figno">2</bdi></a> <span class="fig-title">
-              <span lang="ja" style="">MCM-JP CGのスコープ</span>
-              <span lang="en" style="display: none;">Scope of MCM-JP CG</span>
+              <span lang="ja">MCM-JP CGのスコープ</span>
+              <span lang="en">Scope of MCM-JP CG</span>
             </span></figcaption>
         </figure>
 
         <section id="out-of-scope"><div class="header-wrapper"><h3 id="x2-1-out-of-scope"><bdi class="secno">2.1 </bdi>
-              <span lang="ja" style="">スコープ対象外</span>
-              <span lang="en" style="display: none;">Out of Scope</span>
+              <span lang="ja">スコープ対象外</span>
+              <span lang="en">Out of Scope</span>
             </h3><a class="self-link" href="#out-of-scope" aria-label="Permalink for Section 2.1"></a></div>
             
-            <p lang="ja" style="">本ドキュメントは既存技術仕様に基づく参考情報の提供を対象とし、新規の技術仕様の規定化は行わない。</p>
-            <p lang="en" style="display: none;">This document is intended to provide reference information based on existing technical specifications and does not define new technical specifications.</p>
+            <p lang="ja">本ドキュメントは既存技術仕様に基づく参考情報の提供を対象とし、新規の技術仕様の規定化は行わない。</p>
+            <p lang="en">This document is intended to provide reference information based on existing technical specifications and does not define new technical specifications.</p>
 
-            <p lang="ja" style="">メディアコンテンツメタデータに関して、AI技術に関する課題、関連するユースケースや関連技術動向などの共有にあたり、データに関わる権利（著作権や隣接権）を適切に扱うことができることが望ましいという前提の下で、下記をスコープ外とする。</p>
-            <p lang="en" style="display: none;">When sharing issues related to AI technologies, relevant use cases, and related technology trends regarding media content metadata, it is assumed that rights related to data (such as copyrights and neighboring rights) can be properly handled. Under this premise, the following are considered out of scope:</p>
+            <p lang="ja">メディアコンテンツメタデータに関して、AI技術に関する課題、関連するユースケースや関連技術動向などの共有にあたり、データに関わる権利（著作権や隣接権）を適切に扱うことができることが望ましいという前提の下で、下記をスコープ外とする。</p>
+            <p lang="en">When sharing issues related to AI technologies, relevant use cases, and related technology trends regarding media content metadata, it is assumed that rights related to data (such as copyrights and neighboring rights) can be properly handled. Under this premise, the following are considered out of scope:</p>
             <ul>
-              <li><span lang="ja" style="">データの適切な取り扱いに関する新規のルールや定義を作成しない。</span><span lang="en" style="display: none;">No new rules or definitions regarding the proper handling of data will be created.</span></li>
-              <li><span lang="ja" style="">課題の解決手段の開発、提案を行わない。</span><span lang="en" style="display: none;">No development or proposal of solutions to the issues will be made.</span></li>
-              <li><span lang="ja" style="">既存の取り組みの評価を行わない。</span><span lang="en" style="display: none;">No evaluation of existing initiatives will be conducted.</span></li>
+              <li><span lang="ja">データの適切な取り扱いに関する新規のルールや定義を作成しない。</span><span lang="en">No new rules or definitions regarding the proper handling of data will be created.</span></li>
+              <li><span lang="ja">課題の解決手段の開発、提案を行わない。</span><span lang="en">No development or proposal of solutions to the issues will be made.</span></li>
+              <li><span lang="ja">既存の取り組みの評価を行わない。</span><span lang="en">No evaluation of existing initiatives will be conducted.</span></li>
             </ul>
 
         </section>
@@ -570,28 +570,28 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     </section>
 
     <section id="use-cases"><div class="header-wrapper"><h2 id="x3-practical-use-cases-of-media-content-metadata-interoperability"><bdi class="secno">3. </bdi>
-          <span lang="ja" style="">メディアメタの実践的な相互運用事例</span>
-          <span lang="en" style="display: none;">Practical Use Cases of Media Content Metadata Interoperability</span>
+          <span lang="ja">メディアメタの実践的な相互運用事例</span>
+          <span lang="en">Practical Use Cases of Media Content Metadata Interoperability</span>
         </h2><a class="self-link" href="#use-cases" aria-label="Permalink for Section 3."></a></div>
         
 
-        <p lang="ja" style="">
+        <p lang="ja">
             本章では、業界横断的なサービス開発に向けた実践的な参照情報を提供することを目的として、
             メディアメタの相互運用性の向上に寄与する既存の運用事例、および、相互運用性の検証を目的とした試作・検証事例を紹介する。
         </p>
-        <p lang="en" style="display: none;">
+        <p lang="en">
             This chapter presents existing operational case studies and experimental case studies
             that contribute to improving the interoperability of media content metadata,
             aiming to provide practical reference information for cross-industry service development.
         </p>
 
-        <p lang="ja" style="">
+        <p lang="ja">
             各事例は、新たな技術仕様や標準の策定を目的とするものではなく、
             既存のメタデータ仕様や運用を前提として、
             業界間での連携可能性や実運用上の課題を整理し、
             共通課題解決に向けた協調領域の検討に資する参照事例として位置付けられる。
         </p>
-        <p lang="en" style="display: none;">
+        <p lang="en">
             These case studies are not intended to define new technical specifications or standards.
             Building on existing metadata specifications and operations, they identify
             opportunities for cross-industry collaboration and practical operational challenges.
@@ -599,23 +599,23 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
             that address common issues.
         </p>
 
-        <p lang="ja" style="">
+        <p lang="ja">
             本章に掲載する事例は、今後の検討や議論の進展に応じて、既存事例の詳細化やユースケースの追記などを行いながら、継続的に更新される。
         </p>
-        <p lang="en" style="display: none;">
+        <p lang="en">
             This chapter is continuously updated with refined descriptions and new use cases.
         </p>
 
-        <p lang="ja" style="">
+        <p lang="ja">
             なお、各事例では主に日本語で記載されたメタデータを対象としている。英訳の限界に鑑み、詳細記述は原文（日本語）のみの記載とする。
         </p>
-        <p lang="en" style="display: none;">
+        <p lang="en">
             Note that each use case mainly deals with metadata written in Japanese.
             In view of the limits of translation, the detailed descriptions are presented in the original Japanese only.
         </p>
         
-        <section id="visual-encyclopedia-content-database-0"><div class="header-wrapper"><h3 id="visual-encyclopedia-content-database"><bdi class="secno">3.1 </bdi><span lang="ja" style="">図鑑コンテンツデータベース</span> <span lang="en" style="display: none;">Visual Encyclopedia Content Database</span></h3><a class="self-link" href="#visual-encyclopedia-content-database" aria-label="Permalink for Section 3.1"></a></div><div lang="ja" style=""><p>出版社管理コンテンツの既存ビジネスへのマッチングおよび、新規ビジネスモデル創出の取り組み。</p>
-</div><div lang="en" style="display: none;"><p>An initiative to match publisher-managed content with existing businesses and to create new business models.</p>
+        <section id="visual-encyclopedia-content-database-0"><div class="header-wrapper"><h3 id="visual-encyclopedia-content-database"><bdi class="secno">3.1 </bdi><span lang="ja">図鑑コンテンツデータベース</span> <span lang="en">Visual Encyclopedia Content Database</span></h3><a class="self-link" href="#visual-encyclopedia-content-database" aria-label="Permalink for Section 3.1"></a></div><div lang="ja"><p>出版社管理コンテンツの既存ビジネスへのマッチングおよび、新規ビジネスモデル創出の取り組み。</p>
+</div><div lang="en"><p>An initiative to match publisher-managed content with existing businesses and to create new business models.</p>
 </div><section id="generatedID-0"><div class="header-wrapper"><h4 id="x3-1-1"><bdi class="secno">3.1.1 </bdi>関連する産業ドメイン</h4><a class="self-link" href="#generatedID-0" aria-label="Permalink for Section 3.1.1"></a></div>
 <ul>
 <li>出版</li>
@@ -657,8 +657,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 <li>ユーザが、コトバンクで用語「ヒグラシ」の検索をすると、上記でデータベースシステムに登録された情報が提示される。</li>
 </ol>
 </section></section>
-        <section id="ime-in-house-development-and-deployment-of-ime-dictionary-data-for-proper-nouns-0"><div class="header-wrapper"><h3 id="ime-in-house-development-and-deployment-of-ime-dictionary-data-for-proper-nouns"><bdi class="secno">3.2 </bdi><span lang="ja" style="">固有名詞に関するIME辞書データの自社作成と展開</span> <span lang="en" style="display: none;">In-house Development and Deployment of IME Dictionary Data for Proper Nouns</span></h3><a class="self-link" href="#ime-in-house-development-and-deployment-of-ime-dictionary-data-for-proper-nouns" aria-label="Permalink for Section 3.2"></a></div><div lang="ja" style=""><p>メディアコンテンツに関する新しい固有名詞について、ユーザが文字変換できるようにする事例。</p>
-</div><div lang="en" style="display: none;"><p>Enables text input conversion for new proper nouns related to media content.</p>
+        <section id="ime-in-house-development-and-deployment-of-ime-dictionary-data-for-proper-nouns-0"><div class="header-wrapper"><h3 id="ime-in-house-development-and-deployment-of-ime-dictionary-data-for-proper-nouns"><bdi class="secno">3.2 </bdi><span lang="ja">固有名詞に関するIME辞書データの自社作成と展開</span> <span lang="en">In-house Development and Deployment of IME Dictionary Data for Proper Nouns</span></h3><a class="self-link" href="#ime-in-house-development-and-deployment-of-ime-dictionary-data-for-proper-nouns" aria-label="Permalink for Section 3.2"></a></div><div lang="ja"><p>メディアコンテンツに関する新しい固有名詞について、ユーザが文字変換できるようにする事例。</p>
+</div><div lang="en"><p>Enables text input conversion for new proper nouns related to media content.</p>
 </div><section id="generatedID-4"><div class="header-wrapper"><h4 id="x3-2-1"><bdi class="secno">3.2.1 </bdi>関連する産業ドメイン</h4><a class="self-link" href="#generatedID-4" aria-label="Permalink for Section 3.2.1"></a></div>
 <ul>
 <li>出版</li>
@@ -713,8 +713,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     </li>
 </ul>
 </section></section>
-        <section id="ime-distribution-of-proper-noun-metadata-and-its-integration-into-ime-dictionary-data-0"><div class="header-wrapper"><h3 id="ime-distribution-of-proper-noun-metadata-and-its-integration-into-ime-dictionary-data"><bdi class="secno">3.3 </bdi><span lang="ja" style="">固有名詞に関するメタデータの流通とIME辞書データへの活用</span> <span lang="en" style="display: none;">Distribution of Proper Noun Metadata and Its Integration into IME Dictionary Data</span></h3><a class="self-link" href="#ime-distribution-of-proper-noun-metadata-and-its-integration-into-ime-dictionary-data" aria-label="Permalink for Section 3.3"></a></div><div lang="ja" style=""><p>流通するデータをもとに、メディアコンテンツに関する新しい固有名詞について、ユーザが文字変換できるようにする事例。</p>
-</div><div lang="en" style="display: none;"><p>Enables text input conversion for new proper nouns related to media content, based on shared data.</p>
+        <section id="ime-distribution-of-proper-noun-metadata-and-its-integration-into-ime-dictionary-data-0"><div class="header-wrapper"><h3 id="ime-distribution-of-proper-noun-metadata-and-its-integration-into-ime-dictionary-data"><bdi class="secno">3.3 </bdi><span lang="ja">固有名詞に関するメタデータの流通とIME辞書データへの活用</span> <span lang="en">Distribution of Proper Noun Metadata and Its Integration into IME Dictionary Data</span></h3><a class="self-link" href="#ime-distribution-of-proper-noun-metadata-and-its-integration-into-ime-dictionary-data" aria-label="Permalink for Section 3.3"></a></div><div lang="ja"><p>流通するデータをもとに、メディアコンテンツに関する新しい固有名詞について、ユーザが文字変換できるようにする事例。</p>
+</div><div lang="en"><p>Enables text input conversion for new proper nouns related to media content, based on shared data.</p>
 </div><section id="generatedID-7"><div class="header-wrapper"><h4 id="x3-3-1"><bdi class="secno">3.3.1 </bdi>関連する産業ドメイン</h4><a class="self-link" href="#generatedID-7" aria-label="Permalink for Section 3.3.1"></a></div>
 <ul>
 <li>出版</li>
@@ -741,8 +741,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 <li><a href="#ref-ime">スマートフォン向け IME(iWnn IME for Android)＋クラウド辞書</a></li>
 </ul>
 </section></section>
-        <section id="ime-ime-integrated-with-broadcast-metadata-0"><div class="header-wrapper"><h3 id="ime-ime-integrated-with-broadcast-metadata"><bdi class="secno">3.4 </bdi><span lang="ja" style="">放送メタデータと連動したIME</span> <span lang="en" style="display: none;">IME Integrated with Broadcast Metadata</span></h3><a class="self-link" href="#ime-ime-integrated-with-broadcast-metadata" aria-label="Permalink for Section 3.4"></a></div><div lang="ja" style=""><p>視聴・閲覧したメディアコンテンツの関連情報が、ユーザ操作を起点として提供される事例。</p>
-</div><div lang="en" style="display: none;"><p>Provides information related to media content the user has viewed or browsed, triggered by user actions.</p>
+        <section id="ime-ime-integrated-with-broadcast-metadata-0"><div class="header-wrapper"><h3 id="ime-ime-integrated-with-broadcast-metadata"><bdi class="secno">3.4 </bdi><span lang="ja">放送メタデータと連動したIME</span> <span lang="en">IME Integrated with Broadcast Metadata</span></h3><a class="self-link" href="#ime-ime-integrated-with-broadcast-metadata" aria-label="Permalink for Section 3.4"></a></div><div lang="ja"><p>視聴・閲覧したメディアコンテンツの関連情報が、ユーザ操作を起点として提供される事例。</p>
+</div><div lang="en"><p>Provides information related to media content the user has viewed or browsed, triggered by user actions.</p>
 </div><section id="generatedID-11"><div class="header-wrapper"><h4 id="x3-4-1"><bdi class="secno">3.4.1 </bdi>関連する産業ドメイン</h4><a class="self-link" href="#generatedID-11" aria-label="Permalink for Section 3.4.1"></a></div>
 <ul>
 <li>放送</li>
@@ -779,7 +779,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 </ol>
 </section></section>
 
-        <section id="recommending-publishing-content-based-on-broadcast-programs-0"><div class="header-wrapper"><h3 id="recommending-publishing-content-based-on-broadcast-programs"><bdi class="secno">3.5 </bdi><span lang="ja" style="">放送番組から出版コンテンツをレコメンド</span> <span lang="en" style="display: none;">Recommending Publishing Content Based on Broadcast Programs</span></h3><a class="self-link" href="#recommending-publishing-content-based-on-broadcast-programs" aria-label="Permalink for Section 3.5"></a></div><div lang="ja" style=""><p>以下の目的のため、放送コンテンツのメタデータを用いて、放送コンテンツに関連する出版物が検索され、ユーザに提示する事例。</p>
+        <section id="recommending-publishing-content-based-on-broadcast-programs-0"><div class="header-wrapper"><h3 id="recommending-publishing-content-based-on-broadcast-programs"><bdi class="secno">3.5 </bdi><span lang="ja">放送番組から出版コンテンツをレコメンド</span> <span lang="en">Recommending Publishing Content Based on Broadcast Programs</span></h3><a class="self-link" href="#recommending-publishing-content-based-on-broadcast-programs" aria-label="Permalink for Section 3.5"></a></div><div lang="ja"><p>以下の目的のため、放送コンテンツのメタデータを用いて、放送コンテンツに関連する出版物が検索され、ユーザに提示する事例。</p>
 <ul>
 <li><p><a href="https://github.com/w3c-cg/mcm-jp/blob/main/meetings/2024-09-05/%E3%82%A8%E3%83%A0%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E8%B3%87%E6%96%99_20240905%E3%80%90%E9%85%8D%E5%B8%83%E7%89%88%E3%80%91.pdf">参考資料</a></p>
 </li>
@@ -788,7 +788,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 <li><p>放送コンテンツのメタデータを放送業界外で利用させることでデータの価値を高める。</p>
 </li>
 </ul>
-</div><div lang="en" style="display: none;"><p>Uses broadcast content metadata to search for related published content and present it to the user, for the following purposes.</p>
+</div><div lang="en"><p>Uses broadcast content metadata to search for related published content and present it to the user, for the following purposes.</p>
 <ul>
 <li><p><a href="https://github.com/w3c-cg/mcm-jp/blob/main/meetings/2024-09-05/%E3%82%A8%E3%83%A0%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E8%B3%87%E6%96%99_20240905%E3%80%90%E9%85%8D%E5%B8%83%E7%89%88%E3%80%91.pdf">Reference material</a></p>
 </li>
@@ -862,13 +862,13 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 </li>
 </ul>
 </section></section>
-        <section id="tv-trend-alert-service-for-potential-hit-products-using-broadcast-and-search-data-0"><div class="header-wrapper"><h3 id="tv-trend-alert-service-for-potential-hit-products-using-broadcast-and-search-data"><bdi class="secno">3.6 </bdi><span lang="ja" style="">TVメタデータと検索データを用いたヒット商品のシグナル検知・アラートサービス</span> <span lang="en" style="display: none;">Trend Alert Service for Potential Hit Products Using Broadcast and Search Data</span></h3><a class="self-link" href="#tv-trend-alert-service-for-potential-hit-products-using-broadcast-and-search-data" aria-label="Permalink for Section 3.6"></a></div><p><span id="ref-tv-metadata"></span></p>
-<div lang="ja" style=""><p>TV番組で紹介された商品のデータとポータルサイトの検索データを用いて、小売店のバイヤーやラウンダーへヒットの予兆がある商品を検知・アラートする。
+        <section id="tv-trend-alert-service-for-potential-hit-products-using-broadcast-and-search-data-0"><div class="header-wrapper"><h3 id="tv-trend-alert-service-for-potential-hit-products-using-broadcast-and-search-data"><bdi class="secno">3.6 </bdi><span lang="ja">TVメタデータと検索データを用いたヒット商品のシグナル検知・アラートサービス</span> <span lang="en">Trend Alert Service for Potential Hit Products Using Broadcast and Search Data</span></h3><a class="self-link" href="#tv-trend-alert-service-for-potential-hit-products-using-broadcast-and-search-data" aria-label="Permalink for Section 3.6"></a></div><p><span id="ref-tv-metadata"></span></p>
+<div lang="ja"><p>TV番組で紹介された商品のデータとポータルサイトの検索データを用いて、小売店のバイヤーやラウンダーへヒットの予兆がある商品を検知・アラートする。
 放送コンテンツのメタデータを、放送業界外で利用させることで、データの価値を高める。</p>
 <ul>
 <li><a href="https://github.com/w3c-cg/mcm-jp/blob/main/meetings/2024-09-05/%E3%82%A8%E3%83%A0%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E8%B3%87%E6%96%99_20240905%E3%80%90%E9%85%8D%E5%B8%83%E7%89%88%E3%80%91.pdf">参考資料 (p.11-13)</a></li>
 </ul>
-</div><div lang="en" style="display: none;"><p>Uses data on products featured in TV programs together with portal site search data to detect early signs of potential hit products and alert retail buyers and field merchandisers.
+</div><div lang="en"><p>Uses data on products featured in TV programs together with portal site search data to detect early signs of potential hit products and alert retail buyers and field merchandisers.
 Enhance the value of broadcast content metadata by enabling its use outside the broadcasting industry.</p>
 <ul>
 <li><a href="https://github.com/w3c-cg/mcm-jp/blob/main/meetings/2024-09-05/%E3%82%A8%E3%83%A0%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E8%B3%87%E6%96%99_20240905%E3%80%90%E9%85%8D%E5%B8%83%E7%89%88%E3%80%91.pdf">Reference material (p.11-13)</a></li>
@@ -906,9 +906,9 @@ TV露出効果を最大限活用して商品販促を行う</li>
 </ul>
 </section></section>
 
-        <section id="joint-discovery-of-events-and-tv-programs-0"><div class="header-wrapper"><h3 id="joint-discovery-of-events-and-tv-programs"><bdi class="secno">3.7 </bdi><span lang="ja" style="">催事イベントとテレビ番組の同時検索</span> <span lang="en" style="display: none;">Joint Discovery of Events and TV Programs</span></h3><a class="self-link" href="#joint-discovery-of-events-and-tv-programs" aria-label="Permalink for Section 3.7"></a></div><div lang="ja" style=""><p>イベント（お祭りや展示会などの催事イベント）と同時にテレビ番組を探す、もしくは気付くためのサービス事例。
+        <section id="joint-discovery-of-events-and-tv-programs-0"><div class="header-wrapper"><h3 id="joint-discovery-of-events-and-tv-programs"><bdi class="secno">3.7 </bdi><span lang="ja">催事イベントとテレビ番組の同時検索</span> <span lang="en">Joint Discovery of Events and TV Programs</span></h3><a class="self-link" href="#joint-discovery-of-events-and-tv-programs" aria-label="Permalink for Section 3.7"></a></div><div lang="ja"><p>イベント（お祭りや展示会などの催事イベント）と同時にテレビ番組を探す、もしくは気付くためのサービス事例。
 地図上でイベントを検索するサービス内において、イベント情報とテレビ番組の情報を混在させて表示する。</p>
-</div><div lang="en" style="display: none;"><p>A service for discovering, or becoming aware of, TV programs alongside organized events (such as festivals and exhibitions). Within a map-based event search service, event information and TV program information are displayed together.</p>
+</div><div lang="en"><p>A service for discovering, or becoming aware of, TV programs alongside organized events (such as festivals and exhibitions). Within a map-based event search service, event information and TV program information are displayed together.</p>
 </div><section id="generatedID-22"><div class="header-wrapper"><h4 id="x3-7-1"><bdi class="secno">3.7.1 </bdi>関連する産業ドメイン</h4><a class="self-link" href="#generatedID-22" aria-label="Permalink for Section 3.7.1"></a></div>
 <ul>
 <li>イベント</li>
@@ -959,9 +959,9 @@ TV露出効果を最大限活用して商品販促を行う</li>
 </ul>
 </section></section>
 
-        <section id="program-identification-from-broadcast-logs-and-retrieval-of-on-demand-viewing-information-0"><div class="header-wrapper"><h3 id="program-identification-from-broadcast-logs-and-retrieval-of-on-demand-viewing-information"><bdi class="secno">3.8 </bdi><span lang="ja" style="">放送実績からの放送番組の特定とオンデマンド視聴情報の取得</span> <span lang="en" style="display: none;">Program Identification from Broadcast Logs and Retrieval of On-Demand Viewing Information</span></h3><a class="self-link" href="#program-identification-from-broadcast-logs-and-retrieval-of-on-demand-viewing-information" aria-label="Permalink for Section 3.8"></a></div><div lang="ja" style=""><p>ユーザが既知の情報から放送番組を特定し、放送や配信で番組を視聴できるようにする事例。
+        <section id="program-identification-from-broadcast-logs-and-retrieval-of-on-demand-viewing-information-0"><div class="header-wrapper"><h3 id="program-identification-from-broadcast-logs-and-retrieval-of-on-demand-viewing-information"><bdi class="secno">3.8 </bdi><span lang="ja">放送実績からの放送番組の特定とオンデマンド視聴情報の取得</span> <span lang="en">Program Identification from Broadcast Logs and Retrieval of On-Demand Viewing Information</span></h3><a class="self-link" href="#program-identification-from-broadcast-logs-and-retrieval-of-on-demand-viewing-information" aria-label="Permalink for Section 3.8"></a></div><div lang="ja"><p>ユーザが既知の情報から放送番組を特定し、放送や配信で番組を視聴できるようにする事例。
 放送実績情報（チャンネル、放送時刻）から放送番組を特定し、放送予定・配信情報などの番組情報を取得する。</p>
-</div><div lang="en" style="display: none;"><p>A user identifies a broadcast program from known information and views it via broadcast or on-demand distribution. The program is identified from broadcast log information (channel, broadcast time), and program information such as broadcast schedules and on-demand distribution details is retrieved.</p>
+</div><div lang="en"><p>A user identifies a broadcast program from known information and views it via broadcast or on-demand distribution. The program is identified from broadcast log information (channel, broadcast time), and program information such as broadcast schedules and on-demand distribution details is retrieved.</p>
 </div><section id="generatedID-26"><div class="header-wrapper"><h4 id="x3-8-1"><bdi class="secno">3.8.1 </bdi>関連する産業ドメイン</h4><a class="self-link" href="#generatedID-26" aria-label="Permalink for Section 3.8.1"></a></div>
 <ul>
 <li>放送</li>
@@ -1084,8 +1084,8 @@ TV露出効果を最大限活用して商品販促を行う</li>
 </ul>
 </section></section></section>
 
-        <section id="recommendation-of-tv-programs-and-published-content-related-to-events-0"><div class="header-wrapper"><h3 id="recommendation-of-tv-programs-and-published-content-related-to-events"><bdi class="secno">3.9 </bdi><span lang="ja" style="">催事イベントと関連するテレビ番組・出版コンテンツのレコメンド</span> <span lang="en" style="display: none;">Recommendation of TV Programs and Published Content Related to Events</span></h3><a class="self-link" href="#recommendation-of-tv-programs-and-published-content-related-to-events" aria-label="Permalink for Section 3.9"></a></div><div lang="ja" style=""><p>ユーザの位置情報や日時情報などを用いて、イベント情報、テレビ番組、出版コンテンツのレコメンドを行う。</p>
-</div><div lang="en" style="display: none;"><p>Recommends events, TV programs, and published content using information such as the user's location and date/time.</p>
+        <section id="recommendation-of-tv-programs-and-published-content-related-to-events-0"><div class="header-wrapper"><h3 id="recommendation-of-tv-programs-and-published-content-related-to-events"><bdi class="secno">3.9 </bdi><span lang="ja">催事イベントと関連するテレビ番組・出版コンテンツのレコメンド</span> <span lang="en">Recommendation of TV Programs and Published Content Related to Events</span></h3><a class="self-link" href="#recommendation-of-tv-programs-and-published-content-related-to-events" aria-label="Permalink for Section 3.9"></a></div><div lang="ja"><p>ユーザの位置情報や日時情報などを用いて、イベント情報、テレビ番組、出版コンテンツのレコメンドを行う。</p>
+</div><div lang="en"><p>Recommends events, TV programs, and published content using information such as the user's location and date/time.</p>
 </div><section id="generatedID-33"><div class="header-wrapper"><h4 id="x3-9-1"><bdi class="secno">3.9.1 </bdi>試作・検証事例</h4><a class="self-link" href="#generatedID-33" aria-label="Permalink for Section 3.9.1"></a></div>
 <section id="generatedID-34"><div class="header-wrapper"><h5 id="generatedID-61">日付から番組情報取得</h5><a class="self-link" href="#generatedID-34" aria-label="Permalink for this Section"></a></div>
 <ul>
@@ -1135,8 +1135,8 @@ TV露出効果を最大限活用して商品販促を行う</li>
 </li>
 </ul>
 </section></section>
-        <section id="recommendation-of-tv-programs-and-published-content-related-to-events-in-in-vehicle-infotainment-systems-0"><div class="header-wrapper"><h3 id="recommendation-of-tv-programs-and-published-content-related-to-events-in-in-vehicle-infotainment-systems"><bdi class="secno">3.10 </bdi><span lang="ja" style="">車載インフォテインメントシステムにおける催事イベントと関連するテレビ番組・出版コンテンツのレコメンド</span> <span lang="en" style="display: none;">Recommendation of TV Programs and Published Content Related to Events in In‑Vehicle Infotainment Systems</span></h3><a class="self-link" href="#recommendation-of-tv-programs-and-published-content-related-to-events-in-in-vehicle-infotainment-systems" aria-label="Permalink for Section 3.10"></a></div><div lang="ja" style=""><p>車載インフォテインメントシステムの現在位置情報やナビゲーション目的地情報などを用いて、イベント情報、テレビ番組、出版コンテンツのレコメンドを行う。</p>
-</div><div lang="en" style="display: none;"><p>Recommends events, TV programs, and published content using current location and navigation destination information from in-vehicle infotainment systems.</p>
+        <section id="recommendation-of-tv-programs-and-published-content-related-to-events-in-in-vehicle-infotainment-systems-0"><div class="header-wrapper"><h3 id="recommendation-of-tv-programs-and-published-content-related-to-events-in-in-vehicle-infotainment-systems"><bdi class="secno">3.10 </bdi><span lang="ja">車載インフォテインメントシステムにおける催事イベントと関連するテレビ番組・出版コンテンツのレコメンド</span> <span lang="en">Recommendation of TV Programs and Published Content Related to Events in In‑Vehicle Infotainment Systems</span></h3><a class="self-link" href="#recommendation-of-tv-programs-and-published-content-related-to-events-in-in-vehicle-infotainment-systems" aria-label="Permalink for Section 3.10"></a></div><div lang="ja"><p>車載インフォテインメントシステムの現在位置情報やナビゲーション目的地情報などを用いて、イベント情報、テレビ番組、出版コンテンツのレコメンドを行う。</p>
+</div><div lang="en"><p>Recommends events, TV programs, and published content using current location and navigation destination information from in-vehicle infotainment systems.</p>
 </div><section id="generatedID-39"><div class="header-wrapper"><h4 id="x3-10-1"><bdi class="secno">3.10.1 </bdi>試作・検証事例</h4><a class="self-link" href="#generatedID-39" aria-label="Permalink for Section 3.10.1"></a></div>
 <p>車載インフォテインメントシステムの位置情報を利用して、イベンティアアプリ上でイベント情報と放送番組を混在したレコメンドを行う流れを示す。</p>
 <figure id="fig-interop2-recommend">
@@ -1170,8 +1170,8 @@ TV露出効果を最大限活用して商品販促を行う</li>
 </li>
 </ul>
 </section></section>
-        <section id="ime-integration-between-ime-and-published-content-metadata-0"><div class="header-wrapper"><h3 id="ime-integration-between-ime-and-published-content-metadata"><bdi class="secno">3.11 </bdi><span lang="ja" style="">文字入力ソフト（IME）と出版コンテンツメタデータの連携</span> <span lang="en" style="display: none;">Integration between IME and published content metadata</span></h3><a class="self-link" href="#ime-integration-between-ime-and-published-content-metadata" aria-label="Permalink for Section 3.11"></a></div><div lang="ja" style=""><p>通常の文字入力では予測変換できない出版物の固有名詞(作品名・登場人物名など)を、書誌情報を参照した情報をIME辞書に登録し、スマートフォン上のIMEで予測変換や補完入力を行う。</p>
-</div><div lang="en" style="display: none;"><p>Proper nouns of published content (such as work titles and character names) that standard predictive text input cannot handle are registered into an IME (Input Method Editor) dictionary using information derived from bibliographic data. This enables predictive conversion and autocomplete input on smartphone IMEs.</p>
+        <section id="ime-integration-between-ime-and-published-content-metadata-0"><div class="header-wrapper"><h3 id="ime-integration-between-ime-and-published-content-metadata"><bdi class="secno">3.11 </bdi><span lang="ja">文字入力ソフト（IME）と出版コンテンツメタデータの連携</span> <span lang="en">Integration between IME and published content metadata</span></h3><a class="self-link" href="#ime-integration-between-ime-and-published-content-metadata" aria-label="Permalink for Section 3.11"></a></div><div lang="ja"><p>通常の文字入力では予測変換できない出版物の固有名詞(作品名・登場人物名など)を、書誌情報を参照した情報をIME辞書に登録し、スマートフォン上のIMEで予測変換や補完入力を行う。</p>
+</div><div lang="en"><p>Proper nouns of published content (such as work titles and character names) that standard predictive text input cannot handle are registered into an IME (Input Method Editor) dictionary using information derived from bibliographic data. This enables predictive conversion and autocomplete input on smartphone IMEs.</p>
 </div><section id="generatedID-42"><div class="header-wrapper"><h4 id="x3-11-1"><bdi class="secno">3.11.1 </bdi>関連する産業ドメイン</h4><a class="self-link" href="#generatedID-42" aria-label="Permalink for Section 3.11.1"></a></div>
 <ul>
 <li>出版</li>
@@ -1204,9 +1204,9 @@ TV露出効果を最大限活用して商品販促を行う</li>
 <li><a href="#ref-ime">スマートフォン向け IME(iWnn IME for Android)＋クラウド辞書</a></li>
 </ul>
 </section></section>
-        <section id="book-title-autocomplete-input-on-a-book-search-site-0"><div class="header-wrapper"><h3 id="book-title-autocomplete-input-on-a-book-search-site"><bdi class="secno">3.12 </bdi><span lang="ja" style="">書籍検索サイトでのタイトル補完入力</span> <span lang="en" style="display: none;">Book title autocomplete input on a book search site</span></h3><a class="self-link" href="#book-title-autocomplete-input-on-a-book-search-site" aria-label="Permalink for Section 3.12"></a></div><div lang="ja" style=""><p>作品の検索ページで入力される固有名詞(作品名・登場人物名など)の表記揺らぎを解消し、検索精度を向上させる事例。
+        <section id="book-title-autocomplete-input-on-a-book-search-site-0"><div class="header-wrapper"><h3 id="book-title-autocomplete-input-on-a-book-search-site"><bdi class="secno">3.12 </bdi><span lang="ja">書籍検索サイトでのタイトル補完入力</span> <span lang="en">Book title autocomplete input on a book search site</span></h3><a class="self-link" href="#book-title-autocomplete-input-on-a-book-search-site" aria-label="Permalink for Section 3.12"></a></div><div lang="ja"><p>作品の検索ページで入力される固有名詞(作品名・登場人物名など)の表記揺らぎを解消し、検索精度を向上させる事例。
 書籍検索サイトでのWeb埋め込み側IMEによるタイトル補完入力が提供される。</p>
-</div><div lang="en" style="display: none;"><p>Resolves notation inconsistencies in proper nouns (such as work titles and character names) entered on a work search page, thereby improving search accuracy. Title autocomplete input via a web-embedded IME is provided on a book search site.</p>
+</div><div lang="en"><p>Resolves notation inconsistencies in proper nouns (such as work titles and character names) entered on a work search page, thereby improving search accuracy. Title autocomplete input via a web-embedded IME is provided on a book search site.</p>
 </div><section id="generatedID-46"><div class="header-wrapper"><h4 id="x3-12-1"><bdi class="secno">3.12.1 </bdi>関連する産業ドメイン</h4><a class="self-link" href="#generatedID-46" aria-label="Permalink for Section 3.12.1"></a></div>
 <ul>
 <li>出版</li>
@@ -1237,8 +1237,8 @@ TV露出効果を最大限活用して商品販促を行う</li>
 <li><a href="#ref-ime">スマートフォン向け IME(iWnn IME for Android)＋クラウド辞書 (3.2参照)</a></li>
 </ul>
 </section></section>
-        <section id="publishing-promotion-triggered-by-tv-exposure-0"><div class="header-wrapper"><h3 id="publishing-promotion-triggered-by-tv-exposure"><bdi class="secno">3.13 </bdi><span lang="ja" style="">放送メタデータに基づく出版プロモーション</span> <span lang="en" style="display: none;">Publishing Promotion Triggered by TV Exposure</span></h3><a class="self-link" href="#publishing-promotion-triggered-by-tv-exposure" aria-label="Permalink for Section 3.13"></a></div><div lang="ja" style=""><p>放送メタデータの情報から、出版プロモーションで利用するトピックを検出し、出版社サイトにトピックに基づく出版コンテンツのレコメンドが提供される事例。</p>
-</div><div lang="en" style="display: none;"><p>Detects topics for publishing promotion from broadcast metadata, and provides recommendations of related published content on the publisher's site.</p>
+        <section id="publishing-promotion-triggered-by-tv-exposure-0"><div class="header-wrapper"><h3 id="publishing-promotion-triggered-by-tv-exposure"><bdi class="secno">3.13 </bdi><span lang="ja">放送メタデータに基づく出版プロモーション</span> <span lang="en">Publishing Promotion Triggered by TV Exposure</span></h3><a class="self-link" href="#publishing-promotion-triggered-by-tv-exposure" aria-label="Permalink for Section 3.13"></a></div><div lang="ja"><p>放送メタデータの情報から、出版プロモーションで利用するトピックを検出し、出版社サイトにトピックに基づく出版コンテンツのレコメンドが提供される事例。</p>
+</div><div lang="en"><p>Detects topics for publishing promotion from broadcast metadata, and provides recommendations of related published content on the publisher's site.</p>
 </div><section id="generatedID-50"><div class="header-wrapper"><h4 id="x3-13-1"><bdi class="secno">3.13.1 </bdi>関連する産業ドメイン</h4><a class="self-link" href="#generatedID-50" aria-label="Permalink for Section 3.13.1"></a></div>
 <ul>
 <li>出版</li>
@@ -1267,8 +1267,8 @@ TV露出効果を最大限活用して商品販促を行う</li>
   <img src="assets/cross-industry/interop-tokyo2025/images/book-landingpage.png" alt="interop5c">
   <figcaption><a class="self-link" href="#fig-generatedID-22"><span lang="ja">図 </span><span lang="en">Figure </span><bdi class="figno">32</bdi></a> <span class="fig-title">出版プロモーションページからの放送番組紹介イメージ</span></figcaption>
 </figure></section></section>
-        <section id="tv-program-recommendations-from-e-books-0"><div class="header-wrapper"><h3 id="tv-program-recommendations-from-e-books"><bdi class="secno">3.14 </bdi><span lang="ja" style="">電子書籍からの放送番組レコメンド</span> <span lang="en" style="display: none;">TV Program Recommendations from E-Books</span></h3><a class="self-link" href="#tv-program-recommendations-from-e-books" aria-label="Permalink for Section 3.14"></a></div><div lang="ja" style=""><p>電子書籍内のメタデータを用いて、関連する放送番組をユーザに推薦する。メタデータの出版業界外での活用にあたる。</p>
-</div><div lang="en" style="display: none;"><p>Recommends related broadcast programs to the user using metadata within e-books. This is a use of publishing metadata across industries.</p>
+        <section id="tv-program-recommendations-from-e-books-0"><div class="header-wrapper"><h3 id="tv-program-recommendations-from-e-books"><bdi class="secno">3.14 </bdi><span lang="ja">電子書籍からの放送番組レコメンド</span> <span lang="en">TV Program Recommendations from E-Books</span></h3><a class="self-link" href="#tv-program-recommendations-from-e-books" aria-label="Permalink for Section 3.14"></a></div><div lang="ja"><p>電子書籍内のメタデータを用いて、関連する放送番組をユーザに推薦する。メタデータの出版業界外での活用にあたる。</p>
+</div><div lang="en"><p>Recommends related broadcast programs to the user using metadata within e-books. This is a use of publishing metadata across industries.</p>
 </div><section id="generatedID-54"><div class="header-wrapper"><h4 id="x3-14-1"><bdi class="secno">3.14.1 </bdi>関連する産業ドメイン</h4><a class="self-link" href="#generatedID-54" aria-label="Permalink for Section 3.14.1"></a></div>
 <ul>
 <li>出版</li>
@@ -1355,70 +1355,70 @@ TV露出効果を最大限活用して商品販促を行う</li>
     </section>
 
     <section id="related-specs"><div class="header-wrapper"><h2 id="x4-related-specifications-and-initiatives"><bdi class="secno">4. </bdi>
-          <span lang="ja" style="">関連する技術仕様、取り組み</span>
-          <span lang="en" style="display: none;">Related Specifications and Initiatives</span>
+          <span lang="ja">関連する技術仕様、取り組み</span>
+          <span lang="en">Related Specifications and Initiatives</span>
         </h2><a class="self-link" href="#related-specs" aria-label="Permalink for Section 4."></a></div>
         
 
         <section id="data-catalog-vocabulary-dcat-version-3"><div class="header-wrapper"><h3 id="x4-1-data-catalog-vocabulary-dcat-version-3"><bdi class="secno">4.1 </bdi>Data Catalog Vocabulary (DCAT) - Version 3</h3><a class="self-link" href="#data-catalog-vocabulary-dcat-version-3" aria-label="Permalink for Section 4.1"></a></div>
             
-            <p lang="ja" style="">Web上で公開されているデータカタログ間の相互運用性を高めるために設計されたRDF語彙のW3C勧告 (2024年8月22日) [<cite><a class="bibref" data-link-type="biblio" href="#bib-vocab-dcat-3" title="Data Catalog Vocabulary (DCAT) - Version 3">vocab-dcat-3</a></cite>]。公開者が<code>Dataset</code>と<code>DataService</code>を、標準的なモデルと語彙を使って<code>Catalog</code>に記述することを可能にし、複数の<code>Catalog</code>からのメタデータの利用と集約を容易にする。</p>
-            <p lang="en" style="display: none;">A W3C Recommendation (August 22, 2024) of an RDF vocabulary designed to improve interoperability between data catalogs published on the Web [<cite><a class="bibref" data-link-type="biblio" href="#bib-vocab-dcat-3" title="Data Catalog Vocabulary (DCAT) - Version 3">vocab-dcat-3</a></cite>]. It enables publishers to describe <code>Dataset</code> and <code>DataService</code> resources in <code>Catalog</code> instances using a standard model and vocabulary, making it easier to consume and aggregate metadata from multiple <code>Catalog</code> instances.</p>
-            <p lang="ja" style=""><a href="https://www.w3.org/groups/wg/dx/">W3C Dataset Exchange Working Group</a>により維持、改訂される。</p>
-            <p lang="en" style="display: none;">Maintained and revised by the <a href="https://www.w3.org/groups/wg/dx/">W3C Dataset Exchange Working Group</a>.</p>
+            <p lang="ja">Web上で公開されているデータカタログ間の相互運用性を高めるために設計されたRDF語彙のW3C勧告 (2024年8月22日) [<cite><a class="bibref" data-link-type="biblio" href="#bib-vocab-dcat-3" title="Data Catalog Vocabulary (DCAT) - Version 3">vocab-dcat-3</a></cite>]。公開者が<code>Dataset</code>と<code>DataService</code>を、標準的なモデルと語彙を使って<code>Catalog</code>に記述することを可能にし、複数の<code>Catalog</code>からのメタデータの利用と集約を容易にする。</p>
+            <p lang="en">A W3C Recommendation (August 22, 2024) of an RDF vocabulary designed to improve interoperability between data catalogs published on the Web [<cite><a class="bibref" data-link-type="biblio" href="#bib-vocab-dcat-3" title="Data Catalog Vocabulary (DCAT) - Version 3">vocab-dcat-3</a></cite>]. It enables publishers to describe <code>Dataset</code> and <code>DataService</code> resources in <code>Catalog</code> instances using a standard model and vocabulary, making it easier to consume and aggregate metadata from multiple <code>Catalog</code> instances.</p>
+            <p lang="ja"><a href="https://www.w3.org/groups/wg/dx/">W3C Dataset Exchange Working Group</a>により維持、改訂される。</p>
+            <p lang="en">Maintained and revised by the <a href="https://www.w3.org/groups/wg/dx/">W3C Dataset Exchange Working Group</a>.</p>
         </section>
         <section id="json-ld-1-1"><div class="header-wrapper"><h3 id="x4-2-json-ld-1-1"><bdi class="secno">4.2 </bdi>JSON-LD 1.1</h3><a class="self-link" href="#json-ld-1-1" aria-label="Permalink for Section 4.2"></a></div>
             
-            <p lang="ja" style="">Web上の構造化データやメタデータの表現・交換のための軽量なLinked Dataフォーマット。JSON-LD 1.1[<cite><a class="bibref" data-link-type="biblio" href="#bib-json-ld11" title="JSON-LD 1.1">json-ld11</a></cite>] (2020年W3C勧告) は、W3C JSON-LD Working Groupによりメンテナンスされている。</p>
-            <p lang="en" style="display: none;">A lightweight Linked Data format for representing and exchanging structured data and metadata on the Web. JSON-LD 1.1 [<cite><a class="bibref" data-link-type="biblio" href="#bib-json-ld11" title="JSON-LD 1.1">json-ld11</a></cite>], a 2020 W3C Recommendation, is maintained by the W3C JSON-LD Working Group.</p></p>
-            <p lang="ja" style="">仕様: <a href="https://www.w3.org/TR/json-ld/">https://www.w3.org/TR/json-ld/</a><br>
+            <p lang="ja">Web上の構造化データやメタデータの表現・交換のための軽量なLinked Dataフォーマット。JSON-LD 1.1[<cite><a class="bibref" data-link-type="biblio" href="#bib-json-ld11" title="JSON-LD 1.1">json-ld11</a></cite>] (2020年W3C勧告) は、W3C JSON-LD Working Groupによりメンテナンスされている。</p>
+            <p lang="en">A lightweight Linked Data format for representing and exchanging structured data and metadata on the Web. JSON-LD 1.1 [<cite><a class="bibref" data-link-type="biblio" href="#bib-json-ld11" title="JSON-LD 1.1">json-ld11</a></cite>], a 2020 W3C Recommendation, is maintained by the W3C JSON-LD Working Group.</p></p>
+            <p lang="ja">仕様: <a href="https://www.w3.org/TR/json-ld/">https://www.w3.org/TR/json-ld/</a><br>
             WGページ: <a href="https://www.w3.org/groups/wg/json-ld/">https://www.w3.org/groups/wg/json-ld/</a></p>
-            <p lang="en" style="display: none;">Specification: <a href="https://www.w3.org/TR/json-ld/">https://www.w3.org/TR/json-ld/</a><br>
+            <p lang="en">Specification: <a href="https://www.w3.org/TR/json-ld/">https://www.w3.org/TR/json-ld/</a><br>
             Working Group: <a href="https://www.w3.org/groups/wg/json-ld/">https://www.w3.org/groups/wg/json-ld/</a></p>
         </section>
 
         <section id="dublin-core-metadata-initiative-dcmi-dcmi-metadata-terms"><div class="header-wrapper"><h3 id="x4-3-dublin-core-metadata-initiative-dcmi-dcmi-metadata-terms"><bdi class="secno">4.3 </bdi>Dublin Core Metadata Initiative (DCMI) - DCMI Metadata Terms</h3><a class="self-link" href="#dublin-core-metadata-initiative-dcmi-dcmi-metadata-terms" aria-label="Permalink for Section 4.3"></a></div>
             
-            <p lang="ja" style="">Web上でリソースを記述するためのメタデータ用語の仕様 (2000年) [<cite><a class="bibref" data-link-type="biblio" href="#bib-dcterms" title="DCMI Metadata Terms">DCTERMS</a></cite>]。仕様には、当初のDublin Core Metadata Element
+            <p lang="ja">Web上でリソースを記述するためのメタデータ用語の仕様 (2000年) [<cite><a class="bibref" data-link-type="biblio" href="#bib-dcterms" title="DCMI Metadata Terms">DCTERMS</a></cite>]。仕様には、当初のDublin Core Metadata Element
             Set [<cite><a class="bibref" data-link-type="biblio" href="#bib-dc11" title="Dublin Core Metadata Element Set, Version 1.1">DC11</a></cite>]の15個の用語に加え、数十個の<code>Property</code>、<code>Class</code>、<code>Datatype</code>、および<code>VocabularyEncodingScheme</code>（統制語彙識別のための統制語彙）の用語からなる拡張語彙が含まれている。定義はRDF-Turtle等。用語はURIでグローバルに識別され、アプリケーションに応じて、他の語彙のメタデータ用語と組み合わせて使用されることが想定されている。
             </p>
-            <p lang="en" style="display: none;">A specification of metadata terms for describing resources on the Web (2000) [<cite><a class="bibref" data-link-type="biblio" href="#bib-dcterms" title="DCMI Metadata Terms">DCTERMS</a></cite>]. In addition to the original fifteen terms of the Dublin Core Metadata Element Set [<cite><a class="bibref" data-link-type="biblio" href="#bib-dc11" title="Dublin Core Metadata Element Set, Version 1.1">DC11</a></cite>], it includes an extended vocabulary of dozens of <code>Property</code>, <code>Class</code>, <code>Datatype</code>, and <code>VocabularyEncodingScheme</code> terms (controlled vocabularies whose members identify resources from a controlled vocabulary). Definitions are provided in RDF-Turtle and other formats. Terms are globally identified by URIs and are intended to be combined with metadata terms from other vocabularies as appropriate to each application.</p>
+            <p lang="en">A specification of metadata terms for describing resources on the Web (2000) [<cite><a class="bibref" data-link-type="biblio" href="#bib-dcterms" title="DCMI Metadata Terms">DCTERMS</a></cite>]. In addition to the original fifteen terms of the Dublin Core Metadata Element Set [<cite><a class="bibref" data-link-type="biblio" href="#bib-dc11" title="Dublin Core Metadata Element Set, Version 1.1">DC11</a></cite>], it includes an extended vocabulary of dozens of <code>Property</code>, <code>Class</code>, <code>Datatype</code>, and <code>VocabularyEncodingScheme</code> terms (controlled vocabularies whose members identify resources from a controlled vocabulary). Definitions are provided in RDF-Turtle and other formats. Terms are globally identified by URIs and are intended to be combined with metadata terms from other vocabularies as appropriate to each application.</p>
         </section>
         <section id="schema-org-spec"><div class="header-wrapper"><h3 id="x4-4-schema-org"><bdi class="secno">4.4 </bdi>Schema.org</h3><a class="self-link" href="#schema-org-spec" aria-label="Permalink for Section 4.4"></a></div>
             
-            <p lang="ja" style="">Schema.orgは、インターネット上の構造化データのためのスキーマとして策定されたデータモデル（メタデータ語彙）の仕様。2026年3月現在、Ver. 30.0が公開されている。RDF Schemaから派生したデータモデリングに基づいており、語彙要素として<code>Type</code>、<code>Property</code>、<code>Enumeration</code>を含む。定義はRDF-Turtle等。</p>
-            <p lang="en" style="display: none;">Schema.org is a data model (metadata vocabulary) specification developed as a schema for structured data on the Internet. As of March 2026, version 30.0 is available. Based on a data modeling approach derived from RDF Schema, its vocabulary includes <code>Type</code>, <code>Property</code>, and <code>Enumeration</code>. Definitions are provided in RDF-Turtle and other formats.</p>
+            <p lang="ja">Schema.orgは、インターネット上の構造化データのためのスキーマとして策定されたデータモデル（メタデータ語彙）の仕様。2026年3月現在、Ver. 30.0が公開されている。RDF Schemaから派生したデータモデリングに基づいており、語彙要素として<code>Type</code>、<code>Property</code>、<code>Enumeration</code>を含む。定義はRDF-Turtle等。</p>
+            <p lang="en">Schema.org is a data model (metadata vocabulary) specification developed as a schema for structured data on the Internet. As of March 2026, version 30.0 is available. Based on a data modeling approach derived from RDF Schema, its vocabulary includes <code>Type</code>, <code>Property</code>, and <code>Enumeration</code>. Definitions are provided in RDF-Turtle and other formats.</p>
             <p>Full schema hierarchy: <a href="https://schema.org/docs/full.html">https://schema.org/docs/full.html</a></p>
-            <p lang="ja" style="">Schema.orgはJSON-LD[<cite><a class="bibref" data-link-type="biblio" href="#bib-json-ld11" title="JSON-LD 1.1">json-ld11</a></cite>]による記述も公式にサポートしている。</p>
-            <p lang="en" style="display: none;">Schema.org also officially supports descriptions using JSON-LD [<cite><a class="bibref" data-link-type="biblio" href="#bib-json-ld11" title="JSON-LD 1.1">json-ld11</a></cite>].</p></p>
+            <p lang="ja">Schema.orgはJSON-LD[<cite><a class="bibref" data-link-type="biblio" href="#bib-json-ld11" title="JSON-LD 1.1">json-ld11</a></cite>]による記述も公式にサポートしている。</p>
+            <p lang="en">Schema.org also officially supports descriptions using JSON-LD [<cite><a class="bibref" data-link-type="biblio" href="#bib-json-ld11" title="JSON-LD 1.1">json-ld11</a></cite>].</p></p>
         </section>
         <section id="european-broadcasting-union-ebu-ebucoreplus"><div class="header-wrapper"><h3 id="x4-5-european-broadcasting-union-ebu-ebucoreplus"><bdi class="secno">4.5 </bdi>European Broadcasting Union (EBU) - EBUCorePlus</h3><a class="self-link" href="#european-broadcasting-union-ebu-ebucoreplus" aria-label="Permalink for Section 4.5"></a></div>
             
-            <p lang="ja" style="">メディア企業での活用を目的に、コンテンツの内容を表現・蓄積する知識グラフの構築ルールを規定するデータモデル＝オントロジーの仕様 (2025年4月) [<cite><a class="bibref" data-link-type="biblio" href="#bib-ebu-tech3397" title="EBUCorePlus – The Ontology for Media. TECH 3397 V2">ebu-tech3397</a></cite>]。Web Ontology Language (OWL) を用いて規定されている。</p>
-            <p lang="en" style="display: none;">A specification of an ontology (data model) that defines rules for building knowledge graphs representing and accumulating content for use in media enterprises (April 2025) [<cite><a class="bibref" data-link-type="biblio" href="#bib-ebu-tech3397" title="EBUCorePlus – The Ontology for Media. TECH 3397 V2">ebu-tech3397</a></cite>]. It is defined using the Web Ontology Language (OWL).</p>
+            <p lang="ja">メディア企業での活用を目的に、コンテンツの内容を表現・蓄積する知識グラフの構築ルールを規定するデータモデル＝オントロジーの仕様 (2025年4月) [<cite><a class="bibref" data-link-type="biblio" href="#bib-ebu-tech3397" title="EBUCorePlus – The Ontology for Media. TECH 3397 V2">ebu-tech3397</a></cite>]。Web Ontology Language (OWL) を用いて規定されている。</p>
+            <p lang="en">A specification of an ontology (data model) that defines rules for building knowledge graphs representing and accumulating content for use in media enterprises (April 2025) [<cite><a class="bibref" data-link-type="biblio" href="#bib-ebu-tech3397" title="EBUCorePlus – The Ontology for Media. TECH 3397 V2">ebu-tech3397</a></cite>]. It is defined using the Web Ontology Language (OWL).</p>
             <p>Ontology documentation: <a href="https://tech-metadata.ebu-it-tools.ch/ontologies/ebucoreplus/index.html">https://tech-metadata.ebu-it-tools.ch/ontologies/ebucoreplus/index.html</a></p>
         </section>
         <section id="dvb-i"><div class="header-wrapper"><h3 id="x4-6-dvb-i"><bdi class="secno">4.6 </bdi>DVB-I</h3><a class="self-link" href="#dvb-i" aria-label="Permalink for Section 4.6"></a></div>
             
-            <p lang="ja" style="">DVB-I [<cite><a class="bibref" data-link-type="biblio" href="#bib-dvb-i" title="DVB-I Service Discovery and Programme Metadata">DVB-I</a></cite>] は、ブロードバンドまたは放送ネットワークを通じて配信されるリニア型テレビサービスを発見するメカニズム、およびこれらのサービスの番組メタデータを取得する方法を定義する、DVBによる仕様 (2024年2月) である。コンテンツのメタデータはTV-Anytimeスキーマに基づいたXML文書として扱われる [<cite><a class="bibref" data-link-type="biblio" href="#bib-etsi-ts-102-822-3-1" title="ETSI TS 102 822-3-1 V1.11.1 (2019-03): Broadcast and On-line Services: Search, select, and rightful use of content (&quot;TV-Anytime&quot;); Part 3: Metadata; Sub-part 1: Phase 1 - Metadata schemas">etsi-ts-102-822-3-1</a></cite>]。</p>
-            <p lang="en" style="display: none;">DVB-I [<cite><a class="bibref" data-link-type="biblio" href="#bib-dvb-i" title="DVB-I Service Discovery and Programme Metadata">DVB-I</a></cite>] is a specification (February 2024) by DVB that defines mechanisms for discovering linear television services delivered over broadband or broadcast networks, and methods for retrieving programme metadata for those services. The content metadata is handled as XML documents based on the TV-Anytime schema [<cite><a class="bibref" data-link-type="biblio" href="#bib-etsi-ts-102-822-3-1" title="ETSI TS 102 822-3-1 V1.11.1 (2019-03): Broadcast and On-line Services: Search, select, and rightful use of content (&quot;TV-Anytime&quot;); Part 3: Metadata; Sub-part 1: Phase 1 - Metadata schemas">etsi-ts-102-822-3-1</a></cite>].</p>
+            <p lang="ja">DVB-I [<cite><a class="bibref" data-link-type="biblio" href="#bib-dvb-i" title="DVB-I Service Discovery and Programme Metadata">DVB-I</a></cite>] は、ブロードバンドまたは放送ネットワークを通じて配信されるリニア型テレビサービスを発見するメカニズム、およびこれらのサービスの番組メタデータを取得する方法を定義する、DVBによる仕様 (2024年2月) である。コンテンツのメタデータはTV-Anytimeスキーマに基づいたXML文書として扱われる [<cite><a class="bibref" data-link-type="biblio" href="#bib-etsi-ts-102-822-3-1" title="ETSI TS 102 822-3-1 V1.11.1 (2019-03): Broadcast and On-line Services: Search, select, and rightful use of content (&quot;TV-Anytime&quot;); Part 3: Metadata; Sub-part 1: Phase 1 - Metadata schemas">etsi-ts-102-822-3-1</a></cite>]。</p>
+            <p lang="en">DVB-I [<cite><a class="bibref" data-link-type="biblio" href="#bib-dvb-i" title="DVB-I Service Discovery and Programme Metadata">DVB-I</a></cite>] is a specification (February 2024) by DVB that defines mechanisms for discovering linear television services delivered over broadband or broadcast networks, and methods for retrieving programme metadata for those services. The content metadata is handled as XML documents based on the TV-Anytime schema [<cite><a class="bibref" data-link-type="biblio" href="#bib-etsi-ts-102-822-3-1" title="ETSI TS 102 822-3-1 V1.11.1 (2019-03): Broadcast and On-line Services: Search, select, and rightful use of content (&quot;TV-Anytime&quot;); Part 3: Metadata; Sub-part 1: Phase 1 - Metadata schemas">etsi-ts-102-822-3-1</a></cite>].</p>
         </section>
         <section id="arib-service-information-for-digital-broadcasting-std-b10-tr-b14"><div class="header-wrapper"><h3 id="x4-7-arib-service-information-for-digital-broadcasting-std-b10-tr-b14"><bdi class="secno">4.7 </bdi>ARIB - Service Information for Digital Broadcasting (STD-B10 / TR-B14)</h3><a class="self-link" href="#arib-service-information-for-digital-broadcasting-std-b10-tr-b14" aria-label="Permalink for Section 4.7"></a></div>
             
-            <p lang="ja" style="">ARIB STD-B10 [<cite><a class="bibref" data-link-type="biblio" href="#bib-arib-std-b10" title="ARIB STD-B10: Service Information for Digital Broadcasting System">arib-std-b10</a></cite>] (Ver. 5.14、2025年3月改訂) は、Association of Radio Industries and Businesses (ARIB) による日本のデジタル放送のサービス情報 (SI) を定める標準規格で、番組情報 (EPG) などのメタデータ伝送に用いられる。ARIB TR-B14 [<cite><a class="bibref" data-link-type="biblio" href="#bib-arib-tr-b14" title="ARIB TR-B14: Operational Guidelines for Digital Terrestrial Television Broadcasting">arib-tr-b14</a></cite>] (Ver. 6.13、2026年4月改訂) は、地上デジタルテレビジョン放送の運用規定をまとめたARIB技術資料であり、SIの運用方法も含む。</p>
-            <p lang="en" style="display: none;">ARIB STD-B10 [<cite><a class="bibref" data-link-type="biblio" href="#bib-arib-std-b10" title="ARIB STD-B10: Service Information for Digital Broadcasting System">arib-std-b10</a></cite>] (Ver. 5.14, March 2025), by the Association of Radio Industries and Businesses (ARIB), defines Service Information (SI) for digital broadcasting in Japan, used for transmitting metadata such as electronic programme guides (EPG). ARIB TR-B14 [<cite><a class="bibref" data-link-type="biblio" href="#bib-arib-tr-b14" title="ARIB TR-B14: Operational Guidelines for Digital Terrestrial Television Broadcasting">arib-tr-b14</a></cite>] (Ver. 6.13, April 2026) is an ARIB technical report on operational guidelines for digital terrestrial television broadcasting, including SI operational practices.</p>
+            <p lang="ja">ARIB STD-B10 [<cite><a class="bibref" data-link-type="biblio" href="#bib-arib-std-b10" title="ARIB STD-B10: Service Information for Digital Broadcasting System">arib-std-b10</a></cite>] (Ver. 5.14、2025年3月改訂) は、Association of Radio Industries and Businesses (ARIB) による日本のデジタル放送のサービス情報 (SI) を定める標準規格で、番組情報 (EPG) などのメタデータ伝送に用いられる。ARIB TR-B14 [<cite><a class="bibref" data-link-type="biblio" href="#bib-arib-tr-b14" title="ARIB TR-B14: Operational Guidelines for Digital Terrestrial Television Broadcasting">arib-tr-b14</a></cite>] (Ver. 6.13、2026年4月改訂) は、地上デジタルテレビジョン放送の運用規定をまとめたARIB技術資料であり、SIの運用方法も含む。</p>
+            <p lang="en">ARIB STD-B10 [<cite><a class="bibref" data-link-type="biblio" href="#bib-arib-std-b10" title="ARIB STD-B10: Service Information for Digital Broadcasting System">arib-std-b10</a></cite>] (Ver. 5.14, March 2025), by the Association of Radio Industries and Businesses (ARIB), defines Service Information (SI) for digital broadcasting in Japan, used for transmitting metadata such as electronic programme guides (EPG). ARIB TR-B14 [<cite><a class="bibref" data-link-type="biblio" href="#bib-arib-tr-b14" title="ARIB TR-B14: Operational Guidelines for Digital Terrestrial Television Broadcasting">arib-tr-b14</a></cite>] (Ver. 6.13, April 2026) is an ARIB technical report on operational guidelines for digital terrestrial television broadcasting, including SI operational practices.</p>
         </section>
     </section>
 
     <section id="acknowledgements"><div class="header-wrapper"><h2 id="x5-acknowledgements"><bdi class="secno">5. </bdi>
-          <span lang="ja" style="">謝辞</span>
-          <span lang="en" style="display: none;">Acknowledgements</span>
+          <span lang="ja">謝辞</span>
+          <span lang="en">Acknowledgements</span>
         </h2><a class="self-link" href="#acknowledgements" aria-label="Permalink for Section 5."></a></div>
         
-        <p lang="ja" style="">
+        <p lang="ja">
             本ドキュメントの作成にあたり、多くの示唆を与えていただいた方々に謝意を表する。
         </p>
-        <p lang="en" style="display: none;">
+        <p lang="en">
             The following individuals provided feedback and advice during the development of this document (in no particular order).
             The editor also acknowledges the support provided by W3C staff.
         </p>
