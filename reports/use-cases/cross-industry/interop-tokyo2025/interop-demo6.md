@@ -1,6 +1,16 @@
-# 電子書籍からの放送番組レコメンド / TV Program Recommendations from E-Books
-出版コンテンツ内のメタデータを用いて、出版コンテンツに関連する放送番組が検索され、ユーザに提示される。
-出版以外の業界のサービスでも活用することで、出版コンテンツのメタデータの価値を向上する。
+<h1 id="tv-program-recommendations-from-e-books"><span lang="ja">電子書籍からの放送番組レコメンド</span> <span lang="en">TV Program Recommendations from E-Books</span></h1>
+
+<div lang="ja">
+
+電子書籍内のメタデータを用いて、関連する放送番組をユーザに推薦する。メタデータの出版業界外での活用にあたる。
+
+</div>
+
+<div lang="en">
+
+Recommends related broadcast programs to the user using metadata within e-books. This is a use of published content metadata across industries.
+
+</div>
 
 ## 関連する産業ドメイン
 - 出版

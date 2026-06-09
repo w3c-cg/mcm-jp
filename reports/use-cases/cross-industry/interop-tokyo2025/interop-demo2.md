@@ -1,7 +1,16 @@
-# 車載インフォテインメントシステムにおける催事イベントと関連するテレビ番組・出版コンテンツのレコメンド / Recommendation of TV Programs and Published Content Related to Events in In‑Vehicle Infotainment Systems
+<h1 id="recommendation-of-tv-programs-and-published-content-related-to-events-in-in-vehicle-infotainment-systems"><span lang="ja">車載インフォテインメントシステムにおける催事イベントと関連するテレビ番組・出版コンテンツのレコメンド</span> <span lang="en">Recommendation of TV Programs and Published Content Related to Events in In‑Vehicle Infotainment Systems</span></h1>
 
-車載インフォテインメントシステムの現在位置情報やナビゲーション目的地情報などを用いて、
-催事イベント情報、テレビ番組、出版コンテンツのレコメンドを行う。
+<div lang="ja">
+
+車載インフォテインメントシステムの現在位置情報やナビゲーション目的地情報などを用いて、イベント情報、テレビ番組、出版コンテンツのレコメンドを行う。
+
+</div>
+
+<div lang="en">
+
+Recommends events, TV programs, and published content using current location and navigation destination information from in-vehicle infotainment systems.
+
+</div>
 
 ## 試作・検証事例
 

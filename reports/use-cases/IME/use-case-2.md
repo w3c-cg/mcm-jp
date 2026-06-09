@@ -1,6 +1,16 @@
-# 固有名詞に関するメタデータの流通とIME辞書データへの活用 / Distribution of Proper Noun Metadata and Its Integration into IME Dictionary Data
+<h1 id="ime-distribution-of-proper-noun-metadata-and-its-integration-into-ime-dictionary-data"><span lang="ja">固有名詞に関するメタデータの流通とIME辞書データへの活用</span> <span lang="en">Distribution of Proper Noun Metadata and Its Integration into IME Dictionary Data</span></h1>
 
-流通するデータをもとに、メディアコンテンツに関する新しい固有名詞について、ユーザが文字変換できるようにすること
+<div lang="ja">
+
+流通するデータをもとに、メディアコンテンツに関する新しい固有名詞について、ユーザが文字変換できるようにする事例。
+
+</div>
+
+<div lang="en">
+
+Enables text input conversion for new proper nouns related to media content, based on shared data.
+
+</div>
 
 ## 関連する産業ドメイン
 

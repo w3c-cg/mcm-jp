@@ -1,6 +1,17 @@
-# 放送実績からの放送番組の特定とオンデマンド視聴情報の取得 / Program Identification from Broadcast Logs and Retrieval of On-Demand Viewing Information
+<h1 id="program-identification-from-broadcast-logs-and-retrieval-of-on-demand-viewing-information"><span lang="ja">放送実績からの放送番組の特定とオンデマンド視聴情報の取得</span> <span lang="en">Program Identification from Broadcast Logs and Retrieval of On-Demand Viewing Information</span></h1>
+
+<div lang="ja">
+
 ユーザが既知の情報から放送番組を特定し、放送や配信で番組を視聴できるようにする事例。
 放送実績情報（チャンネル、放送時刻）から放送番組を特定し、放送予定・配信情報などの番組情報を取得する。
+
+</div>
+
+<div lang="en">
+
+A user identifies a broadcast program from known information and views it via broadcast or on-demand distribution. The program is identified from broadcast log information (channel, broadcast time), and program information such as broadcast schedules and on-demand distribution details is retrieved.
+
+</div>
 
 ## 関連する産業ドメイン
 - 放送

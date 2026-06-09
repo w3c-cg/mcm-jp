@@ -1,6 +1,16 @@
-# 固有名詞に関するIME辞書データの自社作成と展開 / In-house Development and Deployment of IME Dictionary Data for Proper Nouns
+<h1 id="ime-in-house-development-and-deployment-of-ime-dictionary-data-for-proper-nouns"><span lang="ja">固有名詞に関するIME辞書データの自社作成と展開</span> <span lang="en">In-house Development and Deployment of IME Dictionary Data for Proper Nouns</span></h1>
+
+<div lang="ja">
 
 メディアコンテンツに関する新しい固有名詞について、ユーザが文字変換できるようにする事例。
+
+</div>
+
+<div lang="en">
+
+Enables text input conversion for new proper nouns related to media content.
+
+</div>
 
 ## 関連する産業ドメイン
 - 出版

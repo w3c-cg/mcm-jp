@@ -1,6 +1,17 @@
-# 書籍検索サイトでのタイトル補完入力 / Book title autocomplete input on a book search site
-作品の検索ページで入力される固有名詞（作品名・登場人物名など）の表記揺らぎを解消し、検索精度を向上させる事例。
+<h1 id="book-title-autocomplete-input-on-a-book-search-site"><span lang="ja">書籍検索サイトでのタイトル補完入力</span> <span lang="en">Book title autocomplete input on a book search site</span></h1>
+
+<div lang="ja">
+
+作品の検索ページで入力される固有名詞(作品名・登場人物名など)の表記揺らぎを解消し、検索精度を向上させる事例。
 書籍検索サイトでのWeb埋め込み側IMEによるタイトル補完入力が提供される。
+
+</div>
+
+<div lang="en">
+
+Resolves notation inconsistencies in proper nouns (such as work titles and character names) entered on a work search page, thereby improving search accuracy. Title autocomplete input via a web-embedded IME is provided on a book search site.
+
+</div>
 
 ## 関連する産業ドメイン
 - 出版

@@ -1,6 +1,16 @@
-# 文字入力ソフト（IME）と出版コンテンツメタデータの連携 / Integration between IME and published content metadata
-通常の文字入力では予測変換できない出版物の固有名詞（作品名・登場人物名など）を、書誌情報を参照した情報をIME辞書に登録し、
-スマートフォン上のIMEで予測変換や補完入力を行う。
+<h1 id="ime-integration-between-ime-and-published-content-metadata"><span lang="ja">文字入力ソフト（IME）と出版コンテンツメタデータの連携</span> <span lang="en">Integration between IME and published content metadata</span></h1>
+
+<div lang="ja">
+
+通常の文字入力では予測変換できない出版物の固有名詞(作品名・登場人物名など)を、書誌情報を参照した情報をIME辞書に登録し、スマートフォン上のIMEで予測変換や補完入力を行う。
+
+</div>
+
+<div lang="en">
+
+Proper nouns of published content (such as work titles and character names) that standard predictive text input cannot handle are registered into an IME (Input Method Editor) dictionary using information derived from bibliographic data. This enables predictive conversion and autocomplete input on smartphone IMEs.
+
+</div>
 
 ## 関連する産業ドメイン
 - 出版

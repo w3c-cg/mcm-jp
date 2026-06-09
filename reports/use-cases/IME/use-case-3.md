@@ -1,5 +1,16 @@
-# 放送メタデータと連動したIME / IME Integrated with Broadcast Metadata
+<h1 id="ime-ime-integrated-with-broadcast-metadata"><span lang="ja">放送メタデータと連動したIME</span> <span lang="en">IME Integrated with Broadcast Metadata</span></h1>
+
+<div lang="ja">
+
 視聴・閲覧したメディアコンテンツの関連情報が、ユーザ操作を起点として提供される事例。
+
+</div>
+
+<div lang="en">
+
+Provides information related to media content the user has viewed or browsed, triggered by user actions.
+
+</div>
 
 ## 関連する産業ドメイン
 - 放送

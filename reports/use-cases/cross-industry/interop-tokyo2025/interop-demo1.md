@@ -1,6 +1,16 @@
-# 催事イベントと関連するテレビ番組・出版コンテンツのレコメンド / Recommendation of TV Programs and Published Content Related to Events
+<h1 id="recommendation-of-tv-programs-and-published-content-related-to-events"><span lang="ja">催事イベントと関連するテレビ番組・出版コンテンツのレコメンド</span> <span lang="en">Recommendation of TV Programs and Published Content Related to Events</span></h1>
 
-ユーザの位置情報や日時情報などを用いて、催事イベント情報、テレビ番組、出版コンテンツのレコメンドを行う。
+<div lang="ja">
+
+ユーザの位置情報や日時情報などを用いて、イベント情報、テレビ番組、出版コンテンツのレコメンドを行う。
+
+</div>
+
+<div lang="en">
+
+Recommends events, TV programs, and published content using information such as the user's location and date/time.
+
+</div>
 
 ## 試作・検証事例
 

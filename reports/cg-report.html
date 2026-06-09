@@ -39,13 +39,22 @@
             });
         }
     };
-    window.addEventListener('DOMContentLoaded', function() {
+    function applyLangFromQuery() {
         const params = new URLSearchParams(window.location.search);
         const lang = params.get('lang');
         if (lang === 'ja' || lang === 'en' || lang === 'all') {
             showLang(lang);
         } else {
             showLang('ja'); // default to Japanese if no lang specified
+        }
+    }
+    window.addEventListener('DOMContentLoaded', function() {
+        applyLangFromQuery();
+        // Re-apply after ReSpec finishes processing (md-includes etc.)
+        if (document.respec && document.respec.ready) {
+            document.respec.ready.then(applyLangFromQuery);
+        } else {
+            document.addEventListener('respec-ready', applyLangFromQuery, { once: true });
         }
     });
     </script>
@@ -92,12 +101,12 @@
                 }
             ],
             name: "メディアコンテンツメタデータの相互運用事例",
-            latestVersion: "https://w3c-cg.github.io/mcm-jp/reports/cg-report",
-            edDraftURI: null,
+            latestVersion: null,
+            edDraftURI: "https://w3c-cg.github.io/mcm-jp/reports/cg-report",
             copyrightStart: 2025,
-            publishDate: "2026-03-31",
+            publishDate: "2026-06-09",
             maxTocLevel: 2,
-            shortName: "mcm-jp",
+            shortName: "media-metadata-interop",
             xref: "web-platform",
             group: "mcm-jp",
             lint: {
@@ -203,9 +212,23 @@
         </p>
 
         <p lang="ja">
-            これらの課題に対し、本ドキュメントは、サービス開発者がメタデータ相互運用を検討する際の実践的な参考情報を提供する。第2章で MCM-JP CG の対象範囲を整理した上で、第3章において、各業界における実際の運用事例や検証事例を参照事例として紹介する。</p>
+            これらの課題に取り組むため、MCM-JP CG では、各業界の参加者がユースケースや知見を持ち寄り、業界横断での相互運用検証を実施している (<a href="#fig-overview"></a>)。</p>
         <p lang="en">
-            In response to these challenges, this document provides practical reference information for service developers considering interoperability of media content metadata. Chapter 2 outlines the scope of the MCM-JP CG's activities, and Chapter 3 presents practical operational and experimental case studies from various industries as reference examples.
+            To address these challenges, the MCM-JP CG brings together participants from various industries to share use cases and insights, and to conduct cross-industry interoperability validation (<a href="#fig-overview"></a>).
+        </p>
+
+        <figure id="fig-overview">
+            <img class="diagram" src="img/mcm-jp-cg-overview.png" alt="Overview of MCM-JP CG activities" width="90%" />
+            <figcaption>
+              <span lang="ja">MCM-JP CGの活動概要</span>
+              <span lang="en">Overview of MCM-JP CG activities</span>
+            </figcaption>
+        </figure>
+
+        <p lang="ja">
+            本ドキュメントは、上記取り組みの成果として、サービス開発者がメタデータ相互運用を検討する際の実践的な参考情報を提供する。第2章で MCM-JP CG の対象範囲を整理した上で、第3章において、各業界における実際の運用事例や検証事例を参照事例として紹介する。</p>
+        <p lang="en">
+            This document presents the outcomes of these activities as practical reference information for service developers considering interoperability of media content metadata. Chapter 2 outlines the scope of the MCM-JP CG's activities, and Chapter 3 presents practical operational and experimental case studies from various industries as reference examples.
         </p>
 
 
@@ -258,7 +281,7 @@
             <p lang="ja">本ドキュメントは既存技術仕様に基づく参考情報の提供を対象とし、新規の技術仕様の規定化は行わない。</p>
             <p lang="en">This document is intended to provide reference information based on existing technical specifications and does not define new technical specifications.</p>
 
-            <p lang="ja">メディアコンテンツのメタデータに関して、AI技術に関する課題、関連するユースケースや関連技術動向などの共有にあたり、データに関わる権利（著作権や隣接権）を適切に扱うことができることが望ましいという前提の下で、下記をスコープ外とする。</p>
+            <p lang="ja">メディアコンテンツメタデータに関して、AI技術に関する課題、関連するユースケースや関連技術動向などの共有にあたり、データに関わる権利（著作権や隣接権）を適切に扱うことができることが望ましいという前提の下で、下記をスコープ外とする。</p>
             <p lang="en">When sharing issues related to AI technologies, relevant use cases, and related technology trends regarding media content metadata, it is assumed that rights related to data (such as copyrights and neighboring rights) can be properly handled. Under this premise, the following are considered out of scope:</p>
             <ul>
               <li><span lang="ja">データの適切な取り扱いに関する新規のルールや定義を作成しない。</span><span lang="en">No new rules or definitions regarding the proper handling of data will be created.</span></li>
@@ -368,7 +391,7 @@
         </section>
         <section id="schema-org-spec">
             <h3>Schema.org</h3>
-            <p lang="ja">Schema.orgは、インターネット上の構造化データのためのスキーマとして策定されたデータモデル（メタデータ語彙）の仕様。2026年3月現在、Ver.30.0が公開されている。RDF Schemaから派生したデータモデリングに基づいており、語彙要素として<code>Type</code>、<code>Property</code>、<code>Enumeration</code>を含む。定義はRDF-Turtle等。</p>
+            <p lang="ja">Schema.orgは、インターネット上の構造化データのためのスキーマとして策定されたデータモデル（メタデータ語彙）の仕様。2026年3月現在、Ver. 30.0が公開されている。RDF Schemaから派生したデータモデリングに基づいており、語彙要素として<code>Type</code>、<code>Property</code>、<code>Enumeration</code>を含む。定義はRDF-Turtle等。</p>
             <p lang="en">Schema.org is a data model (metadata vocabulary) specification developed as a schema for structured data on the Internet. As of March 2026, version 30.0 is available. Based on a data modeling approach derived from RDF Schema, its vocabulary includes <code>Type</code>, <code>Property</code>, and <code>Enumeration</code>. Definitions are provided in RDF-Turtle and other formats.</p>
             <p>Full schema hierarchy: <a href="https://schema.org/docs/full.html">https://schema.org/docs/full.html</a></p>
             <p lang="ja">Schema.orgはJSON-LD[[json-ld]]による記述も公式にサポートしている。</p>
@@ -387,7 +410,7 @@
         </section>
         <section>
             <h3>ARIB - Service Information for Digital Broadcasting (STD-B10 / TR-B14)</h3>
-            <p lang="ja">ARIB STD-B10 [[arib-std-b10]] (Ver.5.14、2025年3月改定) は、Association of Radio Industries and Businesses (ARIB) による日本のデジタル放送のサービス情報 (SI) を定める標準規格で、番組情報 (EPG) などのメタデータ伝送に用いられる。ARIB TR-B14 [[arib-tr-b14]] (Ver.6.13、2026年4月改定) は、地上デジタルテレビジョン放送の運用規定をまとめたARIB技術資料であり、SIの運用方法も含む。</p>
+            <p lang="ja">ARIB STD-B10 [[arib-std-b10]] (Ver. 5.14、2025年3月改訂) は、Association of Radio Industries and Businesses (ARIB) による日本のデジタル放送のサービス情報 (SI) を定める標準規格で、番組情報 (EPG) などのメタデータ伝送に用いられる。ARIB TR-B14 [[arib-tr-b14]] (Ver. 6.13、2026年4月改訂) は、地上デジタルテレビジョン放送の運用規定をまとめたARIB技術資料であり、SIの運用方法も含む。</p>
             <p lang="en">ARIB STD-B10 [[arib-std-b10]] (Ver. 5.14, March 2025), by the Association of Radio Industries and Businesses (ARIB), defines Service Information (SI) for digital broadcasting in Japan, used for transmitting metadata such as electronic programme guides (EPG). ARIB TR-B14 [[arib-tr-b14]] (Ver. 6.13, April 2026) is an ARIB technical report on operational guidelines for digital terrestrial television broadcasting, including SI operational practices.</p>
         </section>
     </section>
@@ -416,7 +439,7 @@
             <li>鈴木 基 / Motoi Suzuki (集英社 / Shueisha)</li>
             <li>高見 真也 / Shinya Takami (KADOKAWA)</li>
             <li>津田 雅之 / Masayuki Tsuda (ジョルテ / Jorte)</li>
-            <li>出葉 義治 / Yoshiharu Dewa (LG Japan Lab)</li>
+            <li>出葉 義治 / Yoshiharu Dewa (北海道大学)</li>
             <li>冨倉 由樹央 / Yukio Tomikura (講談社 / Kodansha)</li>
             <li>廣瀬 良周 / Ryoshu Hirose (講談社 / Kodansha)</li>
             <li>丸山 夢人 / Yumeto Maruyama (集英社 / Shueisha)</li>

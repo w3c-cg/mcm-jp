@@ -1,13 +1,24 @@
-# TVメタデータと検索データを用いたヒット商品のシグナル検知・アラートサービス / Trend Alert Service for Potential Hit Products Using Broadcast and Search Data
+<h1 id="tv-trend-alert-service-for-potential-hit-products-using-broadcast-and-search-data"><span lang="ja">TVメタデータと検索データを用いたヒット商品のシグナル検知・アラートサービス</span> <span lang="en">Trend Alert Service for Potential Hit Products Using Broadcast and Search Data</span></h1>
 
 <span id="ref-tv-metadata"></span>
 
-以下の目的のため、TV番組で紹介された商品のデータとポータルサイトの検索データを用いて、小売店のバイヤーやラウンダーへヒットの予兆がある商品を検知・アラートする。
+<div lang="ja">
 
-  - [紹介スライド(p.11-13)](https://github.com/w3c-cg/mcm-jp/blob/main/meetings/2024-09-05/%E3%82%A8%E3%83%A0%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E8%B3%87%E6%96%99_20240905%E3%80%90%E9%85%8D%E5%B8%83%E7%89%88%E3%80%91.pdf)
+TV番組で紹介された商品のデータとポータルサイトの検索データを用いて、小売店のバイヤーやラウンダーへヒットの予兆がある商品を検知・アラートする。
+放送コンテンツのメタデータを、放送業界外で利用させることで、データの価値を高める。
 
-- 放送コンテンツのメタデータを、放送業界外で利用させることで、データの価値を高める
-- 放送と出版をシームレスに連携させることでユーザが放送・出版双方のコンテンツへシームレスに相互アクセス可能な動線を構築し、ユーザ体験や利便性を向上させ、且つ放送コンテンツの視聴促進と出版物の販売促進に寄与する
+- [参考資料 (p.11-13)](https://github.com/w3c-cg/mcm-jp/blob/main/meetings/2024-09-05/%E3%82%A8%E3%83%A0%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E8%B3%87%E6%96%99_20240905%E3%80%90%E9%85%8D%E5%B8%83%E7%89%88%E3%80%91.pdf)
+
+</div>
+
+<div lang="en">
+
+Uses data on products featured in TV programs together with portal site search data to detect early signs of potential hit products and alert retail buyers and field merchandisers.
+Enhance the value of broadcast content metadata by enabling its use outside the broadcasting industry.
+
+- [Reference material (p.11-13)](https://github.com/w3c-cg/mcm-jp/blob/main/meetings/2024-09-05/%E3%82%A8%E3%83%A0%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E8%B3%87%E6%96%99_20240905%E3%80%90%E9%85%8D%E5%B8%83%E7%89%88%E3%80%91.pdf)
+
+</div>
 
 ## 関連する産業ドメイン
 - 放送

@@ -1,11 +1,26 @@
-# 放送番組から出版コンテンツをレコメンド / Recommending Publishing Content Based on Broadcast Programs
- 
+<h1 id="recommending-publishing-content-based-on-broadcast-programs"><span lang="ja">放送番組から出版コンテンツをレコメンド</span> <span lang="en">Recommending Publishing Content Based on Broadcast Programs</span></h1>
+
+<div lang="ja">
+
 以下の目的のため、放送コンテンツのメタデータを用いて、放送コンテンツに関連する出版物が検索され、ユーザに提示する事例。
-[参考資料](https://github.com/w3c-cg/mcm-jp/blob/main/meetings/2024-09-05/%E3%82%A8%E3%83%A0%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E8%B3%87%E6%96%99_20240905%E3%80%90%E9%85%8D%E5%B8%83%E7%89%88%E3%80%91.pdf)
+
+- [参考資料](https://github.com/w3c-cg/mcm-jp/blob/main/meetings/2024-09-05/%E3%82%A8%E3%83%A0%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E8%B3%87%E6%96%99_20240905%E3%80%90%E9%85%8D%E5%B8%83%E7%89%88%E3%80%91.pdf)
 
 - 放送と出版をシームレスに連携させることでユーザが放送・出版双方のコンテンツへシームレスに相互アクセス可能な動線を構築し、ユーザ体験や利便性を向上させ、且つ放送コンテンツの視聴促進と出版物の販売促進に寄与する。
 - 放送コンテンツのメタデータを放送業界外で利用させることでデータの価値を高める。
 
+</div>
+
+<div lang="en">
+
+Uses broadcast content metadata to search for related published content and present it to the user, for the following purposes.
+
+- [Reference material](https://github.com/w3c-cg/mcm-jp/blob/main/meetings/2024-09-05/%E3%82%A8%E3%83%A0%E3%83%BB%E3%83%87%E3%83%BC%E3%82%BF%E8%B3%87%E6%96%99_20240905%E3%80%90%E9%85%8D%E5%B8%83%E7%89%88%E3%80%91.pdf)
+
+- Seamlessly integrate broadcasting and publishing to build a user flow that enables mutual access to content on both sides, improving user experience and convenience, and contributing to the promotion of broadcast content viewing and published content sales.
+- Enhance the value of broadcast content metadata by enabling its use outside the broadcasting industry.
+
+</div>
 
 ## 関連する産業ドメイン
 - 放送

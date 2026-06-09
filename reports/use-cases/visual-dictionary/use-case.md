@@ -1,6 +1,16 @@
-# 図鑑コンテンツデータベース / Visual Encyclopedia Content Database
+<h1 id="visual-encyclopedia-content-database"><span lang="ja">図鑑コンテンツデータベース</span> <span lang="en">Visual Encyclopedia Content Database</span></h1>
+
+<div lang="ja">
 
 出版社管理コンテンツの既存ビジネスへのマッチングおよび、新規ビジネスモデル創出の取り組み。
+
+</div>
+
+<div lang="en">
+
+An initiative to match publisher-managed content with existing businesses and to create new business models.
+
+</div>
 
 ## 関連する産業ドメイン
 - 出版

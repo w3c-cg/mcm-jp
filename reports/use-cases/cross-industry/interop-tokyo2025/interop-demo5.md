@@ -1,6 +1,16 @@
-# 放送メタデータに基づく出版プロモーション / Publishing Promotion Triggered by TV Exposure
-放送メタデータの情報から、出版プロモーションで利用するトピックを検出し、
-出版社サイトにトピックに基づく出版コンテンツのレコメンドが提供される事例。
+<h1 id="publishing-promotion-triggered-by-tv-exposure"><span lang="ja">放送メタデータに基づく出版プロモーション</span> <span lang="en">Publishing Promotion Triggered by TV Exposure</span></h1>
+
+<div lang="ja">
+
+放送メタデータの情報から、出版プロモーションで利用するトピックを検出し、出版社サイトにトピックに基づく出版コンテンツのレコメンドが提供される事例。
+
+</div>
+
+<div lang="en">
+
+Detects topics for publishing promotion from broadcast metadata, and provides recommendations of related published content on the publisher's site.
+
+</div>
 
 ## 関連する産業ドメイン
 - 出版

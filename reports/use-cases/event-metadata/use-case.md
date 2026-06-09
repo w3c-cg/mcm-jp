@@ -1,7 +1,17 @@
-# イベントとテレビ番組の同時検索 / Joint Discovery of Events and TV Programs
-イベントと同時にテレビ番組を探す、もしくは気付くためのサービス事例。
+<h1 id="joint-discovery-of-events-and-tv-programs"><span lang="ja">催事イベントとテレビ番組の同時検索</span> <span lang="en">Joint Discovery of Events and TV Programs</span></h1>
+
+<div lang="ja">
+
+イベント（お祭りや展示会などの催事イベント）と同時にテレビ番組を探す、もしくは気付くためのサービス事例。
 地図上でイベントを検索するサービス内において、イベント情報とテレビ番組の情報を混在させて表示する。
 
+</div>
+
+<div lang="en">
+
+A service for discovering, or becoming aware of, TV programs alongside organized events (such as festivals and exhibitions). Within a map-based event search service, event information and TV program information are displayed together.
+
+</div>
 
 ## 関連する産業ドメイン
 - イベント
