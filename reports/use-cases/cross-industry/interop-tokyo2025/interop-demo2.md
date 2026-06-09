@@ -16,14 +16,20 @@ Recommends events, TV programs, and published content using current location and
 
 車載インフォテインメントシステムの位置情報を利用して、イベンティアアプリ上でイベント情報と放送番組を混在したレコメンドを行う流れを示す。
 
-<img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/images/interop2a.png" alt="interop2a" width="800" />
+<figure>
+  <img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/images/interop2a.png" alt="イベンティアアプリでのレコメンド動作の流れ" width="800" />
+  <figcaption>イベンティアアプリでのレコメンド動作の流れ</figcaption>
+</figure>
 
 
 ## 実機デモ外観
 
 Interop Tokyo 2025で展示したデモ外観を示す。
 
-<img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/images/interop2-configuration.png" alt="interop2b" width="800" />
+<figure>
+  <img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/images/interop2-configuration.png" alt="Interop Tokyo 2025 展示デモ外観" width="800" />
+  <figcaption>Interop Tokyo 2025 展示デモ外観</figcaption>
+</figure>
 
 ## 実装環境・関連メタデータ仕様
 

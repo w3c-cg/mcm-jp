@@ -29,8 +29,8 @@ A user identifies a broadcast program from known information and views it via br
 ## システム構成
 
 システム構成概要と動作フローを示す。
-<figure>
-  <img src="/mcm-jp/reports/use-cases/broadcasting-schema.org/configuration.png" alt="" width="800" />
+<figure id="fig-uc1-configuration">
+  <img src="/mcm-jp/reports/use-cases/broadcasting-schema.org/configuration.png" alt="システム構成例" width="800" />
   <figcaption>システム構成例</figcaption>
 </figure>
 
@@ -39,24 +39,24 @@ A user identifies a broadcast program from known information and views it via br
 想定データモデルを示す。放送番組については、[Schema.org](#schema-org-spec) などでもスキーマタイプが示されている。
 これらや、放送業界の既存仕様 [Report ITU-R BT.2400](#uc1-references)、[Google Media Actions](#uc1-references) などを参考に、放送番組に関するメタデータのデータモデルを示す。
 
-<figure width="60%">
-  <img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/broadcasting-schema.org/datamodel.png" alt=""  />
+<figure id="fig-uc1-datamodel">
+  <img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/broadcasting-schema.org/datamodel.png" alt="放送番組メタデータのデータモデル"  />
   <figcaption>放送番組メタデータのデータモデル</figcaption>
 </figure>
 
 ## 動作フロー概要
-- 放送事業者、放送メタデータサーバ、受信機、ユーザの構成を図1に示す
+- 放送事業者、放送メタデータサーバ、受信機、ユーザの構成を<a href="#fig-uc1-configuration"></a>に示す
 - 放送メタデータサーバは、放送メタデータの登録APIと、参照APIをもつ
   - 放送メタデータサーバAPI仕様
-  - メタデータのデータモデル（図2）
+  - メタデータのデータモデル（<a href="#fig-uc1-datamodel"></a>）
     - Schema.orgの語彙、データ構造などのRDFスキーマに基づく記述
-- 放送事業者が、放送メタデータサーバに放送実績情報を登録する。メタデータのサンプルを図3に示す
+- 放送事業者が、放送メタデータサーバに放送実績情報を登録する。メタデータのサンプルを<a href="#fig-uc1-data-sample"></a>に示す
   - 放送枠（BroadcastEvent）とその番組枠で提供された放送番組（TVEpisode）の関係性を登録する
   - 放送番組（TVEpisode）に対して、詳細情報（シリーズ、出演者など）や提供情報（放送情報、配信情報）を登録する
 - ユーザが受信機に対して、放送が終了した番組の視聴をリクエストする
-  - 受信機は、放送チャンネルと放送時刻の情報を検索パラメータとして、放送メタデータサーバに問合せ、番組枠（BroadcastEvent）と放送番組（TVEpisode）を特定する（図4 検索API例）
+  - 受信機は、放送チャンネルと放送時刻の情報を検索パラメータとして、放送メタデータサーバに問合せ、番組枠（BroadcastEvent）と放送番組（TVEpisode）を特定する（<a href="#fig-uc1-api"></a> 検索API例）
 - 放送メタデータサーバは、受信機に対して、BroadcastEvent、TVEpisodeの情報を返答する
-  - 図2に示すように、TVEpisodeには、オンデマンド配信枠（OnDemandEvent）の情報などが紐づいている
+  - <a href="#fig-uc1-datamodel"></a>に示すように、TVEpisodeには、オンデマンド配信枠（OnDemandEvent）の情報などが紐づいている
 - 受信機は、TVEpisodeの提供方法として、現在利用可能な複数のBroadcastEventおよびOnDemandEventを視聴方法として提示する
 - ユーザは、提示された視聴方法の候補のうち、あるVODサービスを示すOnDemandEventを選択する
 - 受信機は、指定されたOnDemandEventにより、番組の再生を行う
@@ -87,12 +87,12 @@ A user identifies a broadcast program from known information and views it via br
       - generator: python
 
 
-<figure width="60%">
-  <img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/broadcasting-schema.org/data_sample.png" alt=""  />
+<figure id="fig-uc1-data-sample">
+  <img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/broadcasting-schema.org/data_sample.png" alt="放送番組メタデータのサンプル"  />
   <figcaption>放送番組メタデータのサンプル</figcaption>
 </figure>
 
-<figure width="40%">
+<figure id="fig-uc1-api">
 <img src="https://w3c-cg.github.io/mcm-jp/reports/use-cases/broadcasting-schema.org/api_sample.png" alt="検索API例" />
   <figcaption>検索API例</figcaption>
 </figure>

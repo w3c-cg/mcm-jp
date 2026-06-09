@@ -28,7 +28,7 @@ Detects topics for publishing promotion from broadcast metadata, and provides re
 1. ユーザは、書籍ページから関連する放送番組へ、放送番組から関連書籍へ到達する
 
 ## 構成・動作フロー概要
-<figure  width="80％">
+<figure>
   <img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/images/tvtopic-rec-book-flow.png" alt="interop5a" />
   <figcaption>構成概要・動作フロー概要</figcaption>
 </figure>
@@ -36,13 +36,13 @@ Detects topics for publishing promotion from broadcast metadata, and provides re
 
 ## 検証イメージ外観
 
-<figure  width="80％">
+<figure>
   <img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/images/tvtopic-rec-book-outline.png" alt="interop5b" />
   <figcaption>放送トピックによる出版プロモーションのイメージ</figcaption>
 </figure>
 
 
-<figure  width="80％">
+<figure>
   <img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/images/book-landingpage.png" alt="interop5c" />
   <figcaption>出版プロモーションページからの放送番組紹介イメージ</figcaption>
 </figure>

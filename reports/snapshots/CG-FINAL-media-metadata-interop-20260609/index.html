@@ -476,7 +476,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         </p>
 
         <p lang="ja" style="">
-            複数の事業者が相互にサービス連携させるためには、各サービス間での情報のやり取りに関する共通の前提や取り決めが共有され、それぞれのサービスで扱われるメタデータを相互に交換できることが必要である。一方で、各業界において利用されているメタデータのフォーマットや語彙については、業界間で十分に共有されておらず、相互に認知されていないという課題がある。</p>
+            複数の事業者が相互にサービスを連携させるためには、各サービス間での情報のやり取りに関する共通の前提や取り決めが共有され、それぞれのサービスで扱われるメタデータを相互に交換できることが必要である。一方で、各業界において利用されているメタデータのフォーマットや語彙については、業界間で十分に共有されておらず、相互に認知されていないという課題がある。</p>
         <p lang="en" style="display: none;">
             For multiple businesses to collaborate and link their services, it is necessary to share common conventions for exchanging information between services, and to enable the mutual exchange of metadata handled by each service. However, there remains a challenge in that metadata formats and vocabularies used in each industry are often not sufficiently shared across industries, and are not well known to one another.
         </p>
@@ -979,36 +979,36 @@ TV露出効果を最大限活用して商品販促を行う</li>
 </section><section id="generatedID-28"><div class="header-wrapper"><h4 id="x3-8-3"><bdi class="secno">3.8.3 </bdi>システム構成</h4><a class="self-link" href="#generatedID-28" aria-label="Permalink for Section 3.8.3"></a></div>
 <p>システム構成概要と動作フローを示す。</p>
 <figure id="fig-generatedID-9">
-  <img src="assets/broadcasting-schema.org/configuration.png" alt="" width="800">
+  <img src="assets/broadcasting-schema.org/configuration.png" alt="システム構成例" width="800">
   <figcaption><a class="self-link" href="#fig-generatedID-9"><span lang="ja">図 </span><span lang="en">Figure </span><bdi class="figno">15</bdi></a> <span class="fig-title">システム構成例</span></figcaption>
 </figure></section><section id="generatedID-29"><div class="header-wrapper"><h4 id="x3-8-4"><bdi class="secno">3.8.4 </bdi>データモデル</h4><a class="self-link" href="#generatedID-29" aria-label="Permalink for Section 3.8.4"></a></div>
 <p>想定データモデルを示す。放送番組については、<a href="#schema-org-spec">Schema.org</a> などでもスキーマタイプが示されている。
 これらや、放送業界の既存仕様 <a href="#uc1-references">Report ITU-R BT.2400</a>、<a href="#uc1-references">Google Media Actions</a> などを参考に、放送番組に関するメタデータのデータモデルを示す。</p>
-<figure width="60%" id="fig-generatedID-10">
-  <img src="assets/broadcasting-schema.org/datamodel.png" alt="">
+<figure id="fig-generatedID-10">
+  <img src="assets/broadcasting-schema.org/datamodel.png" alt="放送番組メタデータのデータモデル">
   <figcaption><a class="self-link" href="#fig-generatedID-10"><span lang="ja">図 </span><span lang="en">Figure </span><bdi class="figno">16</bdi></a> <span class="fig-title">放送番組メタデータのデータモデル</span></figcaption>
 </figure></section><section id="generatedID-30"><div class="header-wrapper"><h4 id="x3-8-5"><bdi class="secno">3.8.5 </bdi>動作フロー概要</h4><a class="self-link" href="#generatedID-30" aria-label="Permalink for Section 3.8.5"></a></div>
 <ul>
-<li>放送事業者、放送メタデータサーバ、受信機、ユーザの構成を図1に示す</li>
+<li>放送事業者、放送メタデータサーバ、受信機、ユーザの構成を<a class="fig-ref" href="#fig-generatedID-9"><span lang="ja">図 </span><span lang="en">Figure </span><bdi>15</bdi></a>に示す</li>
 <li>放送メタデータサーバは、放送メタデータの登録APIと、参照APIをもつ<ul>
 <li>放送メタデータサーバAPI仕様</li>
-<li>メタデータのデータモデル（図2）<ul>
+<li>メタデータのデータモデル（<a class="fig-ref" href="#fig-generatedID-10"><span lang="ja">図 </span><span lang="en">Figure </span><bdi>16</bdi></a>）<ul>
 <li>Schema.orgの語彙、データ構造などのRDFスキーマに基づく記述</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>放送事業者が、放送メタデータサーバに放送実績情報を登録する。メタデータのサンプルを図3に示す<ul>
+<li>放送事業者が、放送メタデータサーバに放送実績情報を登録する。メタデータのサンプルを<a class="fig-ref" href="#fig-generatedID-11"><span lang="ja">図 </span><span lang="en">Figure </span><bdi>17</bdi></a>に示す<ul>
 <li>放送枠（BroadcastEvent）とその番組枠で提供された放送番組（TVEpisode）の関係性を登録する</li>
 <li>放送番組（TVEpisode）に対して、詳細情報（シリーズ、出演者など）や提供情報（放送情報、配信情報）を登録する</li>
 </ul>
 </li>
 <li>ユーザが受信機に対して、放送が終了した番組の視聴をリクエストする<ul>
-<li>受信機は、放送チャンネルと放送時刻の情報を検索パラメータとして、放送メタデータサーバに問合せ、番組枠（BroadcastEvent）と放送番組（TVEpisode）を特定する（図4 検索API例）</li>
+<li>受信機は、放送チャンネルと放送時刻の情報を検索パラメータとして、放送メタデータサーバに問合せ、番組枠（BroadcastEvent）と放送番組（TVEpisode）を特定する（<a class="fig-ref" href="#fig-api"><span lang="ja">図 </span><span lang="en">Figure </span><bdi>18</bdi></a> 検索API例）</li>
 </ul>
 </li>
 <li>放送メタデータサーバは、受信機に対して、BroadcastEvent、TVEpisodeの情報を返答する<ul>
-<li>図2に示すように、TVEpisodeには、オンデマンド配信枠（OnDemandEvent）の情報などが紐づいている</li>
+<li><a class="fig-ref" href="#fig-generatedID-10"><span lang="ja">図 </span><span lang="en">Figure </span><bdi>16</bdi></a>に示すように、TVEpisodeには、オンデマンド配信枠（OnDemandEvent）の情報などが紐づいている</li>
 </ul>
 </li>
 <li>受信機は、TVEpisodeの提供方法として、現在利用可能な複数のBroadcastEventおよびOnDemandEventを視聴方法として提示する</li>
@@ -1060,10 +1060,10 @@ TV露出効果を最大限活用して商品販促を行う</li>
 </ul>
 </li>
 </ul>
-<figure width="60%" id="fig-generatedID-11">
-  <img src="assets/broadcasting-schema.org/data_sample.png" alt="">
+<figure id="fig-generatedID-11">
+  <img src="assets/broadcasting-schema.org/data_sample.png" alt="放送番組メタデータのサンプル">
   <figcaption><a class="self-link" href="#fig-generatedID-11"><span lang="ja">図 </span><span lang="en">Figure </span><bdi class="figno">17</bdi></a> <span class="fig-title">放送番組メタデータのサンプル</span></figcaption>
-</figure><figure width="40%" id="fig-api">
+</figure><figure id="fig-api">
 <img src="assets/broadcasting-schema.org/api_sample.png" alt="検索API例">
   <figcaption><a class="self-link" href="#fig-api"><span lang="ja">図 </span><span lang="en">Figure </span><bdi class="figno">18</bdi></a> <span class="fig-title">検索API例</span></figcaption>
 </figure></section><section id="generatedID-32"><div class="header-wrapper"><h5 id="uc1-references">参照仕様など</h5><a class="self-link" href="#uc1-references" aria-label="Permalink for this Section"></a></div><ul>
@@ -1139,9 +1139,15 @@ TV露出効果を最大限活用して商品販促を行う</li>
 </div><div lang="en" style="display: none;"><p>Recommends events, TV programs, and published content using current location and navigation destination information from in-vehicle infotainment systems.</p>
 </div><section id="generatedID-39"><div class="header-wrapper"><h4 id="x3-10-1"><bdi class="secno">3.10.1 </bdi>試作・検証事例</h4><a class="self-link" href="#generatedID-39" aria-label="Permalink for Section 3.10.1"></a></div>
 <p>車載インフォテインメントシステムの位置情報を利用して、イベンティアアプリ上でイベント情報と放送番組を混在したレコメンドを行う流れを示す。</p>
-<img src="assets/cross-industry/interop-tokyo2025/images/interop2a.png" alt="interop2a" width="800"></section><section id="generatedID-40"><div class="header-wrapper"><h4 id="x3-10-2"><bdi class="secno">3.10.2 </bdi>実機デモ外観</h4><a class="self-link" href="#generatedID-40" aria-label="Permalink for Section 3.10.2"></a></div>
+<figure id="fig-interop2-recommend">
+  <img src="assets/cross-industry/interop-tokyo2025/images/interop2a.png" alt="イベンティアアプリでのレコメンド動作の流れ" width="800">
+  <figcaption><a class="self-link" href="#fig-interop2-recommend"><span lang="ja">図 </span><span lang="en">Figure </span><bdi class="figno">23</bdi></a> <span class="fig-title">イベンティアアプリでのレコメンド動作の流れ</span></figcaption>
+</figure></section><section id="generatedID-40"><div class="header-wrapper"><h4 id="x3-10-2"><bdi class="secno">3.10.2 </bdi>実機デモ外観</h4><a class="self-link" href="#generatedID-40" aria-label="Permalink for Section 3.10.2"></a></div>
 <p>Interop Tokyo 2025で展示したデモ外観を示す。</p>
-<img src="assets/cross-industry/interop-tokyo2025/images/interop2-configuration.png" alt="interop2b" width="800"></section><section id="generatedID-41"><div class="header-wrapper"><h4 id="x3-10-3"><bdi class="secno">3.10.3 </bdi>実装環境・関連メタデータ仕様</h4><a class="self-link" href="#generatedID-41" aria-label="Permalink for Section 3.10.3"></a></div>
+<figure id="fig-interop2-demo">
+  <img src="assets/cross-industry/interop-tokyo2025/images/interop2-configuration.png" alt="Interop Tokyo 2025 展示デモ外観" width="800">
+  <figcaption><a class="self-link" href="#fig-interop2-demo"><span lang="ja">図 </span><span lang="en">Figure </span><bdi class="figno">24</bdi></a> <span class="fig-title">Interop Tokyo 2025 展示デモ外観</span></figcaption>
+</figure></section><section id="generatedID-41"><div class="header-wrapper"><h4 id="x3-10-3"><bdi class="secno">3.10.3 </bdi>実装環境・関連メタデータ仕様</h4><a class="self-link" href="#generatedID-41" aria-label="Permalink for Section 3.10.3"></a></div>
 <ul>
 <li>車載インフォテインメントシステム（IVI）<ul>
 <li><a href="https://www.access-company.com/products/browser/netfront-browser-be/">NetFront® Browser for Automotive（ACCESS）</a></li>
@@ -1183,7 +1189,7 @@ TV露出効果を最大限活用して商品販促を行う</li>
 <p>
       </p><figure id="fig-generatedID-16">
         <img src="assets/cross-industry/interop-tokyo2025/images/interop3a.png" alt="alt text">
-        <figcaption><a class="self-link" href="#fig-generatedID-16"><span lang="ja">図 </span><span lang="en">Figure </span><bdi class="figno">23</bdi></a> <span class="fig-title">動作フロー概要</span></figcaption>
+        <figcaption><a class="self-link" href="#fig-generatedID-16"><span lang="ja">図 </span><span lang="en">Figure </span><bdi class="figno">25</bdi></a> <span class="fig-title">動作フロー概要</span></figcaption>
       </figure>
     <p></p>
 </section><section id="generatedID-44"><div class="header-wrapper"><h4 id="x3-11-3"><bdi class="secno">3.11.3 </bdi>実機デモの様子</h4><a class="self-link" href="#generatedID-44" aria-label="Permalink for Section 3.11.3"></a></div>
@@ -1192,7 +1198,7 @@ TV露出効果を最大限活用して商品販促を行う</li>
     <img src="assets/cross-industry/interop-tokyo2025/images/ime-Yu-Gi-Oh!.png" alt="interop3a" width="33%">
     <img src="assets/cross-industry/interop-tokyo2025/images/ime-re_zero.png" alt="interop3b" width="33%">
     <img src="assets/cross-industry/interop-tokyo2025/images/ime-taigan-no-kaji.png" alt="interop3c" width="33%">
-      <figcaption><a class="self-link" href="#fig-interop-tokyo-2025"><span lang="ja">図 </span><span lang="en">Figure </span><bdi class="figno">24</bdi></a> <span class="fig-title">Interop Tokyo 2025 デモ動作の様子</span></figcaption>
+      <figcaption><a class="self-link" href="#fig-interop-tokyo-2025"><span lang="ja">図 </span><span lang="en">Figure </span><bdi class="figno">26</bdi></a> <span class="fig-title">Interop Tokyo 2025 デモ動作の様子</span></figcaption>
 </figure></section><section id="generatedID-45"><div class="header-wrapper"><h4 id="x3-11-4"><bdi class="secno">3.11.4 </bdi>参照仕様など</h4><a class="self-link" href="#generatedID-45" aria-label="Permalink for Section 3.11.4"></a></div>
 <ul>
 <li><a href="#ref-ime">スマートフォン向け IME(iWnn IME for Android)＋クラウド辞書</a></li>
@@ -1217,15 +1223,15 @@ TV露出効果を最大限活用して商品販促を行う</li>
 </ol>
 <figure id="fig-generatedID-17">
   <img src="assets/cross-industry/interop-tokyo2025/images/interop4a.png" alt="interop4a" width="800">
-  <figcaption><a class="self-link" href="#fig-generatedID-17"><span lang="ja">図 </span><span lang="en">Figure </span><bdi class="figno">25</bdi></a> <span class="fig-title">動作イメージ概要</span></figcaption>
+  <figcaption><a class="self-link" href="#fig-generatedID-17"><span lang="ja">図 </span><span lang="en">Figure </span><bdi class="figno">27</bdi></a> <span class="fig-title">動作イメージ概要</span></figcaption>
 </figure><figure id="fig-generatedID-18">
   <img src="assets/cross-industry/interop-tokyo2025/images/interop4b.png" alt="interop4b" width="800">
-  <figcaption><a class="self-link" href="#fig-generatedID-18"><span lang="ja">図 </span><span lang="en">Figure </span><bdi class="figno">26</bdi></a> <span class="fig-title">動作フロー概要</span></figcaption>
+  <figcaption><a class="self-link" href="#fig-generatedID-18"><span lang="ja">図 </span><span lang="en">Figure </span><bdi class="figno">28</bdi></a> <span class="fig-title">動作フロー概要</span></figcaption>
 </figure></section><section id="generatedID-48"><div class="header-wrapper"><h4 id="x3-12-3"><bdi class="secno">3.12.3 </bdi>デモ動作</h4><a class="self-link" href="#generatedID-48" aria-label="Permalink for Section 3.12.3"></a></div>
 <p>Interop Tokyo 2025で展示したデモ外観を示す。</p>
 <figure id="fig-generatedID-19">
   <img src="assets/cross-industry/interop-tokyo2025/images/ime-book-search.png" alt="interop4c" width="800">
-  <figcaption><a class="self-link" href="#fig-generatedID-19"><span lang="ja">図 </span><span lang="en">Figure </span><bdi class="figno">27</bdi></a> <span class="fig-title">実機デモ動作外観</span></figcaption>
+  <figcaption><a class="self-link" href="#fig-generatedID-19"><span lang="ja">図 </span><span lang="en">Figure </span><bdi class="figno">29</bdi></a> <span class="fig-title">実機デモ動作外観</span></figcaption>
 </figure></section><section id="generatedID-49"><div class="header-wrapper"><h4 id="x3-12-4"><bdi class="secno">3.12.4 </bdi>参照仕様など</h4><a class="self-link" href="#generatedID-49" aria-label="Permalink for Section 3.12.4"></a></div>
 <ul>
 <li><a href="#ref-ime">スマートフォン向け IME(iWnn IME for Android)＋クラウド辞書 (3.2参照)</a></li>
@@ -1250,19 +1256,19 @@ TV露出効果を最大限活用して商品販促を行う</li>
 <li>ユーザは、書籍ページから関連する放送番組へ、放送番組から関連書籍へ到達する</li>
 </ol>
 </section><section id="generatedID-52"><div class="header-wrapper"><h4 id="x3-13-3"><bdi class="secno">3.13.3 </bdi>構成・動作フロー概要</h4><a class="self-link" href="#generatedID-52" aria-label="Permalink for Section 3.13.3"></a></div>
-<figure width="80％" id="fig-generatedID-20">
+<figure id="fig-generatedID-20">
   <img src="assets/cross-industry/interop-tokyo2025/images/tvtopic-rec-book-flow.png" alt="interop5a">
-  <figcaption><a class="self-link" href="#fig-generatedID-20"><span lang="ja">図 </span><span lang="en">Figure </span><bdi class="figno">28</bdi></a> <span class="fig-title">構成概要・動作フロー概要</span></figcaption>
+  <figcaption><a class="self-link" href="#fig-generatedID-20"><span lang="ja">図 </span><span lang="en">Figure </span><bdi class="figno">30</bdi></a> <span class="fig-title">構成概要・動作フロー概要</span></figcaption>
 </figure></section><section id="generatedID-53"><div class="header-wrapper"><h4 id="x3-13-4"><bdi class="secno">3.13.4 </bdi>検証イメージ外観</h4><a class="self-link" href="#generatedID-53" aria-label="Permalink for Section 3.13.4"></a></div>
-<figure width="80％" id="fig-generatedID-21">
+<figure id="fig-generatedID-21">
   <img src="assets/cross-industry/interop-tokyo2025/images/tvtopic-rec-book-outline.png" alt="interop5b">
-  <figcaption><a class="self-link" href="#fig-generatedID-21"><span lang="ja">図 </span><span lang="en">Figure </span><bdi class="figno">29</bdi></a> <span class="fig-title">放送トピックによる出版プロモーションのイメージ</span></figcaption>
-</figure><figure width="80％" id="fig-generatedID-22">
+  <figcaption><a class="self-link" href="#fig-generatedID-21"><span lang="ja">図 </span><span lang="en">Figure </span><bdi class="figno">31</bdi></a> <span class="fig-title">放送トピックによる出版プロモーションのイメージ</span></figcaption>
+</figure><figure id="fig-generatedID-22">
   <img src="assets/cross-industry/interop-tokyo2025/images/book-landingpage.png" alt="interop5c">
-  <figcaption><a class="self-link" href="#fig-generatedID-22"><span lang="ja">図 </span><span lang="en">Figure </span><bdi class="figno">30</bdi></a> <span class="fig-title">出版プロモーションページからの放送番組紹介イメージ</span></figcaption>
+  <figcaption><a class="self-link" href="#fig-generatedID-22"><span lang="ja">図 </span><span lang="en">Figure </span><bdi class="figno">32</bdi></a> <span class="fig-title">出版プロモーションページからの放送番組紹介イメージ</span></figcaption>
 </figure></section></section>
         <section id="tv-program-recommendations-from-e-books-0"><div class="header-wrapper"><h3 id="tv-program-recommendations-from-e-books"><bdi class="secno">3.14 </bdi><span lang="ja" style="">電子書籍からの放送番組レコメンド</span> <span lang="en" style="display: none;">TV Program Recommendations from E-Books</span></h3><a class="self-link" href="#tv-program-recommendations-from-e-books" aria-label="Permalink for Section 3.14"></a></div><div lang="ja" style=""><p>電子書籍内のメタデータを用いて、関連する放送番組をユーザに推薦する。メタデータの出版業界外での活用にあたる。</p>
-</div><div lang="en" style="display: none;"><p>Recommends related broadcast programs to the user using metadata within e-books. This is a use of published content metadata across industries.</p>
+</div><div lang="en" style="display: none;"><p>Recommends related broadcast programs to the user using metadata within e-books. This is a use of publishing metadata across industries.</p>
 </div><section id="generatedID-54"><div class="header-wrapper"><h4 id="x3-14-1"><bdi class="secno">3.14.1 </bdi>関連する産業ドメイン</h4><a class="self-link" href="#generatedID-54" aria-label="Permalink for Section 3.14.1"></a></div>
 <ul>
 <li>出版</li>
@@ -1278,9 +1284,9 @@ TV露出効果を最大限活用して商品販促を行う</li>
 <li>放送番組検索サーバは、検索条件に合致する放送番組情報を、電子書籍リーダーに返答する。</li>
 <li>電子書籍リーダーは、放送番組情報をもとに、ユーザに番組のレコメンドを提示する。</li>
 </ol>
-<figure width="80％" id="fig-generatedID-23">
+<figure id="fig-generatedID-23">
   <img src="assets/cross-industry/interop-tokyo2025/images/ebook-rec-program.png" alt="interop6">
-  <figcaption><a class="self-link" href="#fig-generatedID-23"><span lang="ja">図 </span><span lang="en">Figure </span><bdi class="figno">31</bdi></a> <span class="fig-title">システム構成・動作フロー概要</span></figcaption>
+  <figcaption><a class="self-link" href="#fig-generatedID-23"><span lang="ja">図 </span><span lang="en">Figure </span><bdi class="figno">33</bdi></a> <span class="fig-title">システム構成・動作フロー概要</span></figcaption>
 </figure><section id="generatedID-56"><div class="header-wrapper"><h5 id="generatedID-65">実装例</h5><a class="self-link" href="#generatedID-56" aria-label="Permalink for this Section"></a></div>
 <ul>
 <li>電子書籍リーダー<ul>
@@ -1363,8 +1369,8 @@ TV露出効果を最大限活用して商品販促を行う</li>
         </section>
         <section id="json-ld-1-1"><div class="header-wrapper"><h3 id="x4-2-json-ld-1-1"><bdi class="secno">4.2 </bdi>JSON-LD 1.1</h3><a class="self-link" href="#json-ld-1-1" aria-label="Permalink for Section 4.2"></a></div>
             
-            <p lang="ja" style="">Web上の構造化データやメタデータの表現・交換のための軽量なLinked Dataフォーマット。JSON-LD 1.1[<cite><a class="bibref" data-link-type="biblio" href="#bib-json-ld" title="JSON-LD 1.0">json-ld</a></cite>] (2020年W3C勧告) は、W3C JSON-LD Working Groupによりメンテナンスされている。</p>
-            <p lang="en" style="display: none;">A lightweight Linked Data format for representing and exchanging structured data and metadata on the Web. JSON-LD 1.1 [<cite><a class="bibref" data-link-type="biblio" href="#bib-json-ld" title="JSON-LD 1.0">json-ld</a></cite>], a 2020 W3C Recommendation, is maintained by the W3C JSON-LD Working Group.</p>
+            <p lang="ja" style="">Web上の構造化データやメタデータの表現・交換のための軽量なLinked Dataフォーマット。JSON-LD 1.1[<cite><a class="bibref" data-link-type="biblio" href="#bib-json-ld11" title="JSON-LD 1.1">json-ld11</a></cite>] (2020年W3C勧告) は、W3C JSON-LD Working Groupによりメンテナンスされている。</p>
+            <p lang="en" style="display: none;">A lightweight Linked Data format for representing and exchanging structured data and metadata on the Web. JSON-LD 1.1 [<cite><a class="bibref" data-link-type="biblio" href="#bib-json-ld11" title="JSON-LD 1.1">json-ld11</a></cite>], a 2020 W3C Recommendation, is maintained by the W3C JSON-LD Working Group.</p></p>
             <p lang="ja" style="">仕様: <a href="https://www.w3.org/TR/json-ld/">https://www.w3.org/TR/json-ld/</a><br>
             WGページ: <a href="https://www.w3.org/groups/wg/json-ld/">https://www.w3.org/groups/wg/json-ld/</a></p>
             <p lang="en" style="display: none;">Specification: <a href="https://www.w3.org/TR/json-ld/">https://www.w3.org/TR/json-ld/</a><br>
@@ -1383,8 +1389,8 @@ TV露出効果を最大限活用して商品販促を行う</li>
             <p lang="ja" style="">Schema.orgは、インターネット上の構造化データのためのスキーマとして策定されたデータモデル（メタデータ語彙）の仕様。2026年3月現在、Ver. 30.0が公開されている。RDF Schemaから派生したデータモデリングに基づいており、語彙要素として<code>Type</code>、<code>Property</code>、<code>Enumeration</code>を含む。定義はRDF-Turtle等。</p>
             <p lang="en" style="display: none;">Schema.org is a data model (metadata vocabulary) specification developed as a schema for structured data on the Internet. As of March 2026, version 30.0 is available. Based on a data modeling approach derived from RDF Schema, its vocabulary includes <code>Type</code>, <code>Property</code>, and <code>Enumeration</code>. Definitions are provided in RDF-Turtle and other formats.</p>
             <p>Full schema hierarchy: <a href="https://schema.org/docs/full.html">https://schema.org/docs/full.html</a></p>
-            <p lang="ja" style="">Schema.orgはJSON-LD[<cite><a class="bibref" data-link-type="biblio" href="#bib-json-ld" title="JSON-LD 1.0">json-ld</a></cite>]による記述も公式にサポートしている。</p>
-            <p lang="en" style="display: none;">Schema.org also officially supports descriptions using JSON-LD [<cite><a class="bibref" data-link-type="biblio" href="#bib-json-ld" title="JSON-LD 1.0">json-ld</a></cite>].</p>
+            <p lang="ja" style="">Schema.orgはJSON-LD[<cite><a class="bibref" data-link-type="biblio" href="#bib-json-ld11" title="JSON-LD 1.1">json-ld11</a></cite>]による記述も公式にサポートしている。</p>
+            <p lang="en" style="display: none;">Schema.org also officially supports descriptions using JSON-LD [<cite><a class="bibref" data-link-type="biblio" href="#bib-json-ld11" title="JSON-LD 1.1">json-ld11</a></cite>].</p></p>
         </section>
         <section id="european-broadcasting-union-ebu-ebucoreplus"><div class="header-wrapper"><h3 id="x4-5-european-broadcasting-union-ebu-ebucoreplus"><bdi class="secno">4.5 </bdi>European Broadcasting Union (EBU) - EBUCorePlus</h3><a class="self-link" href="#european-broadcasting-union-ebu-ebucoreplus" aria-label="Permalink for Section 4.5"></a></div>
             
@@ -1456,8 +1462,8 @@ TV露出効果を最大限活用して商品販促を行う</li>
       <a href="http://www.etsi.org/deliver/etsi_ts/102800_102899/1028220301/01.11.01_60/ts_1028220301v011101p.pdf"><cite>ETSI TS 102 822-3-1 V1.11.1 (2019-03): Broadcast and On-line Services: Search, select, and rightful use of content ("TV-Anytime"); Part 3: Metadata; Sub-part 1: Phase 1 - Metadata schemas</cite></a>.  ETSI. March 2019. Published. URL: <a href="http://www.etsi.org/deliver/etsi_ts/102800_102899/1028220301/01.11.01_60/ts_1028220301v011101p.pdf">http://www.etsi.org/deliver/etsi_ts/102800_102899/1028220301/01.11.01_60/ts_1028220301v011101p.pdf</a>
     </dd><dt id="bib-geolocation">[geolocation]</dt><dd>
       <a href="https://www.w3.org/TR/geolocation/"><cite>Geolocation</cite></a>. Marcos Caceres; Reilly Grant.  W3C. 26 March 2026. W3C Candidate Recommendation. URL: <a href="https://www.w3.org/TR/geolocation/">https://www.w3.org/TR/geolocation/</a>
-    </dd><dt id="bib-json-ld">[json-ld]</dt><dd>
-      <a href="https://www.w3.org/TR/json-ld/"><cite>JSON-LD 1.0</cite></a>. Manu Sporny; Gregg Kellogg; Markus Lanthaler.  W3C. 3 November 2020. W3C Recommendation. URL: <a href="https://www.w3.org/TR/json-ld/">https://www.w3.org/TR/json-ld/</a>
+    </dd><dt id="bib-json-ld11">[json-ld11]</dt><dd>
+      <a href="https://www.w3.org/TR/json-ld11/"><cite>JSON-LD 1.1</cite></a>. Gregg Kellogg; Pierre-Antoine Champin; Dave Longley. W3C. 16 July 2020. W3C Recommendation. URL: <a href="https://www.w3.org/TR/json-ld11/">https://www.w3.org/TR/json-ld11/</a>
     </dd><dt id="bib-vocab-dcat-3">[vocab-dcat-3]</dt><dd>
       <a href="https://www.w3.org/TR/vocab-dcat-3/"><cite>Data Catalog Vocabulary (DCAT) - Version 3</cite></a>. Simon Cox; Andrea Perego; Alejandra Gonzalez Beltran; Peter Winstanley; Riccardo Albertoni; David Browning.  W3C. 22 August 2024. W3C Recommendation. URL: <a href="https://www.w3.org/TR/vocab-dcat-3/">https://www.w3.org/TR/vocab-dcat-3/</a>
     </dd></dl>

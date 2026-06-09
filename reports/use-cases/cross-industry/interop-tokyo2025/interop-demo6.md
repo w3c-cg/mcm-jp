@@ -8,7 +8,7 @@
 
 <div lang="en">
 
-Recommends related broadcast programs to the user using metadata within e-books. This is a use of published content metadata across industries.
+Recommends related broadcast programs to the user using metadata within e-books. This is a use of publishing metadata across industries.
 
 </div>
 
@@ -27,7 +27,7 @@ Recommends related broadcast programs to the user using metadata within e-books.
 5. 放送番組検索サーバは、検索条件に合致する放送番組情報を、電子書籍リーダーに返答する。
 6. 電子書籍リーダーは、放送番組情報をもとに、ユーザに番組のレコメンドを提示する。
 
-<figure  width="80％">
+<figure>
   <img src="/mcm-jp/reports/use-cases/cross-industry/interop-tokyo2025/images/ebook-rec-program.png" alt="interop6" />
   <figcaption>システム構成・動作フロー概要</figcaption>
 </figure>
