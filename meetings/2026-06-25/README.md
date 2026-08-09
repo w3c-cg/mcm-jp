@@ -21,7 +21,7 @@
 [CGレポートリンク](https://w3c-cg.github.io/mcm-jp/reports/cg-report)
 
 ### Interop展示報告 [30]
-- ミニセミナー資料
+- ミニセミナー資料: https://w3c-cg.github.io/mcm-jp/events/interop2026/20260612_MCM-JP-CG_interop2026_seminar.pdf
 - MCM-JP CGイベントページ: https://w3c-cg.github.io/mcm-jp/events/interop2026/
 
 #### ミニセミナーの構成・反響
